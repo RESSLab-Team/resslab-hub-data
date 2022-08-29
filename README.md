@@ -1,4 +1,4 @@
-# resslab-tools-data
+# resslab-hub-data
 
 ## Commands
 
