@@ -79,7 +79,7 @@ Encoding format: `UTF-8`, Separator: `',' (comma)`
 | a_b                   | Cross-sectional area of steel beam																			|           			| `[mm2]`      | double 	   | -																										|
 | i_xb                  | Second moment of area of steel beam about major axis																|           			| `[mm4]`      | double 	   | -																										|
 | z_xb                  | Plastic section modulus of steel beam about major axis															|           			| `[mm3]`      | double 	   | -																										|
-| z_xb_bfp              | Plastic section modulus of BFP steel beam about major axis															|           			| $[mm^3]$     | double 	   | -																										|
+| z_xb_bfp              | Plastic section modulus of BFP steel beam about major axis															|           			| $[\text{mm^3}]$     | double 	   | -																										|
 | r_yb                  | Minor axis radius of gyration of steel beam																		|           			| `[mm]`       | double 	   | -																										|
 | b_fb_rbs              | Width of steel beam flange at RBS center																		|           			| `[mm]`       | double 	   | -																										|
 | d_gb_rbs              | Distance from steel beam top fibre to its center of gravity at RBS center												|           			| `[mm]`       | double 	   | -																										|
