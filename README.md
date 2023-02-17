@@ -76,22 +76,22 @@ Encoding format: `UTF-8`, Separator: `',' (comma)`
 | `b_bf`                  | Width of steel beam flange																					|           			| $[\text{mm}]$       		| double 	   | -																										|
 | `t_bf`                  | Thickness of steel beam flange																				|           			| $[\text{mm}]$       		| double 	   | -																										|
 | `r_b`                   | Fillet radius of steel beam																				|           			| $[\text{mm}]$       		| double 	   | -																										|
-| `a_b`                   | Cross-sectional area of steel beam																			|           			| $[\text{mm^2}]$      		| double 	   | -																										|
-| `i_xb`                  | Second moment of area of steel beam about major axis															|           			| $[\text{mm^4}]$      		| double 	   | -																										|
-| `z_xb`                  | Plastic section modulus of steel beam about major axis															|           			| $[\text{mm^3}]$      		| double 	   | -																										|
-| `z_xb_bfp`              | Plastic section modulus of BFP steel beam about major axis														|           			| $[\text{mm^3}]$ 			| double 	   | -																										|
+| `a_b`                   | Cross-sectional area of steel beam																			|           			| $[\text{mm}^2]$      		| double 	   | -																										|
+| `i_xb`                  | Second moment of area of steel beam about major axis															|           			| $[\text{mm}^4]$      		| double 	   | -																										|
+| `z_xb`                  | Plastic section modulus of steel beam about major axis															|           			| $[\text{mm}^3]$      		| double 	   | -																										|
+| `z_xb_bfp`              | Plastic section modulus of BFP steel beam about major axis														|           			| $[\text{mm}^3]$ 			| double 	   | -																										|
 | `r_yb`                  | Minor axis radius of gyration of steel beam																	|           			| $[\text{mm}]$       		| double 	   | -																										|
 | `b_fb_rbs`              | Width of steel beam flange at RBS center																		|           			| $[\text{mm}]$       		| double 	   | -																										|
 | `d_gb_rbs`              | Distance from steel beam top fibre to its center of gravity at RBS center											|           			| $[\text{mm}]$       		| double 	   | -																										|
-| `a_b_rbs`               | Cross-sectional area of RBS steel beam																		|           			| $[\text{mm^2}]$      		| double 	   | -																										|
-| `i_xb_rbs`              | Second moment of area of RBS steel beam about major axis															|           			| $[\text{mm^4}]$      		| double 	   | -																										|
-| `z_xb_rbs`              | Plastic section modulus of RBS steel beam about major axis														|           			| $[\text{mm^3}]$      		| double 	   | -																										|
+| `a_b_rbs`               | Cross-sectional area of RBS steel beam																		|           			| $[\text{mm}^2]$      		| double 	   | -																										|
+| `i_xb_rbs`              | Second moment of area of RBS steel beam about major axis															|           			| $[\text{mm}^4]$      		| double 	   | -																										|
+| `z_xb_rbs`              | Plastic section modulus of RBS steel beam about major axis														|           			| $[\text{mm}^3]$      		| double 	   | -																										|
 | `d_bm`                  | Depth of steel beam (measured)																				|           			| $[\text{mm}]$       		| double 	   | -																										|
 | `d_bgm`                 | Distance from steel beam top fibre to its center of gravity (measured)												|           			| $[\text{mm}]$       		| double 	   | Equals: $d_{bm}/2$																							|
 | `t_bwm`                 | Thickness of steel beam web (measured)																		|           			| $[\text{mm}]$       		| double 	   | -																										|
 | `b_bfm`                 | Width of steel beam flange (measured)																		|           			| $[\text{mm}]$       		| double 	   | -																										|
 | `t_bfm`                 | Thickness of steel beam flange (measured)																		|           			| $[\text{mm}]$       		| double 	   | -																										|
-| `z_xbm`                 | Plastic section modulus of steel beam about major axis (measured)													|           			| $[\text{mm^3}]$      		| double 	   | -																										|
+| `z_xbm`                 | Plastic section modulus of steel beam about major axis (measured)													|           			| $[\text{mm}^3]$      		| double 	   | -																										|
 | `steel_b`               |                                                         															|           			|              			|            |                 																							|
 | `f_yb`                  |                                                         															|           			|              			|            |                 																							|
 | `f_ybw`                 |                                                         															|           			|              			|            |                 																							|
