@@ -1,6 +1,6 @@
 # resslab-hub-data
 
-## Commands
+## Commands test
 
 ```bash
 # remove prefix
