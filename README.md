@@ -55,7 +55,7 @@ Encoding format: `UTF-8`, Separator: `',' (comma)`
 
 | Variable name         	 | Description                                             															| Symbol    			| Unit         			| Data type  | Comments        																							|
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------	| ---------------------- | ---------------------------	| ---------- | ---------------------------------------------------------------------------------------------------------------------------------	|
-| `id`                  	 | Unique ID for each experiment																				|           			| $[-]$        			| string 	   | Equals: experimental_program(with underscores)+'_'+date+'_'+specimen_designation / Example: Engelhardt_et_al_2000_DBBWWPZ		|
+| `id`                  	 | Unique ID for each experiment																				|           			| $[-]$        			| string 	   | Equals: experimental_program (with underscores)+'\_'+date+'\_'+specimen_designation / Example: Engelhardt_et_al_2000_DBBWWPZ		|
 | `experimental_program`  | Authors of the experimental program																			|           			| $[-]$        			| string 	   | Example: Engelhardt et al.																					|
 | `date`                  | Date of publication																						|           			| $[-]$        			| int 	   | Example: 2000																								|
 | `specimen_designation`  | Designation of the test specimen																			|           			| $[-]$        			| string 	   | Example: DBBWWPZ																							|
@@ -65,32 +65,32 @@ Encoding format: `UTF-8`, Separator: `',' (comma)`
 | `loading_protocol`      | Test loading protocol																						|           			| $[-]$        			| string 	   | Examples: [Symmetric Cyclic, Monotonic, Asymmetric, Ramped Symmetric Cyclic AISC]										|
 | `slab`                  | Composite or bare connection test																			|           			| $[-]$        			| string 	   | Binary: YES/NO																								|
 | `connection_type`       | Connection type																							|           			| $[-]$        			| string 	   | Examples: [WUF-W, WUF-B, RBS, BFP, WFP, KBB]																		|
-| `t_pl`                  | Plate thickness for BFP and WFP connections																	|           			| $[mm]$       			| double 	   | -																										|
+| `t_pl`                  | Plate thickness for BFP and WFP connections																	|           			| $[\text{mm}]$       		| double 	   | -																										|
 | `rbs_cut`               | Reduction in flange area at RBS center (normalized to the flange width)												|           			| $[-]$        			| double 	   | Range: [0,1]																								|
-| `s_h`                   | Plastic hinge distance from the column face																	|           			| $[mm]$       			| double 	   | -																										|
-| `d_h`                   | Shift of the beam effective depth due to presence of hanches														|           			| $[mm]$       			| double 	   | -																										|
+| `s_h`                   | Plastic hinge distance from the column face																	|           			| $[\text{mm}]$       		| double 	   | -																										|
+| `d_h`                   | Shift of the beam effective depth due to presence of hanches														|           			| $[\text{mm}]$       		| double 	   | -																										|
 | `section_b`             | Section name of steel beam																					|           			| $[-]$        			| string 	   | Examples: [IPE 360, W36x150, H-400x200x8x13, build up H section]														|
-| `d_b`                   | Depth of steel beam																						| $d_{b}/2$			| $[mm]$       			| double 	   | -																										|
-| `d_bg`                  | Distance from steel beam top fibre to its center of gravity														| $d_{bg}/2$   		| $[mm]$       			| double 	   | Equals: $d_b/2$																							|
-| `t_bw`                  | Thickness of steel beam web																				|           			| $[mm]$       			| double 	   | -																										|
-| `b_bf`                  | Width of steel beam flange																					|           			| $[mm]$       			| double 	   | -																										|
-| `t_bf`                  | Thickness of steel beam flange																				|           			| $[mm]$       			| double 	   | -																										|
-| `r_b`                   | Fillet radius of steel beam																				|           			| $[mm]$       			| double 	   | -																										|
+| `d_b`                   | Depth of steel beam																						| $d_{b}/2$			| $[\text{mm}]$       		| double 	   | -																										|
+| `d_bg`                  | Distance from steel beam top fibre to its center of gravity														| $d_{bg}/2$   		| $[\text{mm}]$       		| double 	   | Equals: $d_b/2$																							|
+| `t_bw`                  | Thickness of steel beam web																				|           			| $[\text{mm}]$       		| double 	   | -																										|
+| `b_bf`                  | Width of steel beam flange																					|           			| $[\text{mm}]$       		| double 	   | -																										|
+| `t_bf`                  | Thickness of steel beam flange																				|           			| $[\text{mm}]$       		| double 	   | -																										|
+| `r_b`                   | Fillet radius of steel beam																				|           			| $[\text{mm}]$       		| double 	   | -																										|
 | `a_b`                   | Cross-sectional area of steel beam																			|           			| $[\text{mm^2}]$      		| double 	   | -																										|
 | `i_xb`                  | Second moment of area of steel beam about major axis															|           			| $[\text{mm^4}]$      		| double 	   | -																										|
 | `z_xb`                  | Plastic section modulus of steel beam about major axis															|           			| $[\text{mm^3}]$      		| double 	   | -																										|
 | `z_xb_bfp`              | Plastic section modulus of BFP steel beam about major axis														|           			| $[\text{mm^3}]$ 			| double 	   | -																										|
-| `r_yb`                  | Minor axis radius of gyration of steel beam																	|           			| $[mm]$       			| double 	   | -																										|
-| `b_fb_rbs`              | Width of steel beam flange at RBS center																		|           			| $[mm]$       			| double 	   | -																										|
-| `d_gb_rbs`              | Distance from steel beam top fibre to its center of gravity at RBS center											|           			| $[mm]$       			| double 	   | -																										|
+| `r_yb`                  | Minor axis radius of gyration of steel beam																	|           			| $[\text{mm}]$       		| double 	   | -																										|
+| `b_fb_rbs`              | Width of steel beam flange at RBS center																		|           			| $[\text{mm}]$       		| double 	   | -																										|
+| `d_gb_rbs`              | Distance from steel beam top fibre to its center of gravity at RBS center											|           			| $[\text{mm}]$       		| double 	   | -																										|
 | `a_b_rbs`               | Cross-sectional area of RBS steel beam																		|           			| $[\text{mm^2}]$      		| double 	   | -																										|
 | `i_xb_rbs`              | Second moment of area of RBS steel beam about major axis															|           			| $[\text{mm^4}]$      		| double 	   | -																										|
 | `z_xb_rbs`              | Plastic section modulus of RBS steel beam about major axis														|           			| $[\text{mm^3}]$      		| double 	   | -																										|
-| `d_bm`                  | Depth of steel beam (measured)																				|           			| $[mm]$       			| double 	   | -																										|
-| `d_bgm`                 | Distance from steel beam top fibre to its center of gravity (measured)												|           			| $[mm]$       			| double 	   | Equals: $d_{bm}/2$																							|
-| `t_bwm`                 | Thickness of steel beam web (measured)																		|           			| $[mm]$       			| double 	   | -																										|
-| `b_bfm`                 | Width of steel beam flange (measured)																		|           			| $[mm]$       			| double 	   | -																										|
-| `t_bfm`                 | Thickness of steel beam flange (measured)																		|           			| $[mm]$       			| double 	   | -																										|
+| `d_bm`                  | Depth of steel beam (measured)																				|           			| $[\text{mm}]$       		| double 	   | -																										|
+| `d_bgm`                 | Distance from steel beam top fibre to its center of gravity (measured)												|           			| $[\text{mm}]$       		| double 	   | Equals: $d_{bm}/2$																							|
+| `t_bwm`                 | Thickness of steel beam web (measured)																		|           			| $[\text{mm}]$       		| double 	   | -																										|
+| `b_bfm`                 | Width of steel beam flange (measured)																		|           			| $[\text{mm}]$       		| double 	   | -																										|
+| `t_bfm`                 | Thickness of steel beam flange (measured)																		|           			| $[\text{mm}]$       		| double 	   | -																										|
 | `z_xbm`                 | Plastic section modulus of steel beam about major axis (measured)													|           			| $[\text{mm^3}]$      		| double 	   | -																										|
 | `steel_b`               |                                                         															|           			|              			|            |                 																							|
 | `f_yb`                  |                                                         															|           			|              			|            |                 																							|
