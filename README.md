@@ -155,7 +155,7 @@ Encoding format: `UTF-8`, Separator: `',' (comma)`
 | `wd`                    | Width of the doubler plate																										| $wd$                | $[\text{mm}]$			| double     | -																																														|
 | `n_dp`                  | Number of doubler plates																										| $n_{dp}$            | $[-]$					| int        | -																																														|
 | `t_dp`                  | Thickness of one doubler plate																									| $t_{dp}$            | $[\text{mm}]$			| double     | -																																														|
-| `t_dp_tot`              | Total thickess of doubler plate(s)																								| $t_{dp,tot}         | $[\text{mm}]$			| double     | Equals: $t_{dp}*n_{dp}$																																										|
+| `t_dp_tot`              | Total thickess of doubler plate(s)																								| $t_{dp,tot}$        | $[\text{mm}]$			| double     | Equals: $t_{dp}*n_{dp}$																																										|
 | `t_p`                   | Thickness of panel zone including doubler plates																					| $t_p$               | $[\text{mm}]$			| double     | Equals: $t_{dp,tot}+tw_{pz}$																																									|
 | `t_cp`                  | Thickness of the continuity plates																								| $t_{cp}$            | $[\text{mm}]$			| double     | -																																														|
 | `d_cp`                  | Depth of the continuity plates																									| $d_{cp}$            | $[\text{mm}]$			| double     | -																																														|
