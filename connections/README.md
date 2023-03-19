@@ -97,7 +97,7 @@ Encoding format: `UTF-8`, Separator: `',' (comma)`
 | `c_c`                   | Distance between steel column fillet radius toes																					| $c_c$                  | $[\text{mm}]$			| double     | -																																														|
 | `t_cf`                  | Thickness of steel column flange																								| $t_{cf}$               | $[\text{mm}]$			| double     | -																																														|
 | `r_c`                   | Fillet radius of steel column																									| $r_c$                  | $[\text{mm}]$			| double     | -																																														|
-| `a_c`                   | Cross-sectional area of steel column																								| $a_c$                  | $[\text{mm}^2]$			| double     | -																																														|
+| `a_c`                   | Cross-sectional area of steel column																								| $A_c$                  | $[\text{mm}^2]$			| double     | -																																														|
 | `i_xc`                  | Second moment of area of steel column about major axis																				| $I_{xc}$               | $[\text{mm}^4]$			| double     | -																																														|
 | `d_cm`                  | Depth of steel column (measured)																								| $d_{cm}$               | $[\text{mm}]$			| double     | -																																														|
 | `t_wcm`                 | Thickness of steel column web (measured)																							| $t_{wcm}$              | $[\text{mm}]$			| double     | -																																														|
@@ -123,7 +123,7 @@ Encoding format: `UTF-8`, Separator: `',' (comma)`
 | `w_l`                   | Width of the slab from the center of beam flange to the left edge																		| $w_l$                  | $[\text{mm}]$			| double     | -																																														|
 | `w_r`                   | Width of the slab from the center of beam flange to the right edge																		| $w_r$                  | $[\text{mm}]$			| double     | -																																														|
 | `h_t`                   | Total depth of slab																											| $h_t$                  | $[\text{mm}]$			| double     | -																																														|
-| `a_s`                   | Area of slab reinforcement per meter of beam length																					| $a_s$                  | $[\text{mm}^2/m]$			| double     | Reinforcement includes rebar and/or wire mesh																																					|
+| `a_s`                   | Area of slab reinforcement per meter of beam length																					| $A_s$                  | $[\text{mm}^2/m]$			| double     | Reinforcement includes rebar and/or wire mesh																																					|
 | `f_sk`                  | Nominal yield stress of slab reinforcement 																						| $f_{sk}$               | $[\text{MPa}]$			| double     | -																																														|
 | `f_sm`                  | Measured yield stress of slab reinforcement																						| $f_{sm}$               | $[\text{MPa}]$			| double     | -																																														|
 | `h_co`                  | Depth of concrete above steel deck																								| $h_{co}$               | $[\text{mm}]$			| double     | -																																														|
