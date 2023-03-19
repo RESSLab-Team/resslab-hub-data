@@ -64,7 +64,7 @@ Encoding format: `UTF-8`, Separator: `',' (comma)`
 | `b_bf`                  | Width of steel beam flange																										| $b_{bf}$               | $[\text{mm}]$       		| double 	   | -																																														|
 | `t_bf`                  | Thickness of steel beam flange																									| $t_{bf}$               | $[\text{mm}]$       		| double 	   | -																																														|
 | `r_b`                   | Fillet radius of steel beam																									| $r_b$                  | $[\text{mm}]$       		| double 	   | -																																														|
-| `a_b`                   | Cross-sectional area of steel beam																								| $a_b$                  | $[\text{mm}^2]$      		| double 	   | -																																														|
+| `a_b`                   | Cross-sectional area of steel beam																								| $A_b$                  | $[\text{mm}^2]$      		| double 	   | -																																														|
 | `i_xb`                  | Second moment of area of steel beam about major axis																				| $I_{xb}$               | $[\text{mm}^4]$      		| double 	   | -																																														|
 | `z_xb`                  | Plastic section modulus of steel beam about major axis																				| $Z_{xb}$               | $[\text{mm}^3]$      		| double 	   | -																																														|
 | `z_xb_bfp`              | Plastic section modulus of BFP steel beam about major axis																			| $Z_{xb,bfp}$           | $[\text{mm}^3]$ 			| double 	   | -																																														|
