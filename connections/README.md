@@ -1,5 +1,3 @@
-# resslab-hub-data
-
 ## `Connections` Database
 ---
 
