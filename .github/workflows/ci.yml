@@ -12,9 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: tar --exclude-vcs -czf data.tar.gz *
-      - run: curl -L http://resslab-hub-test.epfl.ch/api/upload/?type=all -F file=@data.tar.gz -u "user:$API_PASSWORD"
-        env:
-          API_PASSWORD: ${{ secrets.API_PASSWORD_TEST }}
-      - run: curl -L http://resslab-hub.epfl.ch/api/upload/?type=all -F file=@data.tar.gz -u "user:$API_PASSWORD"
+      # - run: curl -L -F file=@data.tar.gz -u user:$API_PASSWORD https://resslab-hub-test.epfl.ch/api/upload/?type=all
+      #   env:
+      #     API_PASSWORD: ${{ secrets.API_PASSWORD_TEST }}
+      - run: curl -L -F file=@data.tar.gz -u user:$API_PASSWORD https://resslab-hub.epfl.ch/api/upload/?type=all
         env:
           API_PASSWORD: ${{ secrets.API_PASSWORD_PROD }}
