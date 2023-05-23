@@ -10,11 +10,26 @@ jobs:
   upload-data:
     runs-on: ubuntu-latest
     steps:
+      - run: curl -sSL -u user:$API_PASSWORD https://resslab-hub.epfl.ch/api/user
+        env:
+          API_PASSWORD: ${{ secrets.API_PASSWORD_PROD }}
       - uses: actions/checkout@v3
       - run: tar --exclude-vcs -czf data.tar.gz *
-      # - run: curl -L -F file=@data.tar.gz -u user:$API_PASSWORD https://resslab-hub-test.epfl.ch/api/upload/?type=all
+      # - run: curl -sSL -F file=@data.tar.gz -u user:$API_PASSWORD https://resslab-hub-test.epfl.ch/api/upload/?type=all
       #   env:
       #     API_PASSWORD: ${{ secrets.API_PASSWORD_TEST }}
-      - run: curl -L -F file=@data.tar.gz -u user:$API_PASSWORD https://resslab-hub.epfl.ch/api/upload/?type=all
+      - run: curl -sSL -F file=@data.tar.gz -u user:$API_PASSWORD https://resslab-hub.epfl.ch/api/upload/?type=all-brace
+        env:
+          API_PASSWORD: ${{ secrets.API_PASSWORD_PROD }}
+      - run: curl -sSL -F file=@data.tar.gz -u user:$API_PASSWORD https://resslab-hub.epfl.ch/api/upload/?type=all-column
+        env:
+          API_PASSWORD: ${{ secrets.API_PASSWORD_PROD }}
+      - run: curl -sSL -F file=@data.tar.gz -u user:$API_PASSWORD https://resslab-hub.epfl.ch/api/upload/?type=all-connection
+        env:
+          API_PASSWORD: ${{ secrets.API_PASSWORD_PROD }}
+      - run: curl -sSL -F file=@data.tar.gz -u user:$API_PASSWORD https://resslab-hub.epfl.ch/api/upload/?type=all-material
+        env:
+          API_PASSWORD: ${{ secrets.API_PASSWORD_PROD }}
+      - run: curl -sSL -F file=@data.tar.gz -u user:$API_PASSWORD https://resslab-hub.epfl.ch/api/upload/?type=all-residual-stress
         env:
           API_PASSWORD: ${{ secrets.API_PASSWORD_PROD }}
