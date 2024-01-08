@@ -1,0 +1,31 @@
+name: upload_all
+
+on: workflow_dispatch
+
+env:
+  # SERVER_URL: "https://resslab-hub-test.epfl.ch"
+  API_PASSWORD: ${{ secrets.API_PASSWORD_PROD }}
+
+jobs:
+  authentification:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          AUTH_LOG=$(curl -sSL -f -u user:$API_PASSWORD $SERVER_URL/api/user)
+          echo "$AUTH_LOG"
+
+  upload:
+    needs:
+      - authentification
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Prepare upload
+        run: tar --exclude-vcs -czf data.tar.gz *
+
+      - name: Upload data
+        run: |
+          UPLOAD_LOG=$(curl -sSL -f -F file=@data.tar.gz -u user:$API_PASSWORD $SERVER_URL/api/upload/?type=all) 
+          echo "$UPLOAD_LOG"
+        # --insecure for curl is needed for self-signed certificates e.g. localhost
