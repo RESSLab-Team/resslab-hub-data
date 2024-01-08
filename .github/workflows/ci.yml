@@ -35,10 +35,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          AUTH_LOG=$(curl -sSL -f -u user:$API_PASSWORD $SERVER_URL/api/user)
+          AUTH_LOG=$(curl -sSL -f -u user:$API_PASSWORD $SERVER_URL/api/user )
           echo "$AUTH_LOG"
 
   upload:
+    if: ${{  needs.changes.outputs.types != '[]' && needs.changes.outputs.types != ''}}
     strategy:
       # Contains list of types needing upload
       # e.g. ['braces', 'columns', 'connections', 'hss-columns', 'material', 'residual-stresses']
@@ -64,5 +65,5 @@ jobs:
           DIRECTORY=${DIRECTORY/-/_}
           TAR_NAME=${DIRECTORY}.tar.gz
           UPLOAD_TYPE=all-${{ matrix.type }}  # Replace underscores with hyphens for upload type
-          UPLOAD_LOG=$(curl -sSL -f -F file=@$TAR_NAME -u user:$API_PASSWORD $SERVER_URL/api/upload/?type=$UPLOAD_TYPE)
+          UPLOAD_LOG=$(curl -sSL -f -F file=@$TAR_NAME -u user:$API_PASSWORD $SERVER_URL/api/upload/?type=$UPLOAD_TYPE )
           echo "$UPLOAD_LOG"
