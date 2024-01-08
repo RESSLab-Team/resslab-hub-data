@@ -5,31 +5,64 @@ on:
     branches:
       - develop
       - main
+env:
+  SERVER_URL: "https://resslab-hub.epfl.ch"
+  API_PASSWORD: ${{ secrets.API_PASSWORD_PROD }}
 
 jobs:
-  upload-data:
+  # JOB to run change detection
+  changes:
+    runs-on: ubuntu-latest
+    # Set job outputs to values from filter step
+    outputs:
+      types: ${{ steps.filter.outputs.changes }}
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          base: ${{ github.ref }}
+          filters: |
+            braces: 'braces/**'
+            columns: 'columns/**'
+            connections: 'connections/**'
+            hss-columns: 'hss_columns/**'
+            material: 'material/**'
+            residual-stresses: 'residual_stresses/**'
+
+  authentification:
     runs-on: ubuntu-latest
     steps:
-      - run: curl -sSL -u user:$API_PASSWORD https://resslab-hub.epfl.ch/api/user
-        env:
-          API_PASSWORD: ${{ secrets.API_PASSWORD_PROD }}
+      - run: |
+          AUTH_LOG=$(curl -sSL -f -u user:$API_PASSWORD $SERVER_URL/api/user)
+          echo "$AUTH_LOG"
+
+  upload:
+    strategy:
+      # Contains list of types needing upload
+      # e.g. ['braces', 'columns', 'connections', 'hss-columns', 'material', 'residual-stresses']
+      # each element will run a parallel job
+      matrix:
+        type: ${{ fromJSON(needs.changes.outputs.types) }}
+    needs:
+      - authentification
+      - changes
+    runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v3
-      - run: tar --exclude-vcs -czf data.tar.gz *
-      # - run: curl -sSL -F file=@data.tar.gz -u user:$API_PASSWORD https://resslab-hub-test.epfl.ch/api/upload/?type=all
-      #   env:
-      #     API_PASSWORD: ${{ secrets.API_PASSWORD_TEST }}
-      - run: curl -sSL -F file=@data.tar.gz -u user:$API_PASSWORD https://resslab-hub.epfl.ch/api/upload/?type=all-brace
-        env:
-          API_PASSWORD: ${{ secrets.API_PASSWORD_PROD }}
-      - run: curl -sSL -F file=@data.tar.gz -u user:$API_PASSWORD https://resslab-hub.epfl.ch/api/upload/?type=all-column
-        env:
-          API_PASSWORD: ${{ secrets.API_PASSWORD_PROD }}
-      - run: curl -sSL -F file=@data.tar.gz -u user:$API_PASSWORD https://resslab-hub.epfl.ch/api/upload/?type=all-connection
-        env:
-          API_PASSWORD: ${{ secrets.API_PASSWORD_PROD }}
-      - run: curl -sSL -F file=@data.tar.gz -u user:$API_PASSWORD https://resslab-hub.epfl.ch/api/upload/?type=all-material
-        env:
-          API_PASSWORD: ${{ secrets.API_PASSWORD_PROD }}
-      - run: curl -sSL -F file=@data.tar.gz -u user:$API_PASSWORD https://resslab-hub.epfl.ch/api/upload/?type=all-residual-stress
-        env:
-          API_PASSWORD: ${{ secrets.API_PASSWORD_PROD }}
+      - name: Prepare upload ${{ matrix.type }}
+        run: |
+          DIRECTORY=${{ matrix.type }}
+          DIRECTORY=${DIRECTORY/-/_}  # Replace hyphens with underscores in directory names
+          TAR_NAME=${DIRECTORY}.tar.gz
+          git diff --diff-filter=AM --name-only HEAD~1 HEAD $DIRECTORY/ | xargs tar --exclude-vcs -czf $TAR_NAME
+
+      - name: Upload data ${{ matrix.type }}
+        run: |
+          DIRECTORY=${{ matrix.type }}
+          DIRECTORY=${DIRECTORY/-/_}
+          TAR_NAME=${DIRECTORY}.tar.gz
+          UPLOAD_TYPE=all-${{ matrix.type }}  # Replace underscores with hyphens for upload type
+          UPLOAD_LOG=$(curl -sSL -f -F file=@$TAR_NAME -u user:$API_PASSWORD $SERVER_URL/api/upload/?type=$UPLOAD_TYPE)
+          echo "$UPLOAD_LOG"
