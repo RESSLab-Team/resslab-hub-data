@@ -32,7 +32,7 @@ jobs:
             columns: 'columns/**'
             connections: 'connections/**'
             hss-columns: 'hss_columns/**'
-            material: 'material/**'
+            materials: 'material/**'
             residual-stresses: 'residual_stresses/**'
 
   authentification:
