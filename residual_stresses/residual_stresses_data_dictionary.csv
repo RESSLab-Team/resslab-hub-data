@@ -1,26 +1,26 @@
-column_name,description,symbol,unit,type,example_value,nullable
-id,Unique identifier for specimen,-,None,String,Ketter_1958_W4x13_1,False
-experimental_program,Name of experimental program or primary investigator,-,None,String,Ketter,False
-date,Year of the study,-,None,Integer,1958,False
-profile_type,Type of steel section,-,None,String,Hot-rolled wide flange,False
-profile,Profile designation,-,None,String,W4x13,False
-spec_var,Specimen variant identifier,-,None,String,A,True
-steel,Steel grade designation,-,None,String,ASTM A7,False
-fy_n,Nominal yield strength,fy,MPa,Decimal,250,False
-fy_e,Expected yield strength,fy,e,MPa,Decimal,375,False
-fy_mf,Measured yield strength (flange),fy,mf,MPa,Decimal,371,True
-fy_mw,Measured yield strength (web),fy,mw,MPa,Decimal,350,True
-h,Section depth,h,mm,Decimal,106,False
-b,Section width,b,mm,Decimal,103,False
-tw,Web thickness,tw,mm,Decimal,7.1,False
-tf,Flange thickness,tf,mm,Decimal,8.8,False
-r,Root radius,r,mm,Decimal,6.4,False
-A,Cross-sectional area,A,mm²,Decimal,2470,False
-sigma_0_f,Residual stress at flange tip,σr,f,MPa,Decimal,21.71,False
-sigma_0_w,Residual stress at web center,σr,w,MPa,Decimal,26.81,False
-flange_nr_data,Number of measurement points in flange,-,None,Integer,1,False
-plot_sf,Plot scale factor,-,None,Decimal,2.8,False
-reference,Full citation of the study,-,None,String,"Ketter, R. L. (1958)...",False
-link,DOI or URL link to the study,-,None,String,https://doi.org/...,True
-latitude,Latitude of testing location,-,Degrees,Decimal,40.608028,True
-longitude,Longitude of testing location,-,Degrees,Decimal,-75.376194,True 
+column_name,description,symbol,unit,type,example_value,nullable,
+id,Unique identifier for specimen,,None,String,Ketter_1958_W4x13_1,FALSE,
+experimental_program,Name of experimental program or primary investigator,,None,String,Ketter,FALSE,
+date,Year of the study,,None,SmallInteger,1958,FALSE,
+profile_type,Type of steel section,,None,String,Hot-rolled wide flange,FALSE,
+profile,Profile designation,,None,String,W4x13,FALSE,
+spec_var,Specimen variant identifier,,None,String,A,TRUE,
+steel,Steel grade designation,,None,String,ASTM A7,FALSE,
+fy_n,Nominal yield strength,,MPa,DecimalFloat,250,FALSE,
+fy_e,Expected yield strength,,e,DecimalFloat,DecimalFloat,FALSE,
+fy_mf,Measured yield strength (flange),,mf,DecimalFloat,DecimalFloat,TRUE,
+fy_mw,Measured yield strength (web),,mw,DecimalFloat,DecimalFloat,TRUE,
+h,Section depth,,mm,DecimalFloat,106,FALSE,
+b,Section width,,mm,DecimalFloat,103,FALSE,
+tw,Web thickness,,mm,DecimalFloat,7.1,FALSE,
+tf,Flange thickness,,mm,DecimalFloat,8.8,FALSE,
+r,Root radius,,mm,DecimalFloat,6.4,FALSE,
+A,Cross-sectional area,,mm²,DecimalFloat,2470,FALSE,
+sigma_0_f,Residual stress at flange tip,,f,DecimalFloat,DecimalFloat,FALSE,
+sigma_0_w,Residual stress at web center,,w,DecimalFloat,DecimalFloat,FALSE,
+flange_nr_data,Number of measurement points in flange,,None,SmallInteger,1,FALSE,
+plot_sf,Plot scale factor,,None,DecimalFloat,2.8,FALSE,
+reference,Full citation of the study,,None,String,"Ketter, R. L. (1958)...",FALSE,
+link,DOI or URL link to the study,,None,String,https://doi.org/...,TRUE,
+latitude,Latitude of testing location,,Degrees,DecimalFloat,40.608028,TRUE,
+longitude,Longitude of testing location,,Degrees,DecimalFloat,-75.376194,TRUE,
