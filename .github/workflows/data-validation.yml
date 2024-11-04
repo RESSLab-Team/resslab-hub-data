@@ -1,0 +1,69 @@
+name: data-validation
+
+on:
+  pull_request:
+    branches:
+      - develop
+      - main
+
+env:
+  SERVER_URL: "https://resslab-hub.epfl.ch"
+  API_PASSWORD: ${{ secrets.API_PASSWORD_PROD }}
+
+# ... existing changes detection job remains the same ...
+jobs:
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      types: ${{ steps.filter.outputs.changes }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 20
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          base: ${{ github.ref }}
+          filters: |
+            braces: 'braces/**'
+            columns: 'columns/**'
+            connections: 'connections/**'
+            hss-columns: 'hss_columns/**'
+            material: 'material/**'
+            residual-stresses: 'residual_stresses/**'
+
+  authentification:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          AUTH_LOG=$(curl -sSL -f -u user:$API_PASSWORD $SERVER_URL/api/user )
+          echo "$AUTH_LOG"
+
+  validate:
+    if: ${{  needs.changes.outputs.types != '[]' && needs.changes.outputs.types != ''}}
+    strategy:
+      matrix:
+        type: ${{ fromJSON(needs.changes.outputs.types) }}
+    needs:
+      - authentification
+      - changes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 20
+      - name: Prepare validation ${{ matrix.type }}
+        run: |
+          DIRECTORY=${{ matrix.type }}
+          DIRECTORY=${DIRECTORY/-/_}  # Replace hyphens with underscores in directory names
+          TAR_NAME=${DIRECTORY}.tar.gz
+          git diff --diff-filter=AM --name-only HEAD~1 HEAD $DIRECTORY/ | xargs tar --exclude-vcs -czf $TAR_NAME
+
+      - name: Validate data ${{ matrix.type }}
+        run: |
+          DIRECTORY=${{ matrix.type }}
+          DIRECTORY=${DIRECTORY/-/_}
+          TAR_NAME=${DIRECTORY}.tar.gz
+          UPLOAD_TYPE=all-${{ matrix.type }}  # Replace underscores with hyphens for upload type
+          VALIDATION_LOG=$(curl -sSL -f -F file=@$TAR_NAME -u user:$API_PASSWORD $SERVER_URL/api/validate/?type=$UPLOAD_TYPE )
+          echo "$VALIDATION_LOG" 
