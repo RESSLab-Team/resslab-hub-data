@@ -19,11 +19,11 @@ z_y,Weak-axis plastic section modulus,,mm³,DecimalFloat,7950,FALSE
 j,Torsional constant,,mm⁴,DecimalFloat,11412,FALSE
 configuration,Bracing configuration type (SBF/DBF),,-,String,DBF,FALSE
 brace_angle,Angle between brace and beam,,degrees,DecimalFloat,45,FALSE
-l_b,Total length of brace,,mm,DecimalFloat,988,FALSE
-l_b_clear,Clear length of brace between connections,,mm,DecimalFloat,494,FALSE
+l_b,Total length of brace,,mm,SmallInteger,988,FALSE
+l_b_clear,Clear length of brace between connections,,mm,SmallInteger,494,FALSE
 steel,Steel grade designation,,-,String,Annealed SS 41,FALSE
-e,Young's modulus,,MPa,DecimalFloat,200000,FALSE
-f_yn,Nominal yield strength,,MPa,DecimalFloat,235,FALSE
+e,Young's modulus,,MPa,Integer,200000,FALSE
+f_yn,Nominal yield strength,,MPa,SmallInteger,235,FALSE
 fy_m,Measured yield strength,,MPa,DecimalFloat,284,FALSE
 f_um,Measured ultimate strength,,MPa,DecimalFloat,430,FALSE
 boundary_condition,End conditions of the brace,,-,String,Fixed-fixed end,FALSE
@@ -53,20 +53,20 @@ weld_type,Type of welding used,,-,String,Fillet,TRUE
 l_weld,Length of weld,,mm,DecimalFloat,254,TRUE
 t_weld,Thickness of weld,,mm,DecimalFloat,6.4,TRUE
 stick_space,Stick-out spacing,,mm,DecimalFloat,na,TRUE
-nub_bolts,Number of bolts,,-,SmallInteger,na,TRUE
+nub_bolts,Number of bolts,,-,DecimalFloat,na,TRUE
 bolt_size,Size designation of bolts,,-,String,na,TRUE
 bolt_mat,Material specification of bolts,,-,String,na,TRUE
 reinforcement_pl,Reinforcement plate dimensions,,-,String,203x51x6.4,TRUE
 loading_protocol,Type of loading protocol applied,,-,String,Symmetric Cyclic,FALSE
-p_t,Measured tensile capacity,,kN,DecimalFloat,1099,TRUE
+p_t,Measured tensile capacity,,kN,String,1099,TRUE
 p_t_theory,Theoretical tensile capacity,,kN,DecimalFloat,970.6,TRUE
-p_c,Measured compressive capacity,,kN,DecimalFloat,698,TRUE
-kl_r,Slenderness ratio,,-,DecimalFloat,77,FALSE
-l_c,Normalized slenderness ratio,,-,DecimalFloat,1.2,FALSE
-l_c_theory,Theoretical normalized slenderness ratio,,-,DecimalFloat,1.18,TRUE
-k_assumed,Assumed effective length factor,,-,DecimalFloat,1,FALSE
+p_c,Measured compressive capacity,,kN,String,698,TRUE
+kl_r,Slenderness ratio,,-,Numeric,77,FALSE
+l_c,Normalized slenderness ratio,,-,String,1.2,FALSE
+l_c_theory,Theoretical normalized slenderness ratio,,-,String,1.18,TRUE
+k_assumed,Assumed effective length factor,,-,Numeric,1,FALSE
 kl_r_theory,Theoretical slenderness ratio,,-,DecimalFloat,77.13,TRUE
 reference,Citation of the source publication,,-,String,"Wakabayashi, M., Nakamura, T., & Yoshida, N. (1977)...",FALSE
 link,URL to the source document,,-,String,https://repository.kulib.kyoto-u.ac.jp/...,TRUE
-latitude,Geographical latitude of testing facility,,degrees,DecimalFloat,35.0262,TRUE
-longitude,Geographical longitude of testing facility,,degrees,DecimalFloat,135.7808,True 
+latitude,Geographical latitude of testing facility,,degrees,Numeric,35.0262,TRUE
+longitude,Geographical longitude of testing facility,,degrees,Numeric,135.7808,TRUE

@@ -13,10 +13,10 @@ h_over_t_cw,Web height-to-thickness ratio,,-,DecimalFloat,30.7,FALSE
 b_cf,Flange width,,mm,DecimalFloat,328,FALSE
 t_cf,Flange thickness,,mm,DecimalFloat,26.8,FALSE
 b_f_over_t_cf,Flange width-to-thickness ratio,,-,DecimalFloat,6.1,FALSE
-a_cm,Measured cross-sectional area,,mm²,DecimalFloat,27495,FALSE
-a_cn,Nominal cross-sectional area,,mm²,DecimalFloat,27700,FALSE
-i_xb,Strong-axis moment of inertia at base,,mm⁴,DecimalFloat,1.9E+09,FALSE
-i_xc,Strong-axis moment of inertia at critical section,,mm⁴,DecimalFloat,157862147,FALSE
+a_cm,Measured cross-sectional area,,mm²,Integer,27495,FALSE
+a_cn,Nominal cross-sectional area,,mm²,Integer,27700,FALSE
+i_xb,Strong-axis moment of inertia at base,,mm⁴,BigInteger,1.9E+09,FALSE
+i_xc,Strong-axis moment of inertia at critical section,,mm⁴,Integer,157862147,FALSE
 s_xc,Strong-axis elastic section modulus,,mm³,DecimalFloat,5951531,FALSE
 s_yc,Weak-axis elastic section modulus,,mm³,DecimalFloat,962574,FALSE
 z_xc,Strong-axis plastic section modulus,,mm³,DecimalFloat,6730988,FALSE
@@ -60,7 +60,7 @@ p_t,Tensile load,,N,DecimalFloat,NA,TRUE
 p_c,Compressive load,,N,DecimalFloat,2272000,FALSE
 p_g_over_p_ym,Gravity load ratio to measured yield strength,,-,DecimalFloat,0.2,FALSE
 p_g_over_p_yn,Gravity load ratio to nominal yield strength,,-,DecimalFloat,0.24,FALSE
-p_t_over_p_ym,Tensile load ratio to measured yield strength,,-,DecimalFloat,NA,TRUE
+p_t_over_p_ym,Tensile load ratio to measured yield strength,,-,Numeric,NA,TRUE
 p_c_over_p_ym,Compressive load ratio to measured yield strength,,-,DecimalFloat,0.2,FALSE
 p_c_over_p_yn,Compressive load ratio to nominal yield strength,,-,DecimalFloat,0.24,FALSE
 p,Applied axial load,,N,DecimalFloat,2272000,FALSE
@@ -91,7 +91,7 @@ cs_class_us,Cross-section classification (US standards),,-,String,compact,FALSE
 f_class_eu,Flange classification (Eurocode),,-,String,Class-1,FALSE
 w_class_eu,Web classification (Eurocode),,-,String,Class-1,FALSE
 cs_class_eu,Cross-section classification (Eurocode),,-,String,Class-1,FALSE
-cfe,Column fixed end indicator,,-,String,no,FALSE
+cfe,Column fixed end indicator,,-,Boolean,no,FALSE
 reference,Citation of the source publication,,-,String,"Elkady, A., and Lignos, D.G. 2018...",FALSE
 link,URL to the source document,,-,String,https://doi.org/10.1061/...,TRUE
 latitude,Geographical latitude of testing facility,,degrees,DecimalFloat,45.505,FALSE

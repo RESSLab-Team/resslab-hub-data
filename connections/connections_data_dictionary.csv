@@ -7,7 +7,7 @@ northridge,Connection detailing according to pre- or post-Northridge 1994 earthq
 specimen_type,Interior or exterior connection/Beam or column loaded in case of subassembly testing/Subassembly or Frame testing,-,-,String,"Examples: [Interior - Beam Loaded - Subassembly, Exterior - Frame]",False
 comments,Comments regarding loading protocol/stiffeners/retrofit/deficiencies/axial force,-,-,String,-,True
 loading_protocol,Test loading protocol,-,-,String,"Examples: [Symmetric Cyclic, Monotonic, Asymmetric, Ramped Symmetric Cyclic AISC]",False
-slab,Composite or bare connection test,-,-,String,Binary: YES/NO,False
+slab,Composite or bare connection test,-,-,Boolean,Binary: YES/NO,False
 connection_type,Connection type,-,-,String,"Examples: [WUF-W, WUF-B, RBS, BFP, WFP, KBB]",False
 t_pl,Plate thickness for BFP and WFP connections,tₚₗ,mm,DecimalFloat,-,True
 rbs_cut,Reduction in flange area at RBS center (normalized to the flange width),RBSₖ,-,DecimalFloat,"Range: [0,1]",True
@@ -25,7 +25,7 @@ i_xb,Second moment of area of steel beam about major axis,Iₓᵦ,mm⁴,DecimalF
 z_xb,Plastic section modulus of steel beam about major axis,Zₓᵦ,mm³,DecimalFloat,-,False
 z_xb_bfp,Plastic section modulus of BFP steel beam about major axis,Zₓᵦ₍ᵦᶠₚ₎,mm³,DecimalFloat,-,True
 r_yb,Minor axis radius of gyration of steel beam,rᵧᵦ,mm,DecimalFloat,-,False
-b_fb_rbs,Width of steel beam flange at RBS center,bᶠᵦ₍ᵣᵦₛ₎,mm,DecimalFloat,-,True
+b_bf_rbs,Width of steel beam flange at RBS center,bᶠᵦ₍ᵣᵦₛ₎,mm,DecimalFloat,-,True
 d_gb_rbs,Distance from steel beam top fibre to its center of gravity at RBS center,dᵧᵦ₍ᵣᵦₛ₎,mm,DecimalFloat,-,True
 a_b_rbs,Cross-sectional area of RBS steel beam,Aᵦ₍ᵣᵦₛ₎,mm²,DecimalFloat,-,True
 i_xb_rbs,Second moment of area of RBS steel beam about major axis,Iₓᵦ₍ᵣᵦₛ₎,mm⁴,DecimalFloat,-,True
@@ -68,7 +68,7 @@ f_ycf,Measured yield stress of the column's flange plate,fᵧᶜᶠ,MPa,DecimalF
 f_yc_mill,Yield stress of the column as per the mill certificate,fᵧᶜₘᵢₗₗ,MPa,DecimalFloat,Weighted average of the column's flanges and web mill yield stress,True
 f_yc_avg,Average yield stress of the column,fᵧᶜₐᵥᵧ,MPa,DecimalFloat,"Weighted average of $f_{y,cf}$ and $f_{y,cw}$, based on the areas of the flanges and the web",False
 h_c,Column height measured from centerline to centerline of the beams,hᶜ,mm,DecimalFloat,-,False
-backing_bar,Presence or not of backing bar during testing,-,-,String,Binary: YES/NO,False
+backing_bar,Presence or not of backing bar during testing,-,-,Boolean,Binary: YES/NO,False
 electrode,Weld electrode at the beam flange to column face welded connection,-,-,String,"Example: [AWS E71T-8, E70]",False
 d_electrode,Electrode diameter at the beam flange to column face welded connection,dₑ,mm,DecimalFloat,-,True
 cvn_0f,Electrode Charpy V Notch (CVN) value at 0 F,CVN₀,J,DecimalFloat,At the beam flange to column face welded connection,True
@@ -141,10 +141,10 @@ r_u_n,Panel zone demand at development of beam plastic flexural resistance based
 r_u_m,Panel zone demand at development of beam plastic flexural resistance based on measured yield stress,Rᵤₘ,kN,DecimalFloat,-,False
 ru_rn_el_n,Demand over resistance (Vy) based on the nominal yield stress,Rᵤ/Rₙₑₗₙ,-,DecimalFloat,-,False
 ru_rn_pl_n,Demand over resistance (Vp) based on the nominal yield stress,Rᵤ/Rₙₚₗₙ,-,DecimalFloat,-,False
-aisc_pz_violation_n,Violation of the AISC (2016) design standard for panel zone strength based on nominal material properties. Panel zone designed to exceed 4gamma_y,-,-,String,"Examples: [yes, no] for violation and not, respectively, of the AISC (2016) design for panel zone strength",False
+aisc_pz_violation_n,Violation of the AISC (2016) design standard for panel zone strength based on nominal material properties. Panel zone designed to exceed 4gamma_y,-,-,Boolean,"Examples: [yes, no] for violation and not, respectively, of the AISC (2016) design for panel zone strength",False
 ru_rn_el_m,Demand over resistance (Vy) based on the measured yield stress,Rᵤ/Rₙₑₗₘ,-,DecimalFloat,-,False
 ru_rn_pl_m,Demand over resistance (Vp) based on the measured yield stress,Rᵤ/Rₙₚₗₘ,-,DecimalFloat,-,False
-aisc_pz_violation_m,Violation of the AISC (2016) design standard for panel zone strength based on measured material properties. Panel zone designed to exceed 4gamma_y,-,-,String,"Examples: [yes, no] for violation and not, respectively, of the AISC (2016) design for panel zone strength",False
+aisc_pz_violation_m,Violation of the AISC (2016) design standard for panel zone strength based on measured material properties. Panel zone designed to exceed 4gamma_y,-,-,Boolean,"Examples: [yes, no] for violation and not, respectively, of the AISC (2016) design for panel zone strength",False
 g_max,Maximum attained panel zone shear distortion in the experiment,γₘₐₓ,rad,DecimalFloat,Maximum absolute panel zone shear distortion,False
 g_y,Panel zone shear distortion at yield,γᵧ,rad,DecimalFloat,-,False
 g_max_g_y,Maximum panel zone distortion normalized to the panel zone yield distortion,γₘₐₓ/γᵧ,-,DecimalFloat,Equals: $g_{max}/g_y$,False
