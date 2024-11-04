@@ -41,6 +41,8 @@ Where `Date`: Year of publication (e.g., `2023`)
 
 Encoding format: `UTF-8`, Separator: `',' (comma)`
 
+Note : this table is to be deprecated, refer to `connections_data_dictionary.csv`
+
 | Variable name         	 | Description                                             																				| Symbol    			| Unit         			| Data type  | Comments        																																											|
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------	| ---------------------- | ---------------------------	| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `id`                  	 | Unique ID for each experiment																									| $-$                    | $[-]$        			| string 	   | Equals: experimental_program (with underscores)+'\_'+date+'\_'+specimen_designation / Example: Engelhardt_et_al_2000_DBBWWPZ																						|
