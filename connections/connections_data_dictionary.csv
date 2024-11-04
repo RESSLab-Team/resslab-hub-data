@@ -1,0 +1,154 @@
+column_name,description,symbol,unit,type,example_value,nullable
+id,Unique identifier for the specimen,ID,-,string,Ricles_et_al_2000_C1,false
+experimental_program,Names of researchers who conducted the study,exp,-,string,Ricles et al.,false
+date,Year of the experiment,year,-,integer,2000,false
+specimen_designation,Laboratory identification code,spec,-,string,C1,false
+northridge,Pre or Post Northridge connection,era,-,string,Post,false
+specimen_type,Type of test specimen configuration,type,-,string,Interior - Column Loaded - Subassembly,false
+comments,Additional notes about specimen or test,notes,-,string,NA,true
+loading_protocol,Type of loading protocol applied,LP,-,string,Ramped Symmetric Cyclic AISC,false
+slab,Presence of concrete slab,slab,-,string,NO,false
+connection_type,Type of moment connection,conn,-,string,WUF-W,false
+t_pl,Thickness of continuity plate,t_p,mm,float,NA,true
+rbs_cut,Reduced beam section cut dimensions,rbs,-,string,NA,true
+s_h,Haunch length,s_h,mm,float,NA,true
+d_h,Haunch depth,d_h,mm,float,NA,true
+section_b,Beam section designation,sect_b,-,string,W36x150,false
+d_b,Beam depth,d_b,mm,float,911.86,false
+d_bg,Distance between beam flanges,d_bg,mm,float,455.93,false
+t_bw,Beam web thickness,t_w,mm,float,15.875,false
+b_bf,Beam flange width,b_f,mm,float,304.8,false
+t_bf,Beam flange thickness,t_f,mm,float,23.876,false
+r_b,Beam fillet radius,r,mm,float,20.066,false
+a_b,Beam cross-sectional area,A,mm²,float,28516.072,false
+i_xb,Beam strong-axis moment of inertia,I_x,mm⁴,float,3762732087,false
+z_xb,Beam strong-axis plastic section modulus,Z_x,mm³,float,9520884.184,false
+z_xb_bfp,Beam strong-axis plastic section modulus with cover plate,Z_x_p,mm³,float,NA,true
+r_yb,Beam weak-axis radius of gyration,r_y,mm,float,62.89915923,false
+b_fb_rbs,RBS flange width,b_f_rbs,mm,float,NA,true
+d_gb_rbs,RBS depth between flanges,d_g_rbs,mm,float,NA,true
+a_b_rbs,RBS cross-sectional area,A_rbs,mm²,float,NA,true
+i_xb_rbs,RBS strong-axis moment of inertia,I_x_rbs,mm⁴,float,NA,true
+z_xb_rbs,RBS strong-axis plastic section modulus,Z_x_rbs,mm³,float,NA,true
+d_bm,Measured beam depth,d_m,mm,float,912.876,false
+d_bgm,Measured distance between beam flanges,d_g_m,mm,float,456.438,false
+t_bwm,Measured beam web thickness,t_w_m,mm,float,16.002,false
+b_bfm,Measured beam flange width,b_f_m,mm,float,308.864,false
+t_bfm,Measured beam flange thickness,t_f_m,mm,float,23.622,false
+z_xbm,Measured beam strong-axis plastic section modulus,Z_x_m,mm³,float,9488110.056,false
+steel_b,Beam steel grade designation,grade_b,-,string,ASTM A572 Gr. 50,false
+f_yb,Beam nominal yield strength,f_y,MPa,float,344.7379543,false
+f_ybw,Beam web measured yield strength,f_yw,MPa,float,433.6803466,false
+f_ybf,Beam flange measured yield strength,f_yf,MPa,float,390.9328402,false
+f_yb_mill,Beam mill certificate yield strength,f_y_mill,MPa,float,393.0012679,true
+f_yb_avg,Beam average measured yield strength,f_y_avg,MPa,float,411.6737576,false
+l_b,Beam length,L_b,mm,float,8991.6,false
+l_fc,Distance from column face to loading point,L_fc,mm,float,8526.78,false
+l_o,Beam overhang length,L_o,mm,float,4263.39,false
+lo_db,Beam overhang-to-depth ratio,L_o/d,-,float,4.675487465,false
+section_c,Column section designation,sect_c,-,string,W14x398,false
+d_c,Column depth,d_c,mm,float,464.82,false
+t_cw,Column web thickness,t_w,mm,float,44.958,false
+b_cf,Column flange width,b_f,mm,float,421.64,false
+c_c,Column clear depth between flanges,c,mm,float,254,false
+t_cf,Column flange thickness,t_f,mm,float,72.39,false
+r_c,Column fillet radius,r,mm,float,29.972,false
+a_c,Column cross-sectional area,A,mm²,float,75483.72,false
+i_xc,Column strong-axis moment of inertia,I_x,mm⁴,float,2497388554,false
+d_cm,Measured column depth,d_m,mm,float,NA,true
+t_wcm,Measured column web thickness,t_w_m,mm,float,NA,true
+c_cm,Measured column clear depth,c_m,mm,float,NA,true
+b_fcm,Measured column flange width,b_f_m,mm,float,NA,true
+t_fcm,Measured column flange thickness,t_f_m,mm,float,NA,true
+steel_c,Column steel grade designation,grade_c,-,string,ASTM A572 Gr. 50,false
+f_yc,Column nominal yield strength,f_y,MPa,float,344.7379543,false
+f_ydp,Doubler plate measured yield strength,f_y_dp,MPa,float,NA,true
+f_ycw,Column web measured yield strength,f_yw,MPa,float,351.6327134,false
+f_ycf,Column flange measured yield strength,f_yf,MPa,float,330.9484362,false
+f_yc_mill,Column mill certificate yield strength,f_y_mill,MPa,float,361.2853761,true
+f_yc_avg,Column average measured yield strength,f_y_avg,MPa,float,334.8938079,false
+h_c,Column height,h,mm,float,3708.4,false
+backing_bar,Presence of backing bar,bb,-,string,No,false
+electrode,Welding electrode designation,elec,-,string,E70T-6,false
+d_electrode,Electrode diameter,d_e,mm,float,1.8288,true
+cvn_0f,Charpy V-notch energy at 0°F,CVN_0,J,float,NR,true
+cvn_minus20f,Charpy V-notch energy at -20°F,CVN_-20,J,float,NR,true
+cvn_70f,Charpy V-notch energy at 70°F,CVN_70,J,float,NR,true
+access_hole_geometry,Weld access hole geometry type,ah,-,string,AISC-360-16,false
+w,Width of concrete slab,w,mm,float,NA,true
+w_l,Left width of concrete slab,w_l,mm,float,NA,true
+w_r,Right width of concrete slab,w_r,mm,float,NA,true
+h_t,Total slab thickness,h_t,mm,float,NA,true
+a_s,Area of longitudinal reinforcement,A_s,mm²,float,NA,true
+f_sk,Characteristic yield strength of reinforcement,f_sk,MPa,float,NA,true
+f_sm,Measured yield strength of reinforcement,f_sm,MPa,float,NA,true
+h_co,Concrete cover,h_co,mm,float,NA,true
+slab_con_type,Type of concrete,conc,-,string,NA,true
+f_ck,Characteristic concrete compressive strength,f_ck,MPa,float,NA,true
+f_cm,Measured concrete compressive strength,f_cm,MPa,float,NA,true
+cur_days,Concrete curing time,t_cur,days,integer,NA,true
+f_c_compr_calc,Calculated concrete compressive strength,f_c,MPa,float,NA,true
+d,Stud diameter,d,mm,float,NA,true
+h_sc,Stud height,h_sc,mm,float,NA,true
+n_studs,Number of studs per row,n_s,-,integer,NA,true
+n_diss,Number of dissimilar welds,n_d,-,integer,NA,true
+n_r,Number of stud rows,n_r,-,integer,NA,true
+f_u_sc,Ultimate strength of stud,f_u,MPa,float,NA,true
+h_p,Height of steel deck,h_p,mm,float,NA,true
+b_o,Width of deck rib opening,b_o,mm,float,NA,true
+deck_ribs_orientation,Orientation of deck ribs relative to beam,orient,-,string,NA,true
+section_shape_c,Shape of panel zone section,shape,-,string,H,false
+d_pz,Panel zone depth,d_pz,mm,float,464.82,false
+tw_pz,Panel zone web thickness,t_w_pz,mm,float,44.958,false
+bf_pz,Panel zone flange width,b_f_pz,mm,float,421.64,false
+tf_pz,Panel zone flange thickness,t_f_pz,mm,float,72.39,false
+dz,Total panel zone depth,d_z,mm,float,864.108,false
+zw,Panel zone width,z_w,mm,float,320.04,false
+dz_plug,Plug weld depth,d_z_plug,mm,float,NA,true
+wz_plug,Plug weld width,w_z_plug,mm,float,NA,true
+wd,Doubler plate width,w_d,mm,float,0,false
+n_dp,Number of doubler plates,n_dp,-,integer,0,false
+t_dp,Individual doubler plate thickness,t_dp,mm,float,0,false
+t_dp_tot,Total doubler plate thickness,t_dp_tot,mm,float,0,false
+t_p,Panel zone thickness,t_p,mm,float,44.958,false
+t_cp,Continuity plate thickness,t_cp,mm,float,25.4,false
+d_cp,Continuity plate depth,d_cp,mm,float,320.04,false
+db_plus,Positive beam depth,d_b+,mm,float,887.984,false
+db_minus,Negative beam depth,d_b-,mm,float,887.984,false
+a_vc,Panel zone shear area,A_vc,mm²,float,22032.53658,false
+fy_pz_m,Measured panel zone yield strength,f_y_pz_m,MPa,float,334.8938079,false
+p_cm,Column axial load,P_c,N,float,0,false
+n_pm,Normalized column axial load,n_p,-,float,0,false
+v_pz_el_m_europe,Measured elastic panel zone shear strength (Eurocode),V_pz_el_m_EU,N,float,4504.002926,false
+r_n_el_m_aisc,Measured elastic panel zone shear strength (AISC),R_n_el_m_AISC,N,float,4408.920945,false
+r_n_pl_m_aisc,Measured plastic panel zone shear strength (AISC),R_n_pl_m_AISC,N,float,5852.377214,false
+v_pz_m_aij,Measured panel zone shear strength (AIJ),V_pz_m_AIJ,N,float,4242.486157,false
+fy_pz_n,Nominal panel zone yield strength,f_y_pz_n,MPa,float,344.7379543,false
+p_cn,Nominal column axial load,P_c_n,N,float,0,false
+n_pn,Nominal normalized column axial load,n_p_n,-,float,0,false
+v_pz_el_n_europe,Nominal elastic panel zone shear strength (Eurocode),V_pz_el_n_EU,N,float,4415.689143,false
+r_n_el_n_aisc,Nominal elastic panel zone shear strength (AISC),R_n_el_n_AISC,N,float,4322.920945,false
+r_n_pl_n_aisc,Nominal plastic panel zone shear strength (AISC),R_n_pl_n_AISC,N,float,5738.377214,false
+v_pz_n_aij,Nominal panel zone shear strength (AIJ),V_pz_n_AIJ,N,float,4158.486157,false
+m_cf_minus_n,Nominal negative column face moment,M_cf-_n,kN·m,float,1127.498499,false
+m_cf_plus_n,Nominal positive column face moment,M_cf+_n,kN·m,float,1127.498499,false
+m_cf_minus_m,Measured negative column face moment,M_cf-_m,kN·m,float,NA,true
+m_cf_plus_m,Measured positive column face moment,M_cf+_m,kN·m,float,872.7673567,false
+v_bf_plus_n,Nominal positive beam flange force,V_bf+_n,kN,float,1920.800722,false
+v_bf_minus_n,Nominal negative beam flange force,V_bf-_n,kN,float,1920.800722,false
+v_col_n,Nominal column shear force,V_col_n,kN,float,1383.807543,false
+r_u_n,Nominal panel zone demand-capacity ratio,R_u_n,-,float,2.457793902,false
+r_u_m,Measured panel zone demand-capacity ratio,R_u_m,-,float,1902.514539,false
+ru_rn_el_n,Nominal elastic demand-capacity ratio,R_u/R_n_el_n,-,float,4.152641788,false
+ru_rn_pl_n,Nominal plastic demand-capacity ratio,R_u/R_n_pl_n,-,float,3.61035741,false
+aisc_pz_violation_n,AISC panel zone violation indicator (nominal),viol_n,-,string,yes,false
+ru_rn_el_m,Measured elastic demand-capacity ratio,R_u/R_n_el_m,-,float,2.742186836,false
+ru_rn_pl_m,Measured plastic demand-capacity ratio,R_u/R_n_pl_m,-,float,2.417758543,false
+aisc_pz_violation_m,AISC panel zone violation indicator (measured),viol_m,-,string,yes,false
+g_max,Maximum panel zone shear strain,γ_max,rad,float,0.0406,false
+g_y,Panel zone yield shear strain,γ_y,rad,float,0.002183806,false
+g_max_g_y,Panel zone ductility ratio,γ_max/γ_y,-,float,18.59139132,false
+reference,Citation of the source publication,ref,-,string,"Slutter, R. G. (1981)...",false
+link,URL to the source document,url,-,string,NA,true
+latitude,Geographical latitude of testing facility,lat,degrees,float,40.608028,true
+longitude,Geographical longitude of testing facility,lon,degrees,float,-75.376194,true 
