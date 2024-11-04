@@ -1,59 +1,59 @@
 column_name,description,symbol,unit,type,example_value,nullable
-id,Unique identifier for the specimen,ID,-,string,Yamada_et_al_2012__No-1,false
-date,Year of the experiment,year,-,integer,2012,false
-investigator,Names of researchers who conducted the study,inv,-,string,Yamada,false
-reference,Citation of the source publication,ref,-,string,"Yamada, S., Ishida, T., & Shimada, Y. (2012)...",false
-url,URL to the source document,url,-,string,https://doi.org/10.3130/aijs.77.627,true
-test_configuration,Type of test setup configuration,config,-,string,DC,false
-stiffness_coefficient,Stiffness coefficient for boundary conditions,k,-,float,3,false
-test_type,Type of loading test,type,-,string,Cyclic,false
-loading_protocol,Description of loading sequence,protocol,-,string,Symmetric,false
-forming_process,Manufacturing process of the HSS section,process,-,string,Cold,false
-seams,Presence of seam welds,seam,-,string,NR,true
-tube_section,HSS section designation,section,-,string,HSS-125x125x4.5,false
-width__mm,Width of HSS section,b,mm,float,125,false
-depth__mm,Depth of HSS section,h,mm,float,125,false
-flange_thickness__mm,Thickness of HSS flange,t_f,mm,float,4.5,false
-web_thickness__mm,Thickness of HSS web,t_w,mm,float,4.5,false
-area__mm2,Cross-sectional area,A,mm²,float,2116.85,false
-moment_of_inertia__mm4,Strong-axis moment of inertia,I,mm⁴,float,5062047.74,false
-radius__mm,Radius of gyration,r,mm,float,48.9,false
-depth_over_t,Depth-to-thickness ratio,h/t,-,float,27.78,false
-plastic_section_modulus__mm3,Plastic section modulus,Z,mm³,float,98057.25,false
-axial_load_ratio,Applied axial load ratio,P/P_y,-,float,0,false
-axial_load_sequence,Description of axial load application,P_seq,-,string,Constant,false
-loading_angle,Angle of applied loading,θ,degrees,float,0,false
-steel_type,Steel grade designation,grade,-,string,STKR400,false
-fy_nominal__n_mm2,Nominal yield strength,F_y,N/mm²,float,245,false
-fy_measured__n_mm2,Measured yield strength,F_y_m,N/mm²,float,367,false
-f_ultimate__n_mm2,Measured ultimate strength,F_u,N/mm²,float,436.9,false
-mp_measured__knmm,Measured plastic moment,M_p,kN·mm,float,35987.01,false
-length__mm,Length of specimen,L,mm,float,742,false
-ke_measured__knmm_rad,Measured elastic rotational stiffness,K_e,kN·mm/rad,float,3512579.15,false
-my_pos_100fit__knmm,Positive yield moment (100% fit),M_y+,kN·mm,float,33451.2,false
-my_neg_100fit__knmm,Negative yield moment (100% fit),M_y-,kN·mm,float,36096.14,false
-theta_p_pos_100fit__rad,Positive plastic rotation (100% fit),θ_p+,rad,float,0.026,false
-theta_pc_pos_100fit__rad,Positive post-capping rotation (100% fit),θ_pc+,rad,float,0.096,false
-theta_u_pos_100fit__rad,Positive ultimate rotation (100% fit),θ_u+,rad,float,0.117,false
-theta_p_neg_100fit__rad,Negative plastic rotation (100% fit),θ_p-,rad,float,0.007,false
-theta_pc_neg_100fit__rad,Negative post-capping rotation (100% fit),θ_pc-,rad,float,0.114,false
-theta_u_neg_100fit__rad,Negative ultimate rotation (100% fit),θ_u-,rad,float,0.103,false
-mc_my_pos_100fit,Positive capping moment ratio (100% fit),M_c/M_y+,-,float,1.124,false
-mu_mc_pos_100fit,Positive ultimate moment ratio (100% fit),M_u/M_c+,-,float,0.358,false
-mc_my_neg_100fit,Negative capping moment ratio (100% fit),M_c/M_y-,-,float,1.08,false
-mu_mc_neg_100fit,Negative ultimate moment ratio (100% fit),M_u/M_c-,-,float,0.369,false
-my_pos_80fit__knmm,Positive yield moment (80% fit),M_y+_80,kN·mm,float,31859.1,false
-my_neg_80fit__knmm,Negative yield moment (80% fit),M_y-_80,kN·mm,float,31648.92,false
-theta_p_pos_80fit__rad,Positive plastic rotation (80% fit),θ_p+_80,rad,float,0.042,false
-theta_pc_pos_80fit__rad,Positive post-capping rotation (80% fit),θ_pc+_80,rad,float,0.064,false
-theta_u_pos_80fit__rad,Positive ultimate rotation (80% fit),θ_u+_80,rad,float,0.117,false
-theta_p_neg_80fit__rad,Negative plastic rotation (80% fit),θ_p-_80,rad,float,0.032,false
-theta_pc_neg_80fit__rad,Negative post-capping rotation (80% fit),θ_pc-_80,rad,float,0.066,false
-theta_u_neg_80fit__rad,Negative ultimate rotation (80% fit),θ_u-_80,rad,float,0.103,false
-mc_my_pos_80fit,Positive capping moment ratio (80% fit),M_c/M_y+_80,-,float,1.21,false
-mu_mc_pos_80fit,Positive ultimate moment ratio (80% fit),M_u/M_c+_80,-,float,0.3,false
-mc_my_neg_80fit,Negative capping moment ratio (80% fit),M_c/M_y-_80,-,float,1.19,false
-mu_mc_neg_80fit,Negative ultimate moment ratio (80% fit),M_u/M_c-_80,-,float,0.36,false
-lambda_s,Slenderness ratio (strong axis),λ_s,-,float,0.749,false
-lambda_c,Slenderness ratio (weak axis),λ_c,-,float,0.749,false
-flexural_buckling,Indication of flexural buckling occurrence,buck,-,string,FALSE,false
+id,Unique identifier for the specimen,,-,String,Yamada_et_al_2012__No-1,FALSE
+date,Year of the experiment,,-,SmallInteger,2012,FALSE
+investigator,Names of researchers who conducted the study,,-,String,Yamada,FALSE
+reference,Citation of the source publication,,-,String,"Yamada, S., Ishida, T., & Shimada, Y. (2012)...",FALSE
+url,URL to the source document,,-,String,https://doi.org/10.3130/aijs.77.627,TRUE
+test_configuration,Type of test setup configuration,,-,String,DC,FALSE
+stiffness_coefficient,Stiffness coefficient for boundary conditions,,-,DecimalFloat,3,FALSE
+test_type,Type of loading test,,-,String,Cyclic,FALSE
+loading_protocol,Description of loading sequence,,-,String,Symmetric,FALSE
+forming_process,Manufacturing process of the HSS section,,-,String,Cold,FALSE
+seams,Presence of seam welds,,-,String,NR,TRUE
+tube_section,HSS section designation,,-,String,HSS-125x125x4.5,FALSE
+width__mm,Width of HSS section,,mm,DecimalFloat,125,FALSE
+depth__mm,Depth of HSS section,,mm,DecimalFloat,125,FALSE
+flange_thickness__mm,Thickness of HSS flange,,mm,DecimalFloat,4.5,FALSE
+web_thickness__mm,Thickness of HSS web,,mm,DecimalFloat,4.5,FALSE
+area__mm2,Cross-sectional area,,mm²,DecimalFloat,2116.85,FALSE
+moment_of_inertia__mm4,Strong-axis moment of inertia,,mm⁴,DecimalFloat,5062047.74,FALSE
+radius__mm,Radius of gyration,,mm,DecimalFloat,48.9,FALSE
+depth_over_t,Depth-to-thickness ratio,,-,DecimalFloat,27.78,FALSE
+plastic_section_modulus__mm3,Plastic section modulus,,mm³,DecimalFloat,98057.25,FALSE
+axial_load_ratio,Applied axial load ratio,,-,DecimalFloat,0,FALSE
+axial_load_sequence,Description of axial load application,,-,String,Constant,FALSE
+loading_angle,Angle of applied loading,,degrees,DecimalFloat,0,FALSE
+steel_type,Steel grade designation,,-,String,STKR400,FALSE
+fy_nominal__n_mm2,Nominal yield strength,,N/mm²,DecimalFloat,245,FALSE
+fy_measured__n_mm2,Measured yield strength,,N/mm²,DecimalFloat,367,FALSE
+f_ultimate__n_mm2,Measured ultimate strength,,N/mm²,DecimalFloat,436.9,FALSE
+mp_measured__knmm,Measured plastic moment,,kN·mm,DecimalFloat,35987.01,FALSE
+length__mm,Length of specimen,,mm,DecimalFloat,742,FALSE
+ke_measured__knmm_rad,Measured elastic rotational stiffness,,kN·mm/rad,DecimalFloat,3512579.15,FALSE
+my_pos_100fit__knmm,Positive yield moment (100% fit),,kN·mm,DecimalFloat,33451.2,FALSE
+my_neg_100fit__knmm,Negative yield moment (100% fit),,kN·mm,DecimalFloat,36096.14,FALSE
+theta_p_pos_100fit__rad,Positive plastic rotation (100% fit),,rad,DecimalFloat,0.026,FALSE
+theta_pc_pos_100fit__rad,Positive post-capping rotation (100% fit),,rad,DecimalFloat,0.096,FALSE
+theta_u_pos_100fit__rad,Positive ultimate rotation (100% fit),,rad,DecimalFloat,0.117,FALSE
+theta_p_neg_100fit__rad,Negative plastic rotation (100% fit),,rad,DecimalFloat,0.007,FALSE
+theta_pc_neg_100fit__rad,Negative post-capping rotation (100% fit),,rad,DecimalFloat,0.114,FALSE
+theta_u_neg_100fit__rad,Negative ultimate rotation (100% fit),,rad,DecimalFloat,0.103,FALSE
+mc_my_pos_100fit,Positive capping moment ratio (100% fit),,-,DecimalFloat,1.124,FALSE
+mu_mc_pos_100fit,Positive ultimate moment ratio (100% fit),,-,DecimalFloat,0.358,FALSE
+mc_my_neg_100fit,Negative capping moment ratio (100% fit),,-,DecimalFloat,1.08,FALSE
+mu_mc_neg_100fit,Negative ultimate moment ratio (100% fit),,-,DecimalFloat,0.369,FALSE
+my_pos_80fit__knmm,Positive yield moment (80% fit),,kN·mm,DecimalFloat,31859.1,FALSE
+my_neg_80fit__knmm,Negative yield moment (80% fit),,kN·mm,DecimalFloat,31648.92,FALSE
+theta_p_pos_80fit__rad,Positive plastic rotation (80% fit),,rad,DecimalFloat,0.042,FALSE
+theta_pc_pos_80fit__rad,Positive post-capping rotation (80% fit),,rad,DecimalFloat,0.064,FALSE
+theta_u_pos_80fit__rad,Positive ultimate rotation (80% fit),,rad,DecimalFloat,0.117,FALSE
+theta_p_neg_80fit__rad,Negative plastic rotation (80% fit),,rad,DecimalFloat,0.032,FALSE
+theta_pc_neg_80fit__rad,Negative post-capping rotation (80% fit),,rad,DecimalFloat,0.066,FALSE
+theta_u_neg_80fit__rad,Negative ultimate rotation (80% fit),,rad,DecimalFloat,0.103,FALSE
+mc_my_pos_80fit,Positive capping moment ratio (80% fit),,-,DecimalFloat,1.21,FALSE
+mu_mc_pos_80fit,Positive ultimate moment ratio (80% fit),,-,DecimalFloat,0.3,FALSE
+mc_my_neg_80fit,Negative capping moment ratio (80% fit),,-,DecimalFloat,1.19,FALSE
+mu_mc_neg_80fit,Negative ultimate moment ratio (80% fit),,-,DecimalFloat,0.36,FALSE
+lambda_s,Slenderness ratio (strong axis),,-,DecimalFloat,0.749,FALSE
+lambda_c,Slenderness ratio (weak axis),,-,DecimalFloat,0.749,FALSE
+flexural_buckling,Indication of flexural buckling occurrence,,-,String,FALSE,FALSE
