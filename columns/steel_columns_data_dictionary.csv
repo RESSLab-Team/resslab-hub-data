@@ -1,0 +1,98 @@
+column_name,description,symbol,unit,type,example_value,nullable
+id,Unique identifier for the specimen,,-,String,Elkady_and_Lignos_C3,False
+experimental_program,Names of researchers who conducted the study,,-,String,Elkady & Lignos,False
+date,Year of the experiment,,-,SmallInteger,2018,False
+section_c,Cross-section designation,,-,String,W610x217,False
+specimen_designation,Laboratory identification code,,-,String,C3,False
+d_c,Total depth of section,,mm,DecimalFloat,630,False
+k_c,Distance from outer face of flange to web toe of fillet,,mm,DecimalFloat,50.8,False
+k1_c,Distance from center of web to flange toe of fillet,,mm,DecimalFloat,28.6,False
+h_c,Clear distance between flanges,,mm,DecimalFloat,528.4,False
+t_cw,Web thickness,,mm,DecimalFloat,17.2,False
+h_over_t_cw,Web height-to-thickness ratio,,-,DecimalFloat,30.7,False
+b_cf,Flange width,,mm,DecimalFloat,328,False
+t_cf,Flange thickness,,mm,DecimalFloat,26.8,False
+b_f_over_t_cf,Flange width-to-thickness ratio,,-,DecimalFloat,6.1,False
+a_cm,Measured cross-sectional area,,mm²,Integer,27495,False
+a_cn,Nominal cross-sectional area,,mm²,Integer,27700,False
+i_xb,Strong-axis moment of inertia at base,,mm⁴,BigInteger,1.9E+09,False
+i_xc,Strong-axis moment of inertia at critical section,,mm⁴,Integer,157862147,False
+s_xc,Strong-axis elastic section modulus,,mm³,DecimalFloat,5951531,False
+s_yc,Weak-axis elastic section modulus,,mm³,DecimalFloat,962574,False
+z_xc,Strong-axis plastic section modulus,,mm³,DecimalFloat,6730988,False
+z_yc,Weak-axis plastic section modulus,,mm³,DecimalFloat,1484256,False
+j_c,Torsional constant,,mm⁴,DecimalFloat,5232195,False
+c_wc,Warping constant,,mm⁶,DecimalFloat,1.4E+13,False
+r_yc,Weak-axis radius of gyration,,mm,DecimalFloat,76,False
+r_xc,Strong-axis radius of gyration,,mm,DecimalFloat,261,False
+l_c,Column length,,mm,DecimalFloat,3899,False
+l_sc,Shear span length,,mm,DecimalFloat,2924,False
+l_bc,Length between lateral bracing points,,mm,DecimalFloat,3899,False
+l_b_over_r_yc,Member slenderness ratio about weak axis,,-,DecimalFloat,51.5,False
+k_xc,Strong-axis effective length factor,,-,DecimalFloat,0.7,False
+k_yc,Weak-axis effective length factor,,-,DecimalFloat,0.5,False
+lambda_xc,Strong-axis slenderness parameter,,-,DecimalFloat,10,False
+lambda_yc,Weak-axis slenderness parameter,,-,DecimalFloat,26,False
+lambda_ltb,Lateral-torsional buckling slenderness parameter,,-,DecimalFloat,0.26,False
+steel_c,Steel grade designation,,-,String,ASTM A992 Gr. 50,False
+r_y,Yield strength ratio (measured/nominal),,-,DecimalFloat,1.1,False
+r_t,Ultimate-to-yield strength ratio,,-,DecimalFloat,1.1,False
+f_ymf,Measured flange yield strength,,MPa,DecimalFloat,414,False
+f_ymw,Measured web yield strength,,MPa,DecimalFloat,415,False
+f_umf,Measured flange ultimate strength,,MPa,DecimalFloat,509,False
+f_umw,Measured web ultimate strength,,MPa,DecimalFloat,502,False
+f_yn,Nominal yield strength,,MPa,DecimalFloat,345,False
+f_un,Nominal ultimate strength,,MPa,DecimalFloat,450,False
+e_nc,Nominal elastic modulus,,MPa,DecimalFloat,200000,False
+e_mc,Measured elastic modulus,,MPa,DecimalFloat,190481,False
+g_nc,Nominal shear modulus,,MPa,DecimalFloat,77200,False
+g_mc,Measured shear modulus,,MPa,DecimalFloat,73262,False
+boundary_condition,End conditions of the column,,-,String,Fixed-Flexible,False
+p_ym,Measured axial yield strength,,N,DecimalFloat,11423976,False
+p_yn,Nominal axial yield strength,,N,DecimalFloat,9556500,False
+p_ye,Expected axial yield strength,,N,DecimalFloat,10512150,False
+lateral_lp,Type of lateral loading protocol,,-,String,Collapse-Consistent,False
+direction_lp,Direction of loading,,-,String,Unidirectional,False
+axis_of_bending,Axis about which bending is applied,,-,String,Strong,False
+axial_lp,Type of axial loading protocol,,-,String,Constant,False
+p_g,Gravity load,,N,DecimalFloat,2272000,False
+p_t,Tensile load,,N,DecimalFloat,NA,True
+p_c,Compressive load,,N,DecimalFloat,2272000,False
+p_g_over_p_ym,Gravity load ratio to measured yield strength,,-,DecimalFloat,0.2,False
+p_g_over_p_yn,Gravity load ratio to nominal yield strength,,-,DecimalFloat,0.24,False
+p_t_over_p_ym,Tensile load ratio to measured yield strength,,-,Numeric,NA,True
+p_c_over_p_ym,Compressive load ratio to measured yield strength,,-,DecimalFloat,0.2,False
+p_c_over_p_yn,Compressive load ratio to nominal yield strength,,-,DecimalFloat,0.24,False
+p,Applied axial load,,N,DecimalFloat,2272000,False
+t_top_plate,Thickness of top plate,,mm,DecimalFloat,76,False
+t_bottom_plate,Thickness of bottom plate,,mm,DecimalFloat,76,False
+test_procedure,Description of testing procedure,,-,String,First axial load was applied...,False
+comments,Additional notes about the test,,-,String,Axial loading of 20kN/sec...,True
+k_test,Measured initial stiffness,,N/mm,DecimalFloat,3190,False
+k_flexure_th,Theoretical flexural stiffness,,N/mm,DecimalFloat,3930,False
+k_shear_th,Theoretical shear stiffness,,N/mm,DecimalFloat,23911,False
+k_theory,Combined theoretical stiffness,,N/mm,DecimalFloat,3375,False
+th_y,Story drift at yield,,rad,DecimalFloat,0.006,False
+th_lb,Story drift at local buckling,,rad,DecimalFloat,0.02,False
+th_80,Story drift at 80% peak strength,,rad,DecimalFloat,0.03,False
+th_50,Story drift at 50% peak strength,,rad,DecimalFloat,0.04,True
+th_20,Story drift at 20% peak strength,,rad,DecimalFloat,NA,True
+th_1l,Story drift at first loading cycle,,rad,DecimalFloat,0.03,True
+th_2l,Story drift at second loading cycle,,rad,DecimalFloat,0.035,True
+th_3l,Story drift at third loading cycle,,rad,DecimalFloat,NA,True
+th_4l,Story drift at fourth loading cycle,,rad,DecimalFloat,NA,True
+th_6l,Story drift at sixth loading cycle,,rad,DecimalFloat,NA,True
+d_80,Displacement at 80% peak strength,,mm,DecimalFloat,0.008,True
+d_50,Displacement at 50% peak strength,,mm,DecimalFloat,0.02,True
+d_20,Displacement at 20% peak strength,,mm,DecimalFloat,NA,True
+f_class_us,Flange classification (US standards),,-,String,compact,False
+w_class_us,Web classification (US standards),,-,String,compact,False
+cs_class_us,Cross-section classification (US standards),,-,String,compact,False
+f_class_eu,Flange classification (Eurocode),,-,String,Class-1,False
+w_class_eu,Web classification (Eurocode),,-,String,Class-1,False
+cs_class_eu,Cross-section classification (Eurocode),,-,String,Class-1,False
+cfe,Column fixed end indicator,,-,Boolean,no,False
+reference,Citation of the source publication,,-,String,"Elkady, A., and Lignos, D.G. 2018...",False
+link,URL to the source document,,-,String,https://doi.org/10.1061/...,True
+latitude,Geographical latitude of testing facility,,degrees,DecimalFloat,45.505,False
+longitude,Geographical longitude of testing facility,,degrees,DecimalFloat,-73.614,False 
