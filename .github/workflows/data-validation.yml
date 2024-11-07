@@ -90,6 +90,6 @@ jobs:
                 else "" end
               end'
           # Check validation status
-          if [[ $(echo "$VALIDATION_LOG" | jq 'if .detail then .detail.valid else false end') == "false" ]]; then
+          if [[ $(echo "$VALIDATION_LOG" | jq 'if .valid then .valid else false end') == "false" ]]; then
             exit 1
           fi
