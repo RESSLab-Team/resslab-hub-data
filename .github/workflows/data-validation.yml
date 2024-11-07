@@ -73,7 +73,6 @@ jobs:
           echo "Calling: $SERVER_URL/api/validate/?type=$UPLOAD_TYPE"
           VALIDATION_LOG=$(curl -sSL -F file=@$TAR_NAME -u user:$API_PASSWORD $SERVER_URL/api/validate/?type=$UPLOAD_TYPE )
           echo "Validation Results:"
-          echo "$VALIDATION_LOG"
           # First, parse the JSON response
           echo "$VALIDATION_LOG" | jq -r '
               if .valid then
