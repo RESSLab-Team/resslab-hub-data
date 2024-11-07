@@ -70,7 +70,7 @@ jobs:
           DIRECTORY=${DIRECTORY/-/_}
           TAR_NAME=${DIRECTORY}.tar.gz
           UPLOAD_TYPE=all-${{ matrix.type }}  # Replace underscores with hyphens for upload type
-          VALIDATION_LOG=$(curl -sSL -f -F file=@$TAR_NAME -u user:$API_PASSWORD $SERVER_URL/api/validate/?type=$UPLOAD_TYPE )
+          VALIDATION_LOG=$(curl -i -sSL -F file=@$TAR_NAME -u user:$API_PASSWORD $SERVER_URL/api/validate/?type=$UPLOAD_TYPE )
           echo "Validation Results:"
           echo "$VALIDATION_LOG"
           # First, parse the JSON response
