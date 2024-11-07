@@ -75,12 +75,11 @@ jobs:
           echo "$VALIDATION_LOG"
           # First, parse the JSON response
           echo "$VALIDATION_LOG" | jq -r '
-            if .detail then
-              if .detail.valid then
+              if .valid then
                 "\u001b[32m✓ All validations passed\u001b[0m"
               else
-                .detail.results[] | 
-                "\u001b[1mFile: \(.file)\u001b[0m\n" + 
+                .results[] |
+                "\u001b[31m✗ Validations failed for \(.file)\u001b[0m\n" + 
                 if .errors then
                   "\u001b[31mErrors:\u001b[0m\n" + 
                   (.errors | map("  • \(.)" ) | join("\n"))
@@ -89,10 +88,7 @@ jobs:
                   "\n\u001b[33mWarnings:\u001b[0m\n" + 
                   (.warnings | map("  • \(.)" ) | join("\n"))
                 else "" end
-              end
-            else
-              . | tojson
-            end'
+              end'
           # Check validation status
           if [[ $(echo "$VALIDATION_LOG" | jq 'if .detail then .detail.valid else false end') == "false" ]]; then
             exit 1
