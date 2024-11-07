@@ -32,7 +32,7 @@ pid_extenso_t_i,Extensometer PID integral time,,s,DecimalFloat,50,True
 pid_extenso_t_d,Extensometer PID derivative time,,s,DecimalFloat,0,True
 yield_stress__mpa_,Measured yield stress,,MPa,DecimalFloat,397.8143069,True
 elastic_modulus__mpa_,Measured elastic modulus,,MPa,DecimalFloat,202083.802,True
-fracture_strain,Measured fracture strain,,-,DecimalFloat,1.118311687,True
+fracture_strain,Measured fracture strain,,-,DecimalFloat,1.118311687,False
 c,Carbon content,,wt%,DecimalFloat,0.09,True
 si,Silicon content,,wt%,DecimalFloat,0.24,True
 mn,Manganese content,,wt%,DecimalFloat,1.38,True
