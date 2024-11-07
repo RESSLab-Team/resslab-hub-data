@@ -59,6 +59,11 @@ jobs:
           TAR_NAME=${DIRECTORY}.tar.gz
           git diff --diff-filter=AM --name-only HEAD~1 HEAD $DIRECTORY/ | xargs tar --exclude-vcs -czf $TAR_NAME
 
+      - name: Install jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+
       - name: Validate data ${{ matrix.type }}
         run: |
           DIRECTORY=${{ matrix.type }}
@@ -67,21 +72,28 @@ jobs:
           UPLOAD_TYPE=all-${{ matrix.type }}  # Replace underscores with hyphens for upload type
           VALIDATION_LOG=$(curl -sSL -f -F file=@$TAR_NAME -u user:$API_PASSWORD $SERVER_URL/api/validate/?type=$UPLOAD_TYPE )
           echo "Validation Results:"
+          echo "$VALIDATION_LOG"
+          # First, parse the JSON response
           echo "$VALIDATION_LOG" | jq -r '
-            if .detail.valid then
-              "\u001b[32m✓ All validations passed\u001b[0m"
+            if .detail then
+              if .detail.valid then
+                "\u001b[32m✓ All validations passed\u001b[0m"
+              else
+                .detail.results[] | 
+                "\u001b[1mFile: \(.file)\u001b[0m\n" + 
+                if .errors then
+                  "\u001b[31mErrors:\u001b[0m\n" + 
+                  (.errors | map("  • \(.)" ) | join("\n"))
+                else "" end +
+                if .warnings then
+                  "\n\u001b[33mWarnings:\u001b[0m\n" + 
+                  (.warnings | map("  • \(.)" ) | join("\n"))
+                else "" end
+              end
             else
-              .detail.results[] | 
-              "\u001b[1mFile: \(.file)\u001b[0m\n" + 
-              if .errors then
-                "\u001b[31mErrors:\u001b[0m\n" + 
-                (.errors | map("  • \(.)" ) | join("\n"))
-              else "" end +
-              if .warnings then
-                "\n\u001b[33mWarnings:\u001b[0m\n" + 
-                (.warnings | map("  • \(.)" ) | join("\n"))
-              else "" end
+              . | tojson
             end'
-          if [[ $(echo "$VALIDATION_LOG" | jq '.detail.valid') == "false" ]]; then
+          # Check validation status
+          if [[ $(echo "$VALIDATION_LOG" | jq 'if .detail then .detail.valid else false end') == "false" ]]; then
             exit 1
           fi
