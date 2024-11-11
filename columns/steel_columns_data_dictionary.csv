@@ -55,26 +55,26 @@ lateral_lp,Type of lateral loading protocol,,-,String,Collapse-Consistent,False
 direction_lp,Direction of loading,,-,String,Unidirectional,False
 axis_of_bending,Axis about which bending is applied,,-,String,Strong,False
 axial_lp,Type of axial loading protocol,,-,String,Constant,False
-p_g,Gravity load,,N,DecimalFloat,2272000,False
+p_g,Gravity load,,N,DecimalFloat,2272000,True
 p_t,Tensile load,,N,DecimalFloat,NA,True
-p_c,Compressive load,,N,DecimalFloat,2272000,False
-p_g_over_p_ym,Gravity load ratio to measured yield strength,,-,DecimalFloat,0.2,False
-p_g_over_p_yn,Gravity load ratio to nominal yield strength,,-,DecimalFloat,0.24,False
-p_t_over_p_ym,Tensile load ratio to measured yield strength,,-,Numeric,NA,True
-p_c_over_p_ym,Compressive load ratio to measured yield strength,,-,DecimalFloat,0.2,False
-p_c_over_p_yn,Compressive load ratio to nominal yield strength,,-,DecimalFloat,0.24,False
-p,Applied axial load,,N,DecimalFloat,2272000,False
-t_top_plate,Thickness of top plate,,mm,DecimalFloat,76,False
-t_bottom_plate,Thickness of bottom plate,,mm,DecimalFloat,76,False
+p_c,Compressive load,,N,DecimalFloat,2272000,True
+p_g_over_p_ym,Gravity load ratio to measured yield strength,,-,DecimalFloat,0.2,True
+p_g_over_p_yn,Gravity load ratio to nominal yield strength,,-,DecimalFloat,0.24,True
+p_t_over_p_ym,Tensile load ratio to measured yield strength,,-,DecimalFloat,NA,True
+p_c_over_p_ym,Compressive load ratio to measured yield strength,,-,DecimalFloat,0.2,True
+p_c_over_p_yn,Compressive load ratio to nominal yield strength,,-,DecimalFloat,0.24,True
+p,Applied axial load,,N,DecimalFloat,2272000,True
+t_top_plate,Thickness of top plate,,mm,DecimalFloat,76,True
+t_bottom_plate,Thickness of bottom plate,,mm,DecimalFloat,76,True
 test_procedure,Description of testing procedure,,-,String,First axial load was applied...,False
 comments,Additional notes about the test,,-,String,Axial loading of 20kN/sec...,True
-k_test,Measured initial stiffness,,N/mm,DecimalFloat,3190,False
-k_flexure_th,Theoretical flexural stiffness,,N/mm,DecimalFloat,3930,False
-k_shear_th,Theoretical shear stiffness,,N/mm,DecimalFloat,23911,False
-k_theory,Combined theoretical stiffness,,N/mm,DecimalFloat,3375,False
-th_y,Story drift at yield,,rad,DecimalFloat,0.006,False
-th_lb,Story drift at local buckling,,rad,DecimalFloat,0.02,False
-th_80,Story drift at 80% peak strength,,rad,DecimalFloat,0.03,False
+k_test,Measured initial stiffness,,N/mm,DecimalFloat,3190,True
+k_flexure_th,Theoretical flexural stiffness,,N/mm,DecimalFloat,3930,True
+k_shear_th,Theoretical shear stiffness,,N/mm,DecimalFloat,23911,True
+k_theory,Combined theoretical stiffness,,N/mm,DecimalFloat,3375,True
+th_y,Story drift at yield,,rad,DecimalFloat,0.006,True
+th_lb,Story drift at local buckling,,rad,DecimalFloat,0.02,True
+th_80,Story drift at 80% peak strength,,rad,DecimalFloat,0.03,True
 th_50,Story drift at 50% peak strength,,rad,DecimalFloat,0.04,True
 th_20,Story drift at 20% peak strength,,rad,DecimalFloat,NA,True
 th_1l,Story drift at first loading cycle,,rad,DecimalFloat,0.03,True
