@@ -58,7 +58,7 @@ jobs:
           DIRECTORY=${{ matrix.type }}
           DIRECTORY=${DIRECTORY/-/_}  # Replace hyphens with underscores in directory names
           TAR_NAME=${DIRECTORY}.tar.gz
-          git diff --diff-filter=AM --name-only ${{ github.event.pull_request.base.ref }} ${{ github.event.pull_request.head.ref }} $DIRECTORY/ | xargs tar --exclude-vcs -czf $TAR_NAME
+          git diff --diff-filter=AM --name-only ${{ github.event.pull_request.base.sha }} HEAD $DIRECTORY/ | xargs tar --exclude-vcs -czf $TAR_NAME
 
       - name: Install jq
         run: |
