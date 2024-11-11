@@ -10,12 +10,12 @@ grade,Steel grade designation,,-,String,S355,False
 spec,Steel specification suffix,,-,String,J2+M,False
 lp,Loading protocol identifier,,-,String,LP4,False
 size,Specimen size designation,,-,String,M20,False
-gage_length__mm_,Gage length of the specimen,,mm,SmallInteger,20,False
-avg_reduced_dia__mm_,Average reduced diameter,,mm,Numeric,9.98,True
-avg_fractured_dia_top__mm_,Average fracture diameter at top,,mm,Numeric,5.37333,True
-avg_fractured_dia_bot__mm_,Average fracture diameter at bottom,,mm,Numeric,6.00333,True
-fy_n__mpa_,Nominal yield strength,,MPa,SmallInteger,355,False
-fu_n__mpa_,Nominal ultimate strength,,MPa,SmallInteger,490,False
+gage_length__mm_,Gage length of the specimen,,mm,DecimalFloat,20,True
+avg_reduced_dia__mm_,Average reduced diameter,,mm,DecimalFloat,9.98,True
+avg_fractured_dia_top__mm_,Average fracture diameter at top,,mm,DecimalFloat,5.37333,True
+avg_fractured_dia_bot__mm_,Average fracture diameter at bottom,,mm,DecimalFloat,6.00333,True
+fy_n__mpa_,Nominal yield strength,,MPa,DecimalFloat,355,True
+fu_n__mpa_,Nominal ultimate strength,,MPa,DecimalFloat,490,True
 t_a__deg_c_,Ambient temperature,,°C,DecimalFloat,19.5,True
 date,Test date,,-,Date,07.10.2020,False
 investigator,Name of test operator,,-,String,Selimcan,False
