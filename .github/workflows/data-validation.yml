@@ -17,10 +17,11 @@ jobs:
     outputs:
       types: ${{ steps.filter.outputs.changes }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
-          fetch-depth: 20
-      - uses: dorny/paths-filter@v2
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref }}
+      - uses: dorny/paths-filter@v3
         id: filter
         with:
           filters: |
@@ -48,9 +49,10 @@ jobs:
       - changes
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
-          fetch-depth: 20
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref }}
       - name: Prepare validation ${{ matrix.type }}
         run: |
           DIRECTORY=${{ matrix.type }}
