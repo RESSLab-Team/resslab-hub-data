@@ -8,7 +8,7 @@ Automated data upload pipeline is still under active development and testing.
 ### Data dictionaries
 Data dictionaries are available as CSVs in each tab's folder, e.g. `steel_braces_data_dictionary.csv`. They contain:
 - column_name : column name all lowercase, no spaces
-- type : choose type among : `Numeric` (general type for numbers), `DecimalFloat` (floating-point number with high precision), `SmallInteger` (integer smaller than 30 000),  `BigInteger` (big integer, e.g 10^9),  `Integer` (any integer), `String` (text), `Date` (date in format dd.mm.yyyy. If date is a year only, make it integer - eventually will update to [ISO format](https://fr.wikipedia.org/wiki/ISO_8601)), `Boolean` (binary as 1/0 or True/False)
+- type : choose type among : `Numeric` (general type for numbers), `DecimalFloat` (floating-point number with high precision), `SmallInteger` (integer smaller than 30 000),  `BigInteger` (big integer, e.g 10^9),  `Integer` (any integer), `String` (text), `Date` (date in format dd.mm.yyyy. If date is a year only, make it integer - eventually will update to [ISO format](https://fr.wikipedia.org/wiki/ISO_8601)), `Boolean` (yes/no)
 - example_value (optional) : sample value for this column 
 - symbol (optional) : symbol in markdown format, for automated documentation generation
 - description : plain text description of the column, for future users
