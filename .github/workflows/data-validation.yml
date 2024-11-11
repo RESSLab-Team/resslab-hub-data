@@ -14,15 +14,12 @@ env:
 jobs:
   changes:
     runs-on: ubuntu-latest
-    # Required permissions
-    permissions:
-      pull-requests: read
     outputs:
       types: ${{ steps.filter.outputs.changes }}
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 100
+          fetch-depth: 20
       - uses: dorny/paths-filter@v2
         id: filter
         with:
@@ -53,7 +50,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 100
+          fetch-depth: 20
       - name: Prepare validation ${{ matrix.type }}
         run: |
           DIRECTORY=${{ matrix.type }}
