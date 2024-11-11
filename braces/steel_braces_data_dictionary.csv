@@ -7,7 +7,7 @@ cross_section_shape,Shape of the brace cross-section,,-,String,I-shaped,False
 cross_section_size,Nominal dimensions of the cross-section,,-,String,50x50x6x6,False
 area,Cross-sectional area,,mm²,DecimalFloat,839,False
 d_br,Depth of the cross-section,,mm,DecimalFloat,50,False
-b_br,Width of the cross-section,,mm,DecimalFloat,50,False
+b_br,Width of the cross-section,,mm,DecimalFloat,50,True
 t_br,Thickness of the web/wall,,mm,DecimalFloat,6,True
 w_br,Thickness of the flange,,mm,DecimalFloat,6,True
 i_x,Strong-axis moment of inertia,,mm⁴,DecimalFloat,534700,False
@@ -58,13 +58,13 @@ bolt_size,Size designation of bolts,,-,String,na,True
 bolt_mat,Material specification of bolts,,-,String,na,True
 reinforcement_pl,Reinforcement plate dimensions,,-,String,203x51x6.4,True
 loading_protocol,Type of loading protocol applied,,-,String,Symmetric Cyclic,False
-p_t,Measured tensile capacity,,kN,String,1099,True
+p_t,Measured tensile capacity,,kN,DecimalFloat,1099,True
 p_t_theory,Theoretical tensile capacity,,kN,DecimalFloat,970.6,True
-p_c,Measured compressive capacity,,kN,String,698,True
-kl_r,Slenderness ratio,,-,Numeric,77,False
-l_c,Normalized slenderness ratio,,-,String,1.2,False
-l_c_theory,Theoretical normalized slenderness ratio,,-,String,1.18,True
-k_assumed,Assumed effective length factor,,-,Numeric,1,False
+p_c,Measured compressive capacity,,kN,DecimalFloat,698,True
+kl_r,Slenderness ratio,,-,DecimalFloat,77,False
+l_c,Normalized slenderness ratio,,-,DecimalFloat,1.2,False
+l_c_theory,Theoretical normalized slenderness ratio,,-,DecimalFloat,1.18,True
+k_assumed,Assumed effective length factor,,-,DecimalFloat,1,False
 kl_r_theory,Theoretical slenderness ratio,,-,DecimalFloat,77.13,True
 reference,Citation of the source publication,,-,String,"Wakabayashi, M., Nakamura, T., & Yoshida, N. (1977)...",False
 link,URL to the source document,,-,String,https://repository.kulib.kyoto-u.ac.jp/...,True
