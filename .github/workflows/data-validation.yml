@@ -14,23 +14,23 @@ env:
 jobs:
   changes:
     runs-on: ubuntu-latest
+    # Required permissions
+    permissions:
+      pull-requests: read
     outputs:
       types: ${{ steps.filter.outputs.changes }}
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 20
-      - uses: dorny/paths-filter@v2
-        id: filter
-        with:
-          base: ${{ github.ref }}
-          filters: |
-            braces: 'braces/**'
-            columns: 'columns/**'
-            connections: 'connections/**'
-            hss-columns: 'hss_columns/**'
-            material: 'material/**'
-            residual-stresses: 'residual_stresses/**'
+    - uses: actions/checkout@v4
+    - uses: dorny/paths-filter@v3
+      id: filter
+      with:
+        filters: |
+          braces: 'braces/**'
+          columns: 'columns/**'
+          connections: 'connections/**'
+          hss-columns: 'hss_columns/**'
+          material: 'material/**'
+          residual-stresses: 'residual_stresses/**'
 
   authentification:
     runs-on: ubuntu-latest
@@ -49,15 +49,13 @@ jobs:
       - changes
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 20
+      - uses: actions/checkout@v4
       - name: Prepare validation ${{ matrix.type }}
         run: |
           DIRECTORY=${{ matrix.type }}
           DIRECTORY=${DIRECTORY/-/_}  # Replace hyphens with underscores in directory names
           TAR_NAME=${DIRECTORY}.tar.gz
-          git diff --diff-filter=AM --name-only HEAD~1 HEAD $DIRECTORY/ | xargs tar --exclude-vcs -czf $TAR_NAME
+          git diff --diff-filter=AM --name-only ${{ github.event.pull_request.base.ref }} ${{ github.event.pull_request.head.ref }} $DIRECTORY/ | xargs tar --exclude-vcs -czf $TAR_NAME
 
       - name: Install jq
         run: |
