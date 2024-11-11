@@ -14,60 +14,60 @@ rbs_cut,Reduction in flange area at RBS center (normalized to the flange width),
 s_h,Plastic hinge distance from the column face,sₕ,mm,DecimalFloat,-,True
 d_h,Shift of the beam effective depth due to presence of hanches,dₕ,mm,DecimalFloat,-,True
 section_b,Section name of steel beam,-,-,String,"Examples: [IPE 360, W36x150, H-400x200x8x13, build up H section]",False
-d_b,Depth of steel beam,dᵦ,mm,DecimalFloat,-,False
-d_bg,Distance from steel beam top fibre to its center of gravity,dᵦᵧ,mm,DecimalFloat,Equals: $d_b/2$,False
-t_bw,Thickness of steel beam web,tᵦᵥ,mm,DecimalFloat,-,False
-b_bf,Width of steel beam flange,bᵦᶠ,mm,DecimalFloat,-,False
-t_bf,Thickness of steel beam flange,tᵦᶠ,mm,DecimalFloat,-,False
-r_b,Fillet radius of steel beam,rᵦ,mm,DecimalFloat,-,False
-a_b,Cross-sectional area of steel beam,Aᵦ,mm²,DecimalFloat,-,False
-i_xb,Second moment of area of steel beam about major axis,Iₓᵦ,mm⁴,DecimalFloat,-,False
-z_xb,Plastic section modulus of steel beam about major axis,Zₓᵦ,mm³,DecimalFloat,-,False
+d_b,Depth of steel beam,dᵦ,mm,DecimalFloat,-,True
+d_bg,Distance from steel beam top fibre to its center of gravity,dᵦᵧ,mm,DecimalFloat,Equals: $d_b/2$,True
+t_bw,Thickness of steel beam web,tᵦᵥ,mm,DecimalFloat,-,True
+b_bf,Width of steel beam flange,bᵦᶠ,mm,DecimalFloat,-,True
+t_bf,Thickness of steel beam flange,tᵦᶠ,mm,DecimalFloat,-,True
+r_b,Fillet radius of steel beam,rᵦ,mm,DecimalFloat,-,True
+a_b,Cross-sectional area of steel beam,Aᵦ,mm²,DecimalFloat,-,True
+i_xb,Second moment of area of steel beam about major axis,Iₓᵦ,mm⁴,DecimalFloat,-,True
+z_xb,Plastic section modulus of steel beam about major axis,Zₓᵦ,mm³,DecimalFloat,-,True
 z_xb_bfp,Plastic section modulus of BFP steel beam about major axis,Zₓᵦ₍ᵦᶠₚ₎,mm³,DecimalFloat,-,True
-r_yb,Minor axis radius of gyration of steel beam,rᵧᵦ,mm,DecimalFloat,-,False
+r_yb,Minor axis radius of gyration of steel beam,rᵧᵦ,mm,DecimalFloat,-,True
 b_bf_rbs,Width of steel beam flange at RBS center,bᶠᵦ₍ᵣᵦₛ₎,mm,DecimalFloat,-,True
 d_gb_rbs,Distance from steel beam top fibre to its center of gravity at RBS center,dᵧᵦ₍ᵣᵦₛ₎,mm,DecimalFloat,-,True
 a_b_rbs,Cross-sectional area of RBS steel beam,Aᵦ₍ᵣᵦₛ₎,mm²,DecimalFloat,-,True
 i_xb_rbs,Second moment of area of RBS steel beam about major axis,Iₓᵦ₍ᵣᵦₛ₎,mm⁴,DecimalFloat,-,True
 z_xb_rbs,Plastic section modulus of RBS steel beam about major axis,Zₓᵦ₍ᵣᵦₛ₎,mm³,DecimalFloat,-,True
-d_bm,Depth of steel beam (measured),dᵦₘ,mm,DecimalFloat,-,False
-d_bgm,Distance from steel beam top fibre to its center of gravity (measured),dᵦᵧₘ,mm,DecimalFloat,Equals: $d_{bm}/2$,False
-t_bwm,Thickness of steel beam web (measured),tᵦᵥₘ,mm,DecimalFloat,-,False
-b_bfm,Width of steel beam flange (measured),bᵦᶠₘ,mm,DecimalFloat,-,False
-t_bfm,Thickness of steel beam flange (measured),tᵦᶠₘ,mm,DecimalFloat,-,False
-z_xbm,Plastic section modulus of steel beam about major axis (measured),Zₓᵦₘ,mm³,DecimalFloat,-,False
+d_bm,Depth of steel beam (measured),dᵦₘ,mm,DecimalFloat,-,True
+d_bgm,Distance from steel beam top fibre to its center of gravity (measured),dᵦᵧₘ,mm,DecimalFloat,Equals: $d_{bm}/2$,True
+t_bwm,Thickness of steel beam web (measured),tᵦᵥₘ,mm,DecimalFloat,-,True
+b_bfm,Width of steel beam flange (measured),bᵦᶠₘ,mm,DecimalFloat,-,True
+t_bfm,Thickness of steel beam flange (measured),tᵦᶠₘ,mm,DecimalFloat,-,True
+z_xbm,Plastic section modulus of steel beam about major axis (measured),Zₓᵦₘ,mm³,DecimalFloat,-,True
 steel_b,Steel grade of the beam,-,-,String,-,False
-f_yb,Nominal yield stress of the beam's steel material,fᵧᵦ,MPa,DecimalFloat,-,False
-f_ybw,Measured yield stress of the beam's web plate,fᵧᵦᵥ,MPa,DecimalFloat,Based on coupon test results,False
-f_ybf,Measured yield stress of the beam's flange plate,fᵧᵦᶠ,MPa,DecimalFloat,Based on coupon test results,False
+f_yb,Nominal yield stress of the beam's steel material,fᵧᵦ,MPa,DecimalFloat,-,True
+f_ybw,Measured yield stress of the beam's web plate,fᵧᵦᵥ,MPa,DecimalFloat,Based on coupon test results,True
+f_ybf,Measured yield stress of the beam's flange plate,fᵧᵦᶠ,MPa,DecimalFloat,Based on coupon test results,True
 f_yb_mill,Yield stress of the beam as per the mill certificate,fᵧᵦₘᵢₗₗ,MPa,DecimalFloat,Weighted average of the beam's flanges and web mill yield stress,True
-f_yb_avg,Average yield stress of the beam,fᵧᵦₐᵥᵧ,MPa,DecimalFloat,"Weighted average of $f_{y,bf}$ and $f_{y,bw}$, based on the areas of the flanges and the web",False
-l_b,Beam span from column centerline to column centerline,Lᵦ,mm,DecimalFloat,For exterior subassemblies consider half the column centerline to centerline distance,False
-l_fc,Beam clear span from column face to column face,Lᶠᶜ,mm,DecimalFloat,For exterior subassemblies consider half the column face to column face distance,False
-l_o,Beam shear span from column face to beam inflection point,Lₒ,mm,DecimalFloat,"For exterior subassemblies it equals $L_{fc}$. For interior ones, it equals $L_{fc}/2$",False
-lo_db,Beam shear span to depth ratio,Lₒ/dᵦ,-,DecimalFloat,Equals: $L_o/d_b$,False
+f_yb_avg,Average yield stress of the beam,fᵧᵦₐᵥᵧ,MPa,DecimalFloat,"Weighted average of $f_{y,bf}$ and $f_{y,bw}$, based on the areas of the flanges and the web",True
+l_b,Beam span from column centerline to column centerline,Lᵦ,mm,DecimalFloat,For exterior subassemblies consider half the column centerline to centerline distance,True
+l_fc,Beam clear span from column face to column face,Lᶠᶜ,mm,DecimalFloat,For exterior subassemblies consider half the column face to column face distance,True
+l_o,Beam shear span from column face to beam inflection point,Lₒ,mm,DecimalFloat,"For exterior subassemblies it equals $L_{fc}$. For interior ones, it equals $L_{fc}/2$",True
+lo_db,Beam shear span to depth ratio,Lₒ/dᵦ,-,DecimalFloat,Equals: $L_o/d_b$,True
 section_c,Section name of steel column,-,-,String,"Examples: [HEM 300, W14x498, build up H section]",False
-d_c,Depth of steel column,dᶜ,mm,DecimalFloat,-,False
-t_cw,Thickness of steel column web,tᶜᵥ,mm,DecimalFloat,-,False
-b_cf,Width of steel column flange,bᶜᶠ,mm,DecimalFloat,-,False
-c_c,Distance between steel column fillet radius toes,cᶜ,mm,DecimalFloat,-,False
-t_cf,Thickness of steel column flange,tᶜᶠ,mm,DecimalFloat,-,False
-r_c,Fillet radius of steel column,rᶜ,mm,DecimalFloat,-,False
-a_c,Cross-sectional area of steel column,Aᶜ,mm²,DecimalFloat,-,False
-i_xc,Second moment of area of steel column about major axis,Iₓᶜ,mm⁴,DecimalFloat,-,False
+d_c,Depth of steel column,dᶜ,mm,DecimalFloat,-,True
+t_cw,Thickness of steel column web,tᶜᵥ,mm,DecimalFloat,-,True
+b_cf,Width of steel column flange,bᶜᶠ,mm,DecimalFloat,-,True
+c_c,Distance between steel column fillet radius toes,cᶜ,mm,DecimalFloat,-,True
+t_cf,Thickness of steel column flange,tᶜᶠ,mm,DecimalFloat,-,True
+r_c,Fillet radius of steel column,rᶜ,mm,DecimalFloat,-,True
+a_c,Cross-sectional area of steel column,Aᶜ,mm²,DecimalFloat,-,True
+i_xc,Second moment of area of steel column about major axis,Iₓᶜ,mm⁴,DecimalFloat,-,True
 d_cm,Depth of steel column (measured),dᶜₘ,mm,DecimalFloat,-,True
 t_wcm,Thickness of steel column web (measured),tᵥᶜₘ,mm,DecimalFloat,-,True
 c_cm,Distance between steel column fillet radius toes (measured),cᶜₘ,mm,DecimalFloat,-,True
 b_fcm,Width of steel column flange (measured),bᶠᶜₘ,mm,DecimalFloat,-,True
 t_fcm,Thickness of steel column flange (measured),tᶠᶜₘ,mm,DecimalFloat,-,True
 steel_c,Steel grade of the column,-,-,String,-,False
-f_yc,Nominal yield stress of the column's steel material,fᵧᶜ,MPa,DecimalFloat,-,False
+f_yc,Nominal yield stress of the column's steel material,fᵧᶜ,MPa,DecimalFloat,-,True
 f_ydp,Measured yield stress of the doubler plate(s),fᵧᵈₚ,MPa,DecimalFloat,Based on coupon test results,True
-f_ycw,Measured yield stress of the column's web plate,fᵧᶜᵥ,MPa,DecimalFloat,Based on coupon test results,False
-f_ycf,Measured yield stress of the column's flange plate,fᵧᶜᶠ,MPa,DecimalFloat,Based on coupon test results,False
+f_ycw,Measured yield stress of the column's web plate,fᵧᶜᵥ,MPa,DecimalFloat,Based on coupon test results,True
+f_ycf,Measured yield stress of the column's flange plate,fᵧᶜᶠ,MPa,DecimalFloat,Based on coupon test results,True
 f_yc_mill,Yield stress of the column as per the mill certificate,fᵧᶜₘᵢₗₗ,MPa,DecimalFloat,Weighted average of the column's flanges and web mill yield stress,True
-f_yc_avg,Average yield stress of the column,fᵧᶜₐᵥᵧ,MPa,DecimalFloat,"Weighted average of $f_{y,cf}$ and $f_{y,cw}$, based on the areas of the flanges and the web",False
-h_c,Column height measured from centerline to centerline of the beams,hᶜ,mm,DecimalFloat,-,False
+f_yc_avg,Average yield stress of the column,fᵧᶜₐᵥᵧ,MPa,DecimalFloat,"Weighted average of $f_{y,cf}$ and $f_{y,cw}$, based on the areas of the flanges and the web",True
+h_c,Column height measured from centerline to centerline of the beams,hᶜ,mm,DecimalFloat,-,True
 backing_bar,Presence or not of backing bar during testing,-,-,Boolean,Binary: YES/NO,False
 electrode,Weld electrode at the beam flange to column face welded connection,-,-,String,"Example: [AWS E71T-8, E70]",False
 d_electrode,Electrode diameter at the beam flange to column face welded connection,dₑ,mm,DecimalFloat,-,True
@@ -98,56 +98,56 @@ h_p,Height of steel deck,hₚ,mm,DecimalFloat,-,True
 b_o,Average width of rib,Bₒ,mm,DecimalFloat,Measured at rib centreline,True
 deck_ribs_orientation,Orientation of the deck ribs with respect to the beam,-,-,String,"Examples: [parallel, perpenticular]",True
 section_shape_c,Type of panel zone section,-,-,String,Example: [H],False
-d_pz,Depth of column at panel zone location,dₚᵧ,mm,DecimalFloat,Equals $d_c$,False
-tw_pz,Thickness of column web at panel zone location,tᵥₚᵧ,mm,DecimalFloat,Equals $t_{cw}$,False
-bf_pz,Width of column flange at panel zone location,bᶠₚᵧ,mm,DecimalFloat,Equals $b_{cf}$,False
-tf_pz,Thickness of column flange at panel zone location,tᶠₚᵧ,mm,DecimalFloat,Equals $t_{cf}$,False
-dz,Clear depth of the panel zone,dᵧ,mm,DecimalFloat,Equals: $d_b-2*t_{bf}$,False
-zw,Clear width of the panel zone,zᵥ,mm,DecimalFloat,Equals: $d_{pz}-2*tf_{pz}$,False
+d_pz,Depth of column at panel zone location,dₚᵧ,mm,DecimalFloat,Equals $d_c$,True
+tw_pz,Thickness of column web at panel zone location,tᵥₚᵧ,mm,DecimalFloat,Equals $t_{cw}$,True
+bf_pz,Width of column flange at panel zone location,bᶠₚᵧ,mm,DecimalFloat,Equals $b_{cf}$,True
+tf_pz,Thickness of column flange at panel zone location,tᶠₚᵧ,mm,DecimalFloat,Equals $t_{cf}$,True
+dz,Clear depth of the panel zone,dᵧ,mm,DecimalFloat,Equals: $d_b-2*t_{bf}$,True
+zw,Clear width of the panel zone,zᵥ,mm,DecimalFloat,Equals: $d_{pz}-2*tf_{pz}$,True
 dz_plug,Vertical distance between plug welds,dᵧₚₗᵤᵧ,mm,DecimalFloat,-,True
 wz_plug,Horizontal distance between plug welds,wᵧₚₗᵤᵧ,mm,DecimalFloat,-,True
 wd,Width of the doubler plate,wᵈ,mm,DecimalFloat,-,True
 n_dp,Number of doubler plates,nᵈₚ,-,SmallInteger,-,True
 t_dp,Thickness of one doubler plate,tᵈₚ,mm,DecimalFloat,-,True
 t_dp_tot,Total thickess of doubler plate(s),tᵈₚₜₒₜ,mm,DecimalFloat,Equals: $t_{dp}*n_{dp}$,True
-t_p,Thickness of panel zone including doubler plates,tₚ,mm,DecimalFloat,"Equals: $t_{dp,tot}+tw_{pz}$",False
+t_p,Thickness of panel zone including doubler plates,tₚ,mm,DecimalFloat,"Equals: $t_{dp,tot}+tw_{pz}$",True
 t_cp,Thickness of the continuity plates,tᶜₚ,mm,DecimalFloat,-,True
 d_cp,Depth of the continuity plates,dᶜₚ,mm,DecimalFloat,-,True
-db_plus,Effective depth of panel zone on sagging beam side,dᵦ₊,mm,DecimalFloat,-,False
-db_minus,Effective depth of panel zone on hogging beam side,dᵦ₋,mm,DecimalFloat,-,False
-a_vc,Panel zone shear area according to Eurocode,Aᵥᶜ,mm²,DecimalFloat,According to CEN (2004),False
-fy_pz_m,Measured yield stress of the panel zone,fᵧₚᵧₘ,MPa,DecimalFloat,"Equals: $f_{yc,avg}$",False
+db_plus,Effective depth of panel zone on sagging beam side,dᵦ₊,mm,DecimalFloat,-,True
+db_minus,Effective depth of panel zone on hogging beam side,dᵦ₋,mm,DecimalFloat,-,True
+a_vc,Panel zone shear area according to Eurocode,Aᵥᶜ,mm²,DecimalFloat,According to CEN (2004),True
+fy_pz_m,Measured yield stress of the panel zone,fᵧₚᵧₘ,MPa,DecimalFloat,"Equals: $f_{yc,avg}$",True
 p_cm,Column axial compressive load based on measured yield stress,Pᶜₘ,kN,DecimalFloat,-,True
 n_pm,Column axial load ratio based on measured yield stress (normalized to the column's axial load capacity),nₚₘ,-,DecimalFloat,-,True
-v_pz_el_m_europe,Elastic shear resistance of panel zone according to CEN (2004) based on measured yield stress,Vₚᵧₑₗₘₑᵤᵣ,kN,DecimalFloat,-,False
-r_n_el_m_aisc,Elastic shear resistance of panel zone according to AISC (2016) based on measured yield stress,Rₙₑₗₘₐᵢₛᶜ,kN,DecimalFloat,-,False
-r_n_pl_m_aisc,Shear resistance of panel zone considering inelastic deformation based on measured yield stress,Rₙₚₗₘₐᵢₛᶜ,kN,DecimalFloat,-,False
-v_pz_m_aij,Shear resistance of panel zone according to AIJ based on measured yield stress,Vₚᵧₘₐᵢⱼ,kN,DecimalFloat,-,False
-fy_pz_n,Nominal yield stress of panel zone,fᵧₚᵧₙ,MPa,DecimalFloat,"Equals: $f_{yc,avg}$",False
+v_pz_el_m_europe,Elastic shear resistance of panel zone according to CEN (2004) based on measured yield stress,Vₚᵧₑₗₘₑᵤᵣ,kN,DecimalFloat,-,True
+r_n_el_m_aisc,Elastic shear resistance of panel zone according to AISC (2016) based on measured yield stress,Rₙₑₗₘₐᵢₛᶜ,kN,DecimalFloat,-,True
+r_n_pl_m_aisc,Shear resistance of panel zone considering inelastic deformation based on measured yield stress,Rₙₚₗₘₐᵢₛᶜ,kN,DecimalFloat,-,True
+v_pz_m_aij,Shear resistance of panel zone according to AIJ based on measured yield stress,Vₚᵧₘₐᵢⱼ,kN,DecimalFloat,-,True
+fy_pz_n,Nominal yield stress of panel zone,fᵧₚᵧₙ,MPa,DecimalFloat,"Equals: $f_{yc,avg}$",True
 p_cn,Column axial load (compression) based on nominal yield stress,Pᶜₙ,kN,DecimalFloat,-,True
 n_pn,Column axial load ratio based on nominal yield stress (normalized to the column's axial load capacity),nₚₙ,-,DecimalFloat,-,True
-v_pz_el_n_europe,Elastic shear resistance of panel zone according to Eurocode,Vₚᵧₑₗₙₑᵤᵣ,kN,DecimalFloat,-,False
-r_n_el_n_aisc,Elastic shear resistance of panel zone according to AISC (2016) based on nominal yield stress,Rₙₑₗₙₐᵢₛᶜ,kN,DecimalFloat,-,False
-r_n_pl_n_aisc,Shear resistance of panel zone considering inelastic deformation based on nominal yield stress,Rₙₚₗₙₐᵢₛᶜ,kN,DecimalFloat,-,False
-v_pz_n_aij,Shear resistance of panel zone according to AIJ,Vₚᵧₙₐᵢⱼ,kN,DecimalFloat,-,False
-m_cf_minus_n,Beam hogging moment at column face at development of beam plastic flexural resistance based on nominal yield stress,Mᶜᶠ₋ₙ,kN·m,DecimalFloat,-,False
-m_cf_plus_n,Beam sagging moment at column face at development of beam plastic flexural resistance based on nominal yield stress,Mᶜᶠ₊ₙ,kN·m,DecimalFloat,-,False
+v_pz_el_n_europe,Elastic shear resistance of panel zone according to Eurocode,Vₚᵧₑₗₙₑᵤᵣ,kN,DecimalFloat,-,True
+r_n_el_n_aisc,Elastic shear resistance of panel zone according to AISC (2016) based on nominal yield stress,Rₙₑₗₙₐᵢₛᶜ,kN,DecimalFloat,-,True
+r_n_pl_n_aisc,Shear resistance of panel zone considering inelastic deformation based on nominal yield stress,Rₙₚₗₙₐᵢₛᶜ,kN,DecimalFloat,-,True
+v_pz_n_aij,Shear resistance of panel zone according to AIJ,Vₚᵧₙₐᵢⱼ,kN,DecimalFloat,-,True
+m_cf_minus_n,Beam hogging moment at column face at development of beam plastic flexural resistance based on nominal yield stress,Mᶜᶠ₋ₙ,kN·m,DecimalFloat,-,True
+m_cf_plus_n,Beam sagging moment at column face at development of beam plastic flexural resistance based on nominal yield stress,Mᶜᶠ₊ₙ,kN·m,DecimalFloat,-,True
 m_cf_minus_m,Beam hogging moment at column face at development of beam plastic flexural resistance based on measured yield stress,Mᶜᶠ₋ₘ,kN·m,DecimalFloat,-,True
-m_cf_plus_m,Beam sagging moment at column face at development of beam plastic flexural resistance based on measured yield stress,Mᶜᶠ₊ₘ,kN·m,DecimalFloat,-,False
-v_bf_plus_n,Panel zone shear force demand from the beam at development of beam plastic flexural resistance under sagging bending,Vᵦᶠ₊ₙ,kN,DecimalFloat,-,False
-v_bf_minus_n,Panel zone shear force demand from the beam at development of beam plastic flexural resistance under hogging bending,Vᵦᶠ₋ₙ,kN,DecimalFloat,-,False
-v_col_n,Column shear force at development of beam plastic flexural resistance,Vᶜₒₗₙ,kN,DecimalFloat,-,False
-r_u_n,Panel zone demand at development of beam plastic flexural resistance based on nominal yield stress,Rᵤₙ,kN,DecimalFloat,-,False
-r_u_m,Panel zone demand at development of beam plastic flexural resistance based on measured yield stress,Rᵤₘ,kN,DecimalFloat,-,False
-ru_rn_el_n,Demand over resistance (Vy) based on the nominal yield stress,Rᵤ/Rₙₑₗₙ,-,DecimalFloat,-,False
-ru_rn_pl_n,Demand over resistance (Vp) based on the nominal yield stress,Rᵤ/Rₙₚₗₙ,-,DecimalFloat,-,False
+m_cf_plus_m,Beam sagging moment at column face at development of beam plastic flexural resistance based on measured yield stress,Mᶜᶠ₊ₘ,kN·m,DecimalFloat,-,True
+v_bf_plus_n,Panel zone shear force demand from the beam at development of beam plastic flexural resistance under sagging bending,Vᵦᶠ₊ₙ,kN,DecimalFloat,-,True
+v_bf_minus_n,Panel zone shear force demand from the beam at development of beam plastic flexural resistance under hogging bending,Vᵦᶠ₋ₙ,kN,DecimalFloat,-,True
+v_col_n,Column shear force at development of beam plastic flexural resistance,Vᶜₒₗₙ,kN,DecimalFloat,-,True
+r_u_n,Panel zone demand at development of beam plastic flexural resistance based on nominal yield stress,Rᵤₙ,kN,DecimalFloat,-,True
+r_u_m,Panel zone demand at development of beam plastic flexural resistance based on measured yield stress,Rᵤₘ,kN,DecimalFloat,-,True
+ru_rn_el_n,Demand over resistance (Vy) based on the nominal yield stress,Rᵤ/Rₙₑₗₙ,-,DecimalFloat,-,True
+ru_rn_pl_n,Demand over resistance (Vp) based on the nominal yield stress,Rᵤ/Rₙₚₗₙ,-,DecimalFloat,-,True
 aisc_pz_violation_n,Violation of the AISC (2016) design standard for panel zone strength based on nominal material properties. Panel zone designed to exceed 4gamma_y,-,-,Boolean,"Examples: [yes, no] for violation and not, respectively, of the AISC (2016) design for panel zone strength",False
-ru_rn_el_m,Demand over resistance (Vy) based on the measured yield stress,Rᵤ/Rₙₑₗₘ,-,DecimalFloat,-,False
-ru_rn_pl_m,Demand over resistance (Vp) based on the measured yield stress,Rᵤ/Rₙₚₗₘ,-,DecimalFloat,-,False
+ru_rn_el_m,Demand over resistance (Vy) based on the measured yield stress,Rᵤ/Rₙₑₗₘ,-,DecimalFloat,-,True
+ru_rn_pl_m,Demand over resistance (Vp) based on the measured yield stress,Rᵤ/Rₙₚₗₘ,-,DecimalFloat,-,True
 aisc_pz_violation_m,Violation of the AISC (2016) design standard for panel zone strength based on measured material properties. Panel zone designed to exceed 4gamma_y,-,-,Boolean,"Examples: [yes, no] for violation and not, respectively, of the AISC (2016) design for panel zone strength",False
-g_max,Maximum attained panel zone shear distortion in the experiment,γₘₐₓ,rad,DecimalFloat,Maximum absolute panel zone shear distortion,False
-g_y,Panel zone shear distortion at yield,γᵧ,rad,DecimalFloat,-,False
-g_max_g_y,Maximum panel zone distortion normalized to the panel zone yield distortion,γₘₐₓ/γᵧ,-,DecimalFloat,Equals: $g_{max}/g_y$,False
+g_max,Maximum attained panel zone shear distortion in the experiment,γₘₐₓ,rad,DecimalFloat,Maximum absolute panel zone shear distortion,True
+g_y,Panel zone shear distortion at yield,γᵧ,rad,DecimalFloat,-,True
+g_max_g_y,Maximum panel zone distortion normalized to the panel zone yield distortion,γₘₐₓ/γᵧ,-,DecimalFloat,Equals: $g_{max}/g_y$,True
 reference,Reference of the experimental program,-,-,String,"Example: Engelhardt, M. D., Venti, M. J., Fry, G. T., Jones, S. L., and Holliday, S. D. (2000). Behavior and design of radius cut reduced beam section connections. Report No. SAC/BD-00/17, SAC Joint Venture, Sacramento, CA, USA.",False
 link,Link to the reference,-,-,String,Example: https://store.atcouncil.org/index.php?dispatch=products.view&product_id=132,True
 latitude,Latitude of the laboratory the experiment was conducted,lat,degrees,DecimalFloat,Example: 30.62037845,True
