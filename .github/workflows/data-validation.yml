@@ -20,17 +20,19 @@ jobs:
     outputs:
       types: ${{ steps.filter.outputs.changes }}
     steps:
-    - uses: actions/checkout@v4
-    - uses: dorny/paths-filter@v3
-      id: filter
-      with:
-        filters: |
-          braces: 'braces/**'
-          columns: 'columns/**'
-          connections: 'connections/**'
-          hss-columns: 'hss_columns/**'
-          material: 'material/**'
-          residual-stresses: 'residual_stresses/**'
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 100
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          filters: |
+            braces: 'braces/**'
+            columns: 'columns/**'
+            connections: 'connections/**'
+            hss-columns: 'hss_columns/**'
+            material: 'material/**'
+            residual-stresses: 'residual_stresses/**'
 
   authentification:
     runs-on: ubuntu-latest
@@ -49,7 +51,9 @@ jobs:
       - changes
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 100
       - name: Prepare validation ${{ matrix.type }}
         run: |
           DIRECTORY=${{ matrix.type }}
