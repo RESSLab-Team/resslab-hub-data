@@ -1,4 +1,4 @@
-﻿panel zone shear distortion* (rad),panel zone shear force (kN)
+﻿panel zone shear distortion (rad),panel zone shear force (kN)
 0,0
 0.001788069,1063.913212
 -0.001959799,-1271.342832
