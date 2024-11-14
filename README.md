@@ -186,3 +186,13 @@ curl -L http://127.0.0.1:8000/upload/?type=all -F file=@data.tar.gz -u user:chan
 curl -L http://127.0.0.1:8000/upload/?type=all-brace -F file=@data.tar.gz -u user:changeit
 ```
 
+## process to validate data before upload
+```bash
+# Like above but with the validate endpooint
+tar --exclude-vcs -czf data.tar.gz *
+
+# http://127.0.0.1:8000 is the localhost of the backend of resslab-hub
+curl -L http://127.0.0.1:8000/validate/\?type\=all -F file=@data.tar.gz -u user:changeit
+# you can use jq to prettyfy the json output like so
+# curl -L http://127.0.0.1:8000/validate/\?type\=all -F file=@data.tar.gz -u user:changeit | jq -r 
+```
