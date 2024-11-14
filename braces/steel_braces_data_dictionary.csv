@@ -27,24 +27,24 @@ f_yn,Nominal yield strength,,MPa,DecimalFloat,235,True
 fy_m,Measured yield strength,,MPa,DecimalFloat,284,True
 f_um,Measured ultimate strength,,MPa,DecimalFloat,430,True
 boundary_condition,End conditions of the brace,,-,String,Fixed-fixed end,False
-l_1t,Length of top gusset plate segment 1,,mm,DecimalFloat,na,True
-l_2t,Length of top gusset plate segment 2,,mm,DecimalFloat,na,True
-l_3t,Length of top gusset plate segment 3,,mm,DecimalFloat,na,True
+l_1t,Length of top gusset plate segment 1,,mm,String,na,True
+l_2t,Length of top gusset plate segment 2,,mm,String,na,True
+l_3t,Length of top gusset plate segment 3,,mm,String,na,True
 l_4t,Length of top gusset plate segment 4,,mm,DecimalFloat,na,True
-l_5t,Length of top gusset plate segment 5,,mm,DecimalFloat,na,True
-l_6t,Length of top gusset plate segment 6,,mm,DecimalFloat,na,True
-l_7t,Length of top gusset plate segment 7,,mm,DecimalFloat,na,True
+l_5t,Length of top gusset plate segment 5,,mm,String,na,True
+l_6t,Length of top gusset plate segment 6,,mm,String,na,True
+l_7t,Length of top gusset plate segment 7,,mm,String,na,True
 _8t,Length of top gusset plate segment 8,,mm,DecimalFloat,na,True
 t_t,Thickness of top gusset plate,,mm,DecimalFloat,12,True
-l_1b,Length of bottom gusset plate segment 1,,mm,DecimalFloat,na,True
-l_2b,Length of bottom gusset plate segment 2,,mm,DecimalFloat,na,True
-l_3b,Length of bottom gusset plate segment 3,,mm,DecimalFloat,na,True
-l_4b,Length of bottom gusset plate segment 4,,mm,DecimalFloat,na,True
-l_5b,Length of bottom gusset plate segment 5,,mm,DecimalFloat,na,True
-l_6b,Length of bottom gusset plate segment 6,,mm,DecimalFloat,na,True
+l_1b,Length of bottom gusset plate segment 1,,mm,String,na,True
+l_2b,Length of bottom gusset plate segment 2,,mm,String,na,True
+l_3b,Length of bottom gusset plate segment 3,,mm,String,na,True
+l_4b,Length of bottom gusset plate segment 4,,mm,String,na,True
+l_5b,Length of bottom gusset plate segment 5,,mm,String,na,True
+l_6b,Length of bottom gusset plate segment 6,,mm,String,na,True
 l_7b,Length of bottom gusset plate segment 7,,mm,DecimalFloat,na,True
 l_8b,Length of bottom gusset plate segment 8,,mm,DecimalFloat,na,True
-t_b,Thickness of bottom gusset plate,,mm,DecimalFloat,12,True
+t_b,Thickness of bottom gusset plate,,mm,String,12,True
 steel_gp,Steel grade of gusset plates,,-,String,A572 Gr.50,True
 f_yn_gp,Nominal yield strength of gusset plates,,MPa,DecimalFloat,345,True
 f_ym_gp,Measured yield strength of gusset plates,,MPa,DecimalFloat,508,True

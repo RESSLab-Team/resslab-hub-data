@@ -68,13 +68,13 @@ f_ycf,Measured yield stress of the column's flange plate,fᵧᶜᶠ,MPa,DecimalF
 f_yc_mill,Yield stress of the column as per the mill certificate,fᵧᶜₘᵢₗₗ,MPa,DecimalFloat,Weighted average of the column's flanges and web mill yield stress,True
 f_yc_avg,Average yield stress of the column,fᵧᶜₐᵥᵧ,MPa,DecimalFloat,"Weighted average of $f_{y,cf}$ and $f_{y,cw}$, based on the areas of the flanges and the web",True
 h_c,Column height measured from centerline to centerline of the beams,hᶜ,mm,DecimalFloat,-,True
-backing_bar,Presence or not of backing bar during testing,-,-,Boolean,Binary: YES/NO,False
+backing_bar,Presence or not of backing bar during testing,-,-,Boolean,Binary: YES/NO,True
 electrode,Weld electrode at the beam flange to column face welded connection,-,-,String,"Example: [AWS E71T-8, E70]",False
 d_electrode,Electrode diameter at the beam flange to column face welded connection,dₑ,mm,DecimalFloat,-,True
 cvn_0f,Electrode Charpy V Notch (CVN) value at 0 F,CVN₀,J,DecimalFloat,At the beam flange to column face welded connection,True
 cvn_minus20f,Electrode Charpy V Notch (CVN) value at -20 F,CVN₋₂₀,J,DecimalFloat,At the beam flange to column face welded connection,True
 cvn_70f,Electrode Charpy V Notch (CVN) value at 70 F,CVN₇₀,J,DecimalFloat,At the beam flange to column face welded connection,True
-access_hole_geometry,Type of access hole geometry at the beam,-,-,String,"Examples: [Pre-Northridge, AISC-360-16, AIJ]",False
+access_hole_geometry,Type of access hole geometry at the beam,-,-,String,"Examples: [Pre-Northridge, AISC-360-16, AIJ]",True
 w,Total width of slab,w,mm,DecimalFloat,-,True
 w_l,Width of the slab from the center of beam flange to the left edge,wₗ,mm,DecimalFloat,-,True
 w_r,Width of the slab from the center of beam flange to the right edge,wᵣ,mm,DecimalFloat,-,True
@@ -141,10 +141,10 @@ r_u_n,Panel zone demand at development of beam plastic flexural resistance based
 r_u_m,Panel zone demand at development of beam plastic flexural resistance based on measured yield stress,Rᵤₘ,kN,DecimalFloat,-,True
 ru_rn_el_n,Demand over resistance (Vy) based on the nominal yield stress,Rᵤ/Rₙₑₗₙ,-,DecimalFloat,-,True
 ru_rn_pl_n,Demand over resistance (Vp) based on the nominal yield stress,Rᵤ/Rₙₚₗₙ,-,DecimalFloat,-,True
-aisc_pz_violation_n,Violation of the AISC (2016) design standard for panel zone strength based on nominal material properties. Panel zone designed to exceed 4gamma_y,-,-,Boolean,"Examples: [yes, no] for violation and not, respectively, of the AISC (2016) design for panel zone strength",False
+aisc_pz_violation_n,Violation of the AISC (2016) design standard for panel zone strength based on nominal material properties. Panel zone designed to exceed 4gamma_y,-,-,Boolean,"Examples: [yes, no] for violation and not, respectively, of the AISC (2016) design for panel zone strength",True
 ru_rn_el_m,Demand over resistance (Vy) based on the measured yield stress,Rᵤ/Rₙₑₗₘ,-,DecimalFloat,-,True
 ru_rn_pl_m,Demand over resistance (Vp) based on the measured yield stress,Rᵤ/Rₙₚₗₘ,-,DecimalFloat,-,True
-aisc_pz_violation_m,Violation of the AISC (2016) design standard for panel zone strength based on measured material properties. Panel zone designed to exceed 4gamma_y,-,-,Boolean,"Examples: [yes, no] for violation and not, respectively, of the AISC (2016) design for panel zone strength",False
+aisc_pz_violation_m,Violation of the AISC (2016) design standard for panel zone strength based on measured material properties. Panel zone designed to exceed 4gamma_y,-,-,Boolean,"Examples: [yes, no] for violation and not, respectively, of the AISC (2016) design for panel zone strength",True
 g_max,Maximum attained panel zone shear distortion in the experiment,γₘₐₓ,rad,DecimalFloat,Maximum absolute panel zone shear distortion,True
 g_y,Panel zone shear distortion at yield,γᵧ,rad,DecimalFloat,-,True
 g_max_g_y,Maximum panel zone distortion normalized to the panel zone yield distortion,γₘₐₓ/γᵧ,-,DecimalFloat,Equals: $g_{max}/g_y$,True
