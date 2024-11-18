@@ -79,7 +79,7 @@ jobs:
               if .valid then
                 "\u001b[32m✓ All validations passed\u001b[0m"
               else
-                .results[] |
+                .errors[] |
                 "\u001b[31m✗ Validations failed for \(.file)\u001b[0m\n" + 
                 if .errors then
                   "\u001b[31mErrors:\u001b[0m\n" + 
