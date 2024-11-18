@@ -3,7 +3,7 @@ name: upload_all
 on: workflow_dispatch
 
 env:
-  # SERVER_URL: "https://resslab-hub-test.epfl.ch"
+  SERVER_URL: "https://resslab-hub.epfl.ch"
   API_PASSWORD: ${{ secrets.API_PASSWORD_PROD }}
 
 jobs:
