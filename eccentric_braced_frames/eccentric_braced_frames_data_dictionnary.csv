@@ -71,7 +71,7 @@ l_confi,Connection configuration identifier,,-,String,TF2,False
 l_con_typ,Type of connection (e.g., continuous-welded),,-,String,continuous-welded,False
 l_st,Local status/specification,,-,String,NA,True
 h_st,Height status/specification,,-,String,NA,True
-e,Unspecified parameter "e" (needs clarification),,-,Integer,711,False
+e,Unspecified parameter 'e' (needs clarification),,-,Integer,711,False
 l_con_confi,Connection configuration detail,,-,String,LC9,False
 l_con_wld,Weld type for connection,,-,String,CJP single bevel groove,False
 l_endp_wld,Endpoint weld detail,,-,String,NA,True
