@@ -5,7 +5,7 @@ year,Year of the study or experiment,,-,SmallInteger,1989,False
 spec_id,Specimen identifier,,-,String,A1,False
 profile,"Profile designation (e.g., steel section)",,-,String,W12x16,False
 region,Geographical region or country code,,-,String,USA,False
-sec_type,Section type (e.g., hot-rolled),,-,String,hot-rolled,False
+sec_type,"Section type (e.g., hot-rolled)",,-,String,hot-rolled,False
 sg_flg_link,Steel grade flag from flag source,,-,String,A36,False
 sg_web_link,Steel grade from web source,,-,String,A36,False
 f_y_n_flg,Flag value for nominal yield strength,,-,DecimalFloat,250,False
