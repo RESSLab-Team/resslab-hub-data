@@ -26,8 +26,8 @@ f_u_exp_l_flg,Flag value for lower expected ultimate strength,,-,DecimalFloat,48
 f_u_exp_l_web,Web-sourced lower expected ultimate strength,,-,DecimalFloat,480.0,False
 f_u_exp_u_flg,Flag value for upper expected ultimate strength,,-,DecimalFloat,480.0,False
 f_u_exp_u_web,Web-sourced upper expected ultimate strength,,-,DecimalFloat,480.0,False
-e_m_flg,"Flag for measured elastic modulus (if available, 'NR' if not)",,-,Integer,197340,True
-e_m_web,"Web-sourced measured elastic modulus (if available, 'NR' if not)",,-,Integer,197685,True
+e_m_flg,"Flag for measured elastic modulus (if available, 'NR' if not)",,-,DecimalFloat,197340,True
+e_m_web,"Web-sourced measured elastic modulus (if available, 'NR' if not)",,-,DecimalFloat,197685,True
 r_y_l_flg,Flag value for lower yield ratio,,-,DecimalFloat,1.5,False
 r_y_l_web,Web-sourced lower yield ratio,,-,DecimalFloat,1.5,False
 r_y_u_flg,Flag value for upper yield ratio,,-,DecimalFloat,1.5,False
@@ -50,7 +50,7 @@ h_m,Measured height of the section,,mm,DecimalFloat,302.0,False
 tw_m,Measured web thickness,,mm,DecimalFloat,5.5,False
 bf_m,Measured flange width,,mm,DecimalFloat,101.3,False
 tf_m,Measured flange thickness,,mm,DecimalFloat,6.5,False
-tf_add_m,Measured additional flange thickness,,mm,Integer,12,True
+tf_add_m,Measured additional flange thickness,,mm,DecimalFloat,12,True
 hw_n,Nominal head width,,mm,DecimalFloat,275.1,False
 hw_m,Measured head width,,mm,DecimalFloat,273.052,False
 a_fil_n,Nominal fillet area,,mm²,DecimalFloat,13.73451754,False
@@ -69,9 +69,9 @@ zp_no_fil_m,Measured plastic section modulus without fillet,,mm³,DecimalFloat,3
 link_loc,Location of the link in the structure,,-,String,edge,False
 l_confi,Connection configuration identifier,,-,String,TF2,False
 l_con_typ,"Type of connection (e.g., continuous-welded)",,-,String,continuous-welded,False
-l_st,Local status/specification,,-,Integer,6000,True
-h_st,Height status/specification,,-,Integer,3500,True
-e,Unspecified parameter 'e' (needs clarification),,-,Integer,711,False
+l_st,Local status/specification,,-,DecimalFloat,6000,True
+h_st,Height status/specification,,-,DecimalFloat,3500,True
+e,Unspecified parameter 'e' (needs clarification),,-,DecimalFloat,711,False
 l_con_confi,Connection configuration detail,,-,String,LC9,False
 l_con_wld,Weld type for connection,,-,String,CJP single bevel groove,False
 l_endp_wld,Endpoint weld detail,,-,String,CJP single bevel groove,True
@@ -93,7 +93,7 @@ d_b_s,Base dimension specification,,-,DecimalFloat,9.5,True
 d_b_pnl_1,Dimension of base panel 1,,-,DecimalFloat,263.7,False
 d_b_pnl_2,Dimension of base panel 2,,-,DecimalFloat,457.2,True
 b_s_no,Number of base supports,,-,SmallInteger,2,True
-l_p_typ,Load pattern type,,-,String,Symmetriccyclic,False
+l_p_typ,Load pattern type,,-,String,Symmetric cyclic,False
 n_d_n_pl_ten,Number of non-plastic tensile elements,,-,DecimalFloat,0.49,True
 n_d_n_pl_comp,Number of non-plastic compressive elements,,-,DecimalFloat,0.49,True
 fail_mode,Failure mode,,-,String,FM5,False
