@@ -8,27 +8,27 @@ region,Geographical region or country code,,-,String,USA,False
 sec_type,"Section type (e.g., hot-rolled)",,-,String,hot-rolled,False
 sg_flg_link,Steel grade flag from flag source,,-,String,A36,False
 sg_web_link,Steel grade from web source,,-,String,A36,False
-f_y_n_flg,Flag value for nominal yield strength,,-,DecimalFloat,250,False
-f_y_n_web,Web-sourced nominal yield strength,,-,DecimalFloat,250,False
-f_u_n_flg,Flag value for nominal ultimate strength,,-,DecimalFloat,400,False
-f_u_n_web,Web-sourced nominal ultimate strength,,-,DecimalFloat,400,False
+f_y_n_flg,Flag value for nominal yield strength,,MPa,DecimalFloat,250,False
+f_y_n_web,Web-sourced nominal yield strength,,MPa,DecimalFloat,250,False
+f_u_n_flg,Flag value for nominal ultimate strength,,MPa,DecimalFloat,400,False
+f_u_n_web,Web-sourced nominal ultimate strength,,MPa,DecimalFloat,400,False
 e_n_flg,Flag value for elastic modulus (nominal),,MPa,Integer,205000,False
 e_n_web,Web-sourced elastic modulus (nominal),,MPa,Integer,205000,False
-f_y_m_flg,Flag value for measured yield strength,,-,DecimalFloat,317,False
-f_y_m_web,Web-sourced measured yield strength,,-,DecimalFloat,365,False
-f_y_exp_l_flg,Flag value for lower expected yield strength,,-,DecimalFloat,375,False
-f_y_exp_l_web,Web-sourced lower expected yield strength,,-,DecimalFloat,375.00,False
-f_y_exp_u_flg,Flag value for upper expected yield strength,,-,DecimalFloat,375.00,False
-f_y_exp_u_web,Web-sourced upper expected yield strength,,-,DecimalFloat,375,False
-f_u_m_flg,Flag value for measured ultimate strength,,-,DecimalFloat,420.60,False
-f_u_m_web,Web-sourced measured ultimate strength,,-,DecimalFloat,448.20,False
-f_u_exp_l_flg,Flag value for lower expected ultimate strength,,-,DecimalFloat,480.0,False
-f_u_exp_l_web,Web-sourced lower expected ultimate strength,,-,DecimalFloat,480.0,False
-f_u_exp_u_flg,Flag value for upper expected ultimate strength,,-,DecimalFloat,480.0,False
-f_u_exp_u_web,Web-sourced upper expected ultimate strength,,-,DecimalFloat,480.0,False
-e_m_flg,"Flag for measured elastic modulus (if available, 'NR' if not)",,-,DecimalFloat,197340,True
-e_m_web,"Web-sourced measured elastic modulus (if available, 'NR' if not)",,-,DecimalFloat,197685,True
-r_y_l_flg,Flag value for lower yield ratio,,-,DecimalFloat,1.5,False
+f_y_m_flg,Flag value for measured yield strength,,MPa,DecimalFloat,317,False
+f_y_m_web,Web-sourced measured yield strength,,MPa,DecimalFloat,365,False
+f_y_exp_l_flg,Flag value for lower expected yield strength,,MPa,DecimalFloat,375,False
+f_y_exp_l_web,Web-sourced lower expected yield strength,,MPa,DecimalFloat,375.00,False
+f_y_exp_u_flg,Flag value for upper expected yield strength,,MPa,DecimalFloat,375.00,False
+f_y_exp_u_web,Web-sourced upper expected yield strength,,MPa,DecimalFloat,375,False
+f_u_m_flg,Flag value for measured ultimate strength,,MPa,DecimalFloat,420.60,False
+f_u_m_web,Web-sourced measured ultimate strength,,MPa,DecimalFloat,448.20,False
+f_u_exp_l_flg,Flag value for lower expected ultimate strength,,MPa,DecimalFloat,480.0,False
+f_u_exp_l_web,Web-sourced lower expected ultimate strength,,MPa,DecimalFloat,480.0,False
+f_u_exp_u_flg,Flag value for upper expected ultimate strength,,MPa,DecimalFloat,480.0,False
+f_u_exp_u_web,Web-sourced upper expected ultimate strength,,MPa,DecimalFloat,480.0,False
+e_m_flg,"Flag for measured elastic modulus (if available, 'NR' if not)",,MPa,DecimalFloat,197340,True
+e_m_web,"Web-sourced measured elastic modulus (if available, 'NR' if not)",,MPa,DecimalFloat,197685,True
+r_y_l_flg,Flag value for lower yield ratio,,mm,DecimalFloat,1.5,False
 r_y_l_web,Web-sourced lower yield ratio,,-,DecimalFloat,1.5,False
 r_y_u_flg,Flag value for upper yield ratio,,-,DecimalFloat,1.5,False
 r_y_u_web,Web-sourced upper yield ratio,,-,DecimalFloat,1.5,False
@@ -40,12 +40,12 @@ f_u_f_y_n_flg,Flag value for ultimate-to-nominal yield strength ratio,,-,Decimal
 f_u_f_y_n_web,Web-sourced ultimate-to-nominal yield strength ratio,,-,DecimalFloat,1.6,False
 f_u_f_y_m_flg,Flag value for ultimate-to-measured yield strength ratio,,-,DecimalFloat,1.325977301,False
 f_u_f_y_m_web,Web-sourced ultimate-to-measured yield strength ratio,,-,DecimalFloat,1.226600985,False
-h_n,Nominal height of the section,,-,DecimalFloat,304.5,False
+h_n,Nominal height of the section,,mm,DecimalFloat,304.5,False
 tw_n,Nominal web thickness,,mm,DecimalFloat,5.6,False
 bf_n,Nominal flange width,,mm,DecimalFloat,101.4,False
 tf_n,Nominal flange thickness,,mm,DecimalFloat,6.7,False
 tf_add_n,Nominal additional flange thickness,,mm,DecimalFloat,12,True
-r_n,Nominal radius,,-,Integer,8,False
+r_n,Nominal radius,,mm,DecimalFloat,8,False
 h_m,Measured height of the section,,mm,DecimalFloat,302.0,False
 tw_m,Measured web thickness,,mm,DecimalFloat,5.5,False
 bf_m,Measured flange width,,mm,DecimalFloat,101.3,False
@@ -71,7 +71,7 @@ l_confi,Connection configuration identifier,,-,String,TF2,False
 l_con_typ,"Type of connection (e.g., continuous-welded)",,-,String,continuous-welded,False
 l_st,Local status/specification,,-,DecimalFloat,6000,True
 h_st,Height status/specification,,-,DecimalFloat,3500,True
-e,Unspecified parameter 'e' (needs clarification),,-,DecimalFloat,711,False
+e,Unspecified parameter 'e' (needs clarification),,mm,DecimalFloat,711,False
 l_con_confi,Connection configuration detail,,-,String,LC9,False
 l_con_wld,Weld type for connection,,-,String,CJP single bevel groove,False
 l_endp_wld,Endpoint weld detail,,-,String,CJP single bevel groove,True
