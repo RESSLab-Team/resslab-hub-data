@@ -79,7 +79,7 @@ l_bu_wld,Butt weld detail,,-,String,CJP single V-groove + fillet,True
 l_s_side,Link side designation,,-,String,single,False
 l_s_reg,Regularity of link side,,-,String,non-regular,False
 l_s_d_pnl_1_f,Load distribution panel 1 front value,,-,DecimalFloat,168.402,False
-l_s_d_pnl_2_f,Load distribution panel 2 front value,,-,DecimalFloat,136.652,False
+l_s_d_pnl_2_f,Load distribution panel 2 front value,,-,DecimalFloat,136.652,True
 l_s_d_pnl_1_b,Load distribution panel 1 back value,,-,DecimalFloat,355.6,True
 l_s_d_pnl_2_b,Load distribution panel 2 back value,,-,DecimalFloat,279.4,True
 t_s,Test sequence duration or identifier,,-,DecimalFloat,9.5,False
