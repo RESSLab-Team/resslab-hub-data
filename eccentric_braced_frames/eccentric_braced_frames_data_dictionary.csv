@@ -14,91 +14,91 @@ f_u_n_flg,Flag value for nominal ultimate strength,,MPa,DecimalFloat,400,False
 f_u_n_web,Web-sourced nominal ultimate strength,,MPa,DecimalFloat,400,False
 e_n_flg,Flag value for elastic modulus (nominal),,MPa,Integer,205000,False
 e_n_web,Web-sourced elastic modulus (nominal),,MPa,Integer,205000,False
-f_y_m_flg,Flag value for measured yield strength,,MPa,DecimalFloat,317,False
-f_y_m_web,Web-sourced measured yield strength,,MPa,DecimalFloat,365,False
-f_y_exp_l_flg,Flag value for lower expected yield strength,,MPa,DecimalFloat,375,False
-f_y_exp_l_web,Web-sourced lower expected yield strength,,MPa,DecimalFloat,375.00,False
-f_y_exp_u_flg,Flag value for upper expected yield strength,,MPa,DecimalFloat,375.00,False
-f_y_exp_u_web,Web-sourced upper expected yield strength,,MPa,DecimalFloat,375,False
-f_u_m_flg,Flag value for measured ultimate strength,,MPa,DecimalFloat,420.60,False
-f_u_m_web,Web-sourced measured ultimate strength,,MPa,DecimalFloat,448.20,False
-f_u_exp_l_flg,Flag value for lower expected ultimate strength,,MPa,DecimalFloat,480.0,False
-f_u_exp_l_web,Web-sourced lower expected ultimate strength,,MPa,DecimalFloat,480.0,False
-f_u_exp_u_flg,Flag value for upper expected ultimate strength,,MPa,DecimalFloat,480.0,False
-f_u_exp_u_web,Web-sourced upper expected ultimate strength,,MPa,DecimalFloat,480.0,False
+f_y_m_flg,Flag value for measured yield strength,,MPa,DecimalFloat,317,True
+f_y_m_web,Web-sourced measured yield strength,,MPa,DecimalFloat,365,True
+f_y_exp_l_flg,Flag value for lower expected yield strength,,MPa,DecimalFloat,375,True
+f_y_exp_l_web,Web-sourced lower expected yield strength,,MPa,DecimalFloat,375.00,True
+f_y_exp_u_flg,Flag value for upper expected yield strength,,MPa,DecimalFloat,375.00,True
+f_y_exp_u_web,Web-sourced upper expected yield strength,,MPa,DecimalFloat,375,True
+f_u_m_flg,Flag value for measured ultimate strength,,MPa,DecimalFloat,420.60,True
+f_u_m_web,Web-sourced measured ultimate strength,,MPa,DecimalFloat,448.20,True
+f_u_exp_l_flg,Flag value for lower expected ultimate strength,,MPa,DecimalFloat,480.0,True
+f_u_exp_l_web,Web-sourced lower expected ultimate strength,,MPa,DecimalFloat,480.0,True
+f_u_exp_u_flg,Flag value for upper expected ultimate strength,,MPa,DecimalFloat,480.0,True
+f_u_exp_u_web,Web-sourced upper expected ultimate strength,,MPa,DecimalFloat,480.0,True
 e_m_flg,"Flag for measured elastic modulus (if available, 'NR' if not)",,MPa,DecimalFloat,197340,True
 e_m_web,"Web-sourced measured elastic modulus (if available, 'NR' if not)",,MPa,DecimalFloat,197685,True
-r_y_l_flg,Flag value for lower yield ratio,,mm,DecimalFloat,1.5,False
-r_y_l_web,Web-sourced lower yield ratio,,-,DecimalFloat,1.5,False
-r_y_u_flg,Flag value for upper yield ratio,,-,DecimalFloat,1.5,False
-r_y_u_web,Web-sourced upper yield ratio,,-,DecimalFloat,1.5,False
-r_t_l_flg,Flag value for lower target ratio,,-,DecimalFloat,1.2,False
-r_t_l_web,Web-sourced lower target ratio,,-,DecimalFloat,1.2,False
-r_t_u_flg,Flag value for upper target ratio,,-,DecimalFloat,1.2,False
-r_t_u_web,Web-sourced upper target ratio,,-,DecimalFloat,1.2,False
-f_u_f_y_n_flg,Flag value for ultimate-to-nominal yield strength ratio,,-,DecimalFloat,1.6,False
-f_u_f_y_n_web,Web-sourced ultimate-to-nominal yield strength ratio,,-,DecimalFloat,1.6,False
-f_u_f_y_m_flg,Flag value for ultimate-to-measured yield strength ratio,,-,DecimalFloat,1.325977301,False
-f_u_f_y_m_web,Web-sourced ultimate-to-measured yield strength ratio,,-,DecimalFloat,1.226600985,False
+r_y_l_flg,Flag value for lower yield ratio,,mm,DecimalFloat,1.5,True
+r_y_l_web,Web-sourced lower yield ratio,,-,DecimalFloat,1.5,True
+r_y_u_flg,Flag value for upper yield ratio,,-,DecimalFloat,1.5,True
+r_y_u_web,Web-sourced upper yield ratio,,-,DecimalFloat,1.5,True
+r_t_l_flg,Flag value for lower target ratio,,-,DecimalFloat,1.2,True
+r_t_l_web,Web-sourced lower target ratio,,-,DecimalFloat,1.2,True
+r_t_u_flg,Flag value for upper target ratio,,-,DecimalFloat,1.2,True
+r_t_u_web,Web-sourced upper target ratio,,-,DecimalFloat,1.2,True
+f_u_f_y_n_flg,Flag value for ultimate-to-nominal yield strength ratio,,-,DecimalFloat,1.6,True
+f_u_f_y_n_web,Web-sourced ultimate-to-nominal yield strength ratio,,-,DecimalFloat,1.6,True
+f_u_f_y_m_flg,Flag value for ultimate-to-measured yield strength ratio,,-,DecimalFloat,1.325977301,True
+f_u_f_y_m_web,Web-sourced ultimate-to-measured yield strength ratio,,-,DecimalFloat,1.226600985,True
 h_n,Nominal height of the section,,mm,DecimalFloat,304.5,False
 tw_n,Nominal web thickness,,mm,DecimalFloat,5.6,False
 bf_n,Nominal flange width,,mm,DecimalFloat,101.4,False
 tf_n,Nominal flange thickness,,mm,DecimalFloat,6.7,False
 tf_add_n,Nominal additional flange thickness,,mm,DecimalFloat,12,True
-r_n,Nominal radius,,mm,DecimalFloat,8,False
-h_m,Measured height of the section,,mm,DecimalFloat,302.0,False
-tw_m,Measured web thickness,,mm,DecimalFloat,5.5,False
-bf_m,Measured flange width,,mm,DecimalFloat,101.3,False
-tf_m,Measured flange thickness,,mm,DecimalFloat,6.5,False
+r_n,Nominal radius,,mm,DecimalFloat,8,True
+h_m,Measured height of the section,,mm,DecimalFloat,302.0,True
+tw_m,Measured web thickness,,mm,DecimalFloat,5.5,True
+bf_m,Measured flange width,,mm,DecimalFloat,101.3,True
+tf_m,Measured flange thickness,,mm,DecimalFloat,6.5,True
 tf_add_m,Measured additional flange thickness,,mm,DecimalFloat,12,True
 hw_n,Nominal head width,,mm,DecimalFloat,275.1,False
-hw_m,Measured head width,,mm,DecimalFloat,273.052,False
-a_fil_n,Nominal fillet area,,mm²,DecimalFloat,13.73451754,False
+hw_m,Measured head width,,mm,DecimalFloat,273.052,True
+a_fil_n,Nominal fillet area,,mm²,DecimalFloat,13.73451754,True
 af_n,Nominal flange area,,mm²,DecimalFloat,679.38,False
 aw_n,Nominal web area,,mm²,DecimalFloat,1630.16,False
 a_n,Nominal total cross-sectional area,,mm²,DecimalFloat,3043.85807,False
-af_m,Measured flange area,,mm²,DecimalFloat,656.418042,False
-aw_m,Measured web area,,mm²,DecimalFloat,1593.196814,False
-a_m,Measured total cross-sectional area,,mm²,DecimalFloat,2960.970968,False
-zp_fil_n,Nominal plastic section modulus of fillet,,mm³,DecimalFloat,7898.064885,False
-zp_n,Nominal plastic section modulus,,mm³,DecimalFloat,328852.3229,False
-zp_no_fil_n,Nominal plastic section modulus without fillet,,mm³,DecimalFloat,314433.618,False
-zp_fil_m,Measured plastic section modulus of fillet,,mm³,DecimalFloat,7841.808301,False
-zp_m,Measured plastic section modulus,,mm³,DecimalFloat,316961.5572,False
-zp_no_fil_m,Measured plastic section modulus without fillet,,mm³,DecimalFloat,309119.7489,False
-link_loc,Location of the link in the structure,,-,String,edge,False
-l_confi,Connection configuration identifier,,-,String,TF2,False
-l_con_typ,"Type of connection (e.g., continuous-welded)",,-,String,continuous-welded,False
+af_m,Measured flange area,,mm²,DecimalFloat,656.418042,True
+aw_m,Measured web area,,mm²,DecimalFloat,1593.196814,True
+a_m,Measured total cross-sectional area,,mm²,DecimalFloat,2960.970968,True
+zp_fil_n,Nominal plastic section modulus of fillet,,mm³,DecimalFloat,7898.064885,True
+zp_n,Nominal plastic section modulus,,mm³,DecimalFloat,328852.3229,True
+zp_no_fil_n,Nominal plastic section modulus without fillet,,mm³,DecimalFloat,314433.618,True
+zp_fil_m,Measured plastic section modulus of fillet,,mm³,DecimalFloat,7841.808301,True
+zp_m,Measured plastic section modulus,,mm³,DecimalFloat,316961.5572,True
+zp_no_fil_m,Measured plastic section modulus without fillet,,mm³,DecimalFloat,309119.7489,True
+link_loc,Location of the link in the structure,,-,String,edge,True
+l_confi,Connection configuration identifier,,-,String,TF2,True
+l_con_typ,"Type of connection (e.g., continuous-welded)",,-,String,continuous-welded,True
 l_st,Local status/specification,,-,DecimalFloat,6000,True
 h_st,Height status/specification,,-,DecimalFloat,3500,True
-e,Unspecified parameter 'e' (needs clarification),,mm,DecimalFloat,711,False
-l_con_confi,Connection configuration detail,,-,String,LC9,False
-l_con_wld,Weld type for connection,,-,String,CJP single bevel groove,False
+e,Unspecified parameter 'e' (needs clarification),,mm,SmallInteger,711,False
+l_con_confi,Connection configuration detail,,-,String,LC9,True
+l_con_wld,Weld type for connection,,-,String,CJP single bevel groove,True
 l_endp_wld,Endpoint weld detail,,-,String,CJP single bevel groove,True
 l_bu_wld,Butt weld detail,,-,String,CJP single V-groove + fillet,True
-l_s_side,Link side designation,,-,String,single,False
-l_s_reg,Regularity of link side,,-,String,non-regular,False
-l_s_d_pnl_1_f,Load distribution panel 1 front value,,-,DecimalFloat,168.402,False
+l_s_side,Link side designation,,-,String,single,True
+l_s_reg,Regularity of link side,,-,String,non-regular,True
+l_s_d_pnl_1_f,Load distribution panel 1 front value,,-,DecimalFloat,168.402,True
 l_s_d_pnl_2_f,Load distribution panel 2 front value,,-,DecimalFloat,136.652,True
 l_s_d_pnl_1_b,Load distribution panel 1 back value,,-,DecimalFloat,355.6,True
 l_s_d_pnl_2_b,Load distribution panel 2 back value,,-,DecimalFloat,279.4,True
-t_s,Test sequence duration or identifier,,-,DecimalFloat,9.5,False
-l_s_weld,Weld type on link side,,-,String,fillet,False
-l_s_no_f,Number of fillet welds on link side,,-,Integer,4,False
+t_s,Test sequence duration or identifier,,-,DecimalFloat,9.5,True
+l_s_weld,Weld type on link side,,-,String,fillet,True
+l_s_no_f,Number of fillet welds on link side,,-,Integer,4,True
 l_s_no_b,Number of butt welds on link side,,-,Integer,NA,True
-a_b_b,Base plate area or dimension,,-,DecimalFloat,48.2,False
-t_e_s,Test end specification value,,-,DecimalFloat,9.5,False
+a_b_b,Base plate area or dimension,,-,DecimalFloat,48.2,True
+t_e_s,Test end specification value,,-,DecimalFloat,9.5,True
 t_b_s,Test base specification value,,-,DecimalFloat,9.5,True
 d_b_s,Base dimension specification,,-,DecimalFloat,9.5,True
-d_b_pnl_1,Dimension of base panel 1,,-,DecimalFloat,263.7,False
+d_b_pnl_1,Dimension of base panel 1,,-,DecimalFloat,263.7,True
 d_b_pnl_2,Dimension of base panel 2,,-,DecimalFloat,457.2,True
 b_s_no,Number of base supports,,-,SmallInteger,2,True
 l_p_typ,Load pattern type,,-,String,Symmetric cyclic,False
 n_d_n_pl_ten,Number of non-plastic tensile elements,,-,DecimalFloat,0.49,True
 n_d_n_pl_comp,Number of non-plastic compressive elements,,-,DecimalFloat,0.49,True
-fail_mode,Failure mode,,-,String,FM5,False
-ov_aisc,Overstrength factor (AISC),,-,DecimalFloat,1.19,False
-ov_ec8,Overstrength factor (EC8),,-,DecimalFloat,1.93,False
+fail_mode,Failure mode,,-,String,FM5,True
+ov_aisc,Overstrength factor (AISC),,-,DecimalFloat,1.19,True
+ov_ec8,Overstrength factor (EC8),,-,DecimalFloat,1.93,True
 class_aisc,Classification according to AISC,,-,String,intermediate,False
 class_ec8,Classification according to EC8,,-,String,long,False
 reference,Reference citation for the study,,-,String,"Engelhardt, M. and Popov, E. P. (1989). Behavior of long links in eccentrically braced frames. Report No. UCB/EERC- 89/01, Earthquake Engineering Research Center, Berkeley, California",False
