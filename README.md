@@ -49,7 +49,7 @@ This guide explains how to add, modify, or delete data in the repository while e
 git clone <repository-url>
 cd <repository-name>
 #Create a new branch
-git checkout -b data/your-changes-description
+git switch -c data/your-changes-description
 ```
 
 
@@ -62,6 +62,7 @@ You can modify data in any of these directories:
 - `hss_columns/`
 - `material/`
 - `residual_stresses/`
+- `eccentric_braced_frames`
 
 ### Important Note About Commits
 
