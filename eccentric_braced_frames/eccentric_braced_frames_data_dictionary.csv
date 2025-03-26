@@ -18,24 +18,16 @@ f_y_m_flg,Flag value for measured yield strength,,MPa,DecimalFloat,317,True
 f_y_m_web,Web-sourced measured yield strength,,MPa,DecimalFloat,365,True
 f_y_exp_l_flg,Flag value for lower expected yield strength,,MPa,DecimalFloat,375,True
 f_y_exp_l_web,Web-sourced lower expected yield strength,,MPa,DecimalFloat,375.00,True
-f_y_exp_u_flg,Flag value for upper expected yield strength,,MPa,DecimalFloat,375.00,True
-f_y_exp_u_web,Web-sourced upper expected yield strength,,MPa,DecimalFloat,375,True
 f_u_m_flg,Flag value for measured ultimate strength,,MPa,DecimalFloat,420.60,True
 f_u_m_web,Web-sourced measured ultimate strength,,MPa,DecimalFloat,448.20,True
 f_u_exp_l_flg,Flag value for lower expected ultimate strength,,MPa,DecimalFloat,480.0,True
 f_u_exp_l_web,Web-sourced lower expected ultimate strength,,MPa,DecimalFloat,480.0,True
-f_u_exp_u_flg,Flag value for upper expected ultimate strength,,MPa,DecimalFloat,480.0,True
-f_u_exp_u_web,Web-sourced upper expected ultimate strength,,MPa,DecimalFloat,480.0,True
 e_m_flg,"Flag for measured elastic modulus (if available, 'NR' if not)",,MPa,DecimalFloat,197340,True
 e_m_web,"Web-sourced measured elastic modulus (if available, 'NR' if not)",,MPa,DecimalFloat,197685,True
-r_y_l_flg,Flag value for lower yield ratio,,mm,DecimalFloat,1.5,True
-r_y_l_web,Web-sourced lower yield ratio,,-,DecimalFloat,1.5,True
-r_y_u_flg,Flag value for upper yield ratio,,-,DecimalFloat,1.5,True
-r_y_u_web,Web-sourced upper yield ratio,,-,DecimalFloat,1.5,True
-r_t_l_flg,Flag value for lower target ratio,,-,DecimalFloat,1.2,True
-r_t_l_web,Web-sourced lower target ratio,,-,DecimalFloat,1.2,True
-r_t_u_flg,Flag value for upper target ratio,,-,DecimalFloat,1.2,True
-r_t_u_web,Web-sourced upper target ratio,,-,DecimalFloat,1.2,True
+r_y_flg,Flag value for lower yield ratio,,mm,DecimalFloat,1.5,True
+r_y_web,Web-sourced lower yield ratio,,-,DecimalFloat,1.5,True
+r_t_flg,Flag value for lower target ratio,,-,DecimalFloat,1.2,True
+r_t_web,Web-sourced lower target ratio,,-,DecimalFloat,1.2,True
 f_u_f_y_n_flg,Flag value for ultimate-to-nominal yield strength ratio,,-,DecimalFloat,1.6,True
 f_u_f_y_n_web,Web-sourced ultimate-to-nominal yield strength ratio,,-,DecimalFloat,1.6,True
 f_u_f_y_m_flg,Flag value for ultimate-to-measured yield strength ratio,,-,DecimalFloat,1.325977301,True
@@ -93,7 +85,7 @@ d_b_s,Base dimension specification,,-,DecimalFloat,9.5,True
 d_b_pnl_1,Dimension of base panel 1,,-,DecimalFloat,263.7,True
 d_b_pnl_2,Dimension of base panel 2,,-,DecimalFloat,457.2,True
 b_s_no,Number of base supports,,-,SmallInteger,2,True
-l_p_typ,Load pattern type,,-,String,Symmetric cyclic,False
+l_p_typ,Load pattern type,,-,String,Symmetric-cyclic,False
 n_d_n_pl_ten,Number of non-plastic tensile elements,,-,DecimalFloat,0.49,True
 n_d_n_pl_comp,Number of non-plastic compressive elements,,-,DecimalFloat,0.49,True
 fail_mode,Failure mode,,-,String,FM5,True
