@@ -18,7 +18,7 @@ z_x,Strong-axis plastic section modulus,,mm³,DecimalFloat,20550,True
 z_y,Weak-axis plastic section modulus,,mm³,DecimalFloat,7950,True
 j,Torsional constant,,mm⁴,DecimalFloat,11412,True
 configuration,Bracing configuration type (SBF/DBF),,-,String,DBF,False
-brace_angle,Angle between brace and beam,,degrees,DecimalFloat,45,False
+brace_angle,Angle between brace and beam,,degrees,DecimalFloat,45,True
 l_b,Total length of brace,,mm,DecimalFloat,988,True
 l_b_clear,Clear length of brace between connections,,mm,DecimalFloat,494,True
 steel,Steel grade designation,,-,String,Annealed SS 41,False
