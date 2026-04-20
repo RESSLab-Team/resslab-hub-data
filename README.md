@@ -63,6 +63,7 @@ You can modify data in any of these directories:
 - `material/`
 - `residual_stresses/`
 - `eccentric_braced_frames`
+- `tensile_coupons/`
 
 ### Important Note About Commits
 
