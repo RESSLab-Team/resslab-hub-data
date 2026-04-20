@@ -1,0 +1,71 @@
+column_name,description,symbol,unit,type,example_value,nullable
+experimental_program,Name of the research program/investigators,,-,String,"Wen, Skiadopoulos, Ashida & Lignos",False
+standard,Testing standard referenced,,-,String,ASTM E8M-25,False
+specimen_type,Selected specimen cross-section type,,-,String,Rectangular,False
+specimen_id,Unique specimen identifier (primary key),`id`,-,String,batch1-bfl-A3,False
+profile_type,Type of steel section,,-,String,wide flange,False
+profile,Profile designation,,-,String,IPE400,False
+specimen_source,Source of the coupon within the parent profile,,-,String,Flange,True
+steel_grade,Steel grade designation,,-,String,S355J2+AR,False
+avg_init_reduced_width__mm_,Averaged initial measured width of reduced section,`b_0`,mm,DecimalFloat,40.09,False
+avg_init_reduced_thickness__mm_,Averaged initial measured thickness of reduced section,`t_0`,mm,DecimalFloat,13.293,False
+avg_init_marked_gauge_length__mm_,Averaged initial distance between gauge marks,`L_0`,mm,DecimalFloat,200.68,False
+eff_fractured_width__mm_,"Effective final measured width at fracture (see report A-30007_REP_01, section 7.12)",`b_f`,mm,DecimalFloat,27.76,False
+eff_fractured_thickness__mm_,"Effective final measured thickness at fracture (see report A-30007_REP_01, section 7.12)",`t_f`,mm,DecimalFloat,7.483,False
+avg_fractured_marked_gauge_length__mm_,Averaged final distance between gauge marks at fracture,`L_f`,mm,DecimalFloat,250.18,False
+fy_n__mpa_,Nominal yield stress,"`f_{y,n}`",MPa,DecimalFloat,355,False
+fu_n__mpa_,Nominal tensile strength,"`f_{u,n}`",MPa,DecimalFloat,490,False
+t_a__deg_c_,Ambient temperature at which the test was conducted,`T_a`,°C,DecimalFloat,20.6,False
+date,Test date (format: DD.MM.YYYY),,-,String,25.02.2026,False
+year,Year of test,,-,SmallInteger,2026,False
+investigator,Person who conducted the test,,-,String,Yosuke Ashida,False
+location,Test location,,-,String,EPFL_GIS,False
+machine,Test machine identifier,,-,String,LFV-1500,False
+pid_force_p,PID proportional gain for force control,`K_p`,-,DecimalFloat,0.007,True
+pid_force_i,PID integral gain for force control,`K_i`,-,DecimalFloat,1,True
+pid_force_d,PID derivative gain for force control,`K_d`,-,DecimalFloat,0,True
+pid_disp_p,PID proportional gain for crosshead displacement control,`K_p`,-,DecimalFloat,4,True
+pid_disp_i,PID integral gain for crosshead displacement control,`K_i`,-,DecimalFloat,0.2,True
+pid_disp_d,PID derivative gain for crosshead displacement control,`K_d`,-,DecimalFloat,0,True
+pid_ext_p,PID proportional gain for extensometer control,`K_p`,-,DecimalFloat,0.8,True
+pid_ext_i,PID integral gain for extensometer control,`K_i`,-,DecimalFloat,0.8,True
+pid_ext_d,PID derivative gain for extensometer control,`K_d`,-,DecimalFloat,0,True
+yield_stress_02__mpa_,"Engineering stress at yield, 0.2% offset rule","`f_{y,m}`",MPa,DecimalFloat,395,True
+yield_strain_02,"Engineering strain at yield, 0.2% offset rule",`\varepsilon_y`,-,DecimalFloat,0.00394,True
+bin_discont_yield,"Presence of discontinuous yielding (0 = no, 1 = yes)",,-,Boolean,1,False
+yield_stress_uyp__mpa_,Engineering stress at upper yield point,"`f_{y,uyp}`",MPa,DecimalFloat,400,True
+yield_stress_lyp__mpa_,Engineering stress at lower yield point,"`f_{y,lyp}`",MPa,DecimalFloat,389,True
+yield_point_elongation,Yield point elongation,`\varepsilon_{yp}`,-,DecimalFloat,0.01045,True
+tensile_strength__mpa_,Engineering stress at maximum strength (measured tensile strength),"`f_{u,m}`",MPa,DecimalFloat,523,True
+uniform_elongation,Engineering strain at maximum strength,`\varepsilon_u`,-,DecimalFloat,0.13913,True
+elongation_at_fracture,Elongation at fracture,`\varepsilon_f`,%,DecimalFloat,21.5,True
+elongation_after_fracture,Elongation after fracture,`\varepsilon_{af}`,%,DecimalFloat,24.7,True
+reduction_of_area,Reduction of area,`Z`,%,DecimalFloat,61,True
+elastic_modulus__mpa_,Young's modulus,`E`,MPa,DecimalFloat,202901,True
+c,Carbon content,,wt%,DecimalFloat,0.09,True
+si,Silicon content,,wt%,DecimalFloat,0.19,True
+mn,Manganese content,,wt%,DecimalFloat,1.46,True
+p,Phosphorus content,,wt%,DecimalFloat,0.024,True
+s,Sulfur content,,wt%,DecimalFloat,0.023,True
+n,Nitrogen content,,wt%,DecimalFloat,0.011,True
+cu,Copper content,,wt%,DecimalFloat,0.32,True
+mo,Molybdenum content,,wt%,DecimalFloat,0.02,True
+ni,Nickel content,,wt%,DecimalFloat,0.15,True
+cr,Chromium content,,wt%,DecimalFloat,0.13,True
+v,Vanadium content,,wt%,DecimalFloat,0.008,True
+nb,Niobium content,,wt%,DecimalFloat,0.04,True
+ti,Titanium content,,wt%,DecimalFloat,0.023,True
+al,Aluminum content,,wt%,DecimalFloat,0.018,True
+b,Boron content,,wt%,DecimalFloat,0.001,True
+zr,Zirconium content,,wt%,DecimalFloat,0.001,True
+sn,Tin content,,wt%,DecimalFloat,0.001,True
+ca,Calcium content,,wt%,DecimalFloat,0.001,True
+h,Hydrogen content,,wt%,DecimalFloat,0.001,True
+fe,Iron content,,wt%,DecimalFloat,98.5,True
+file_path,Relative path to the stress-strain time-series file for this specimen,,-,String,tensile_coupons/stress_strain/batch1-bfl-A3.csv,True
+reference,Publication reference (human-readable),,-,String,Wen et al. (2026),True
+link,URL to the publication,,-,String,https://doi.org/...,True
+latitude,Latitude of the test location,,degrees,DecimalFloat,46.5191,False
+longitude,Longitude of the test location,,degrees,DecimalFloat,6.5668,False
+publication_key,BibTeX citation key for the publication,,-,String,AshidaCompositeEffect2025,True
+datacol_version,Version of the data collection system,,-,SmallInteger,1,False
