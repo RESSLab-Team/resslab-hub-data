@@ -2,7 +2,7 @@ column_name,description,symbol,unit,type,example_value,nullable
 experimental_program,Name of the research program/investigators,,-,String,"Wen, Skiadopoulos, Ashida & Lignos",False
 standard,Testing standard referenced,,-,String,ASTM E8M-25,False
 specimen_type,Selected specimen cross-section type,,-,String,Rectangular,False
-specimen_id,Unique specimen identifier (primary key),`id`,-,String,batch1-bfl-A3,False
+id,Unique specimen identifier (primary key),`id`,-,String,batch1-bfl-A3,False
 profile_type,Type of steel section,,-,String,wide flange,False
 profile,Profile designation,,-,String,IPE400,False
 specimen_source,Source of the coupon within the parent profile,,-,String,Flange,True
