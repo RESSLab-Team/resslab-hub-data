@@ -76,3 +76,4 @@ reference,Publication reference,,-,String,"Skiadopoulos, A., and Lignos, D. (202
 link,Publication URL,,-,String,https://www.sciencedirect.com/science/article/pii/S0143974X26000271,False
 latitude,Test location latitude,,°,DecimalFloat,46.5172,False
 longitude,Test location longitude,,°,DecimalFloat,6.5689,False
+has_sem,Whether Scanning Electron Microscopy images are available for this specimen,,-,Boolean,Binary: YES/NO,True
