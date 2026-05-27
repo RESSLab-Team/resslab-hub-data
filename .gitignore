@@ -1,3 +1,6 @@
 **/.DS_Store
 material/.DS_Store
 .DS_Store
+
+# Generated WebPs + dimple JSONs from `make precompute-sem` (backend repo)
+ductile_fracture/sem/_webp/
