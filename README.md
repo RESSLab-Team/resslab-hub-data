@@ -60,10 +60,11 @@ You can modify data in any of these directories:
 - `columns/`
 - `connections/`
 - `hss_columns/`
-- `material/`
+- `material/cyclic_coupons/`
+- `material/tensile_coupons/`
+- `material/ductile_fracture/`
 - `residual_stresses/`
 - `eccentric_braced_frames`
-- `tensile_coupons/`
 
 ### Important Note About Commits
 
