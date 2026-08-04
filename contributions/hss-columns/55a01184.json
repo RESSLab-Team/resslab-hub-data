@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "type": "all-hss-columns",
+  "submitted_at": "2026-08-04T22:43:08+00:00",
+  "contributor": {
+    "name": "Pierre Ripoll",
+    "email": "pierre.ripoll@epfl.ch",
+    "institution": "EPFL",
+    "orcid": "",
+    "identity": "self-declared"
+  },
+  "files": [
+    {
+      "path": "hss_columns/hss_columns.csv",
+      "sha256": "2164f3ad532f5ddf3a0783ecf91667983a8b3e8fb1ccd817c4fe0a5e631a7262"
+    },
+    {
+      "path": "hss_columns/Moment_Rotation/DEMO-HSS-001.csv",
+      "sha256": "bed477327c1f085977388aabb96c572ebbe98b1ea543dd19654099ce7ec7ce45"
+    }
+  ],
+  "dismissed_warnings": []
+}
