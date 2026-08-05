@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "type": "all-material",
+  "submitted_at": "2026-08-05T10:04:45+00:00",
+  "contributor": {
+    "name": "Pierre Ripoll",
+    "email": "pierre.ripoll@epfl.ch",
+    "institution": "EPFL",
+    "orcid": "",
+    "identity": "self-declared"
+  },
+  "files": [
+    {
+      "path": "material/cyclic_coupons/steel_material.csv",
+      "sha256": "423171a6b0d26a5d1f1c04b44b8dd0df5b3b83634927487af26a5697503f0128"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/DEMO-MAT-001.csv",
+      "sha256": "35b86ee777f82768ef58096fd1a245e44393a32ef0e8c8c830987862c318bbcb"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/DEMO-MAT-002.csv",
+      "sha256": "03d3a2aa1ffa5ddb409a4f6609954fcb126646ee1d5ce13b96ff777eff473d59"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/DEMO-MAT-003.csv",
+      "sha256": "384b5c8ae9bcedd4d8e9973f53e24b1fe930d044571f22d83c6da1bea0c32776"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/DEMO-MAT-004.csv",
+      "sha256": "32b508c78e29def609b0f5b9c8203a589c7aad232ae8747f98a6cb67053b1bd4"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/DEMO-MAT-005.csv",
+      "sha256": "23094ef60e6ad3ca9619c53bec5f290aa2e5ee439017ceadc735588778be5679"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/DEMO-MAT-006.csv",
+      "sha256": "586708563fad03e6d176663dd328e40ffc56d6e8cdf4220f09933c7b62bacfdc"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/DEMO-MAT-007.csv",
+      "sha256": "4df1b43f2e3f1250a360403522719754da16af4c9a3565e70b2d43799bb6e2a8"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/DEMO-MAT-008.csv",
+      "sha256": "e9bc12dbd5a86856d82fd8b7d214d1b5b4bbb2a1f625ffe3754201bb6df379b3"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/DEMO-MAT-009.csv",
+      "sha256": "6321e2badaa39cb72fe53529d267d9cacb7ca2a413ccf783cbc872dbc1954f9c"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/DEMO-MAT-010.csv",
+      "sha256": "fd1720cc337161e3c4867e96a967741136e1cbafe4a997819d9bb2c04dbd4338"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/DEMO-MAT-011.csv",
+      "sha256": "0c3e9c85b9cedfca4a8240b9be1be8f1f949ec26cfd23a95036f4594bd613e60"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/DEMO-MAT-012.csv",
+      "sha256": "0d5a5612390ee7ca7bb4a1a51bc5262bc330537bf03dbcd28a0d1748fa0f369b"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/DEMO-MAT-013.csv",
+      "sha256": "f3be7f273fea355ca8d9518f2938320bf3c865fba468b4d4a3c37418cc07a480"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/DEMO-MAT-014.csv",
+      "sha256": "01edb95ef2662b26e39631d5cce9668821cc8a79087f8915aac359df045d12a2"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/DEMO-MAT-015.csv",
+      "sha256": "246ffea08a7d1e844b2da5f91ccfb5644f022db79b059247f23e287daa9ae5ae"
+    }
+  ],
+  "dismissed_warnings": []
+}
