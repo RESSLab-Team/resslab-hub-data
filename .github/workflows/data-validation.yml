@@ -12,6 +12,32 @@ env:
 
 # ... existing changes detection job remains the same ...
 jobs:
+  line-endings:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: CSVs must use LF line endings
+        run: |
+          BAD=$(git grep -Il $'\r' -- '*.csv' || true)
+          if [ -n "$BAD" ]; then
+            echo "These CSV files contain CR (\\r) characters — use LF line endings:"
+            echo "$BAD"
+            exit 1
+          fi
+      - name: CSVs must end with a newline
+        run: |
+          BAD=""
+          while IFS= read -r f; do
+            if [ -s "$f" ] && [ -n "$(tail -c 1 "$f")" ]; then
+              BAD="$BAD$f"$'\n'
+            fi
+          done < <(git ls-files '*.csv')
+          if [ -n "$BAD" ]; then
+            echo "These CSV files are missing a final newline:"
+            printf '%s' "$BAD"
+            exit 1
+          fi
+
   changes:
     runs-on: ubuntu-latest
     outputs:
