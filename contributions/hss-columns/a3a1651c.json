@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "type": "all-hss-columns",
+  "submitted_at": "2026-08-05T20:44:12+00:00",
+  "contributor": {
+    "name": "Pierre Ripoll",
+    "email": "pierre.ripoll@epfl.ch",
+    "institution": "EPFL",
+    "orcid": "",
+    "identity": "self-declared"
+  },
+  "files": [
+    {
+      "path": "hss_columns/hss_columns.csv",
+      "sha256": "1e55afd43d8d7073d3252ec9f9d8b5cfdb869657abfbebf2deb69d468c20b659"
+    },
+    {
+      "path": "hss_columns/Moment_Rotation/DEMO-HSS-001.csv",
+      "sha256": "bed477327c1f085977388aabb96c572ebbe98b1ea543dd19654099ce7ec7ce45"
+    },
+    {
+      "path": "hss_columns/Moment_Rotation/DEMO-HSS-002.csv",
+      "sha256": "f4bdd29ad4df26d1af1cabe6df7fefb487dc356011e745e61a35863c1c744da3"
+    },
+    {
+      "path": "hss_columns/Moment_Rotation/DEMO-HSS-003.csv",
+      "sha256": "a538fab4ac7f40b221eb6e96e6c686445eb5eaad2108d783dc2a0b4324b8d5b9"
+    },
+    {
+      "path": "hss_columns/Moment_Rotation/DEMO-HSS-004.csv",
+      "sha256": "44b35688ffc02eb3094271032f8e56c704317bcff470648a50315c166df3e0b1"
+    },
+    {
+      "path": "hss_columns/Moment_Rotation/DEMO-HSS-005.csv",
+      "sha256": "ce4349cafaa462a605672aeab943cf31353d6d43a84423d14f51c9b771ca9e38"
+    },
+    {
+      "path": "hss_columns/Moment_Rotation/DEMO-HSS-006.csv",
+      "sha256": "5d3df8b5a62e8966bfe5ce74210b7434860cac2105ddd792d6dfd304886f6ed6"
+    },
+    {
+      "path": "hss_columns/Moment_Rotation/DEMO-HSS-007.csv",
+      "sha256": "dec7b9fc67967155bc0378bec52a59a45928ab12fe174e3c5397e0665b89431e"
+    },
+    {
+      "path": "hss_columns/Moment_Rotation/DEMO-HSS-008.csv",
+      "sha256": "79b990be66f6360308ded4ccb64d9d502b452e37b3c47bf476a72393dedf48d1"
+    },
+    {
+      "path": "hss_columns/Moment_Rotation/DEMO-HSS-009.csv",
+      "sha256": "729535eac6772ba5b28ba1b9b16d70be441e6ad626098e306cb2b6d37a4f89c2"
+    },
+    {
+      "path": "hss_columns/Moment_Rotation/DEMO-HSS-010.csv",
+      "sha256": "b18d6ff6d2893d6c8e64a66f107a9577b3ad29a4ac3318400b2f8c31d41382e4"
+    },
+    {
+      "path": "hss_columns/Moment_Rotation/DEMO-HSS-011.csv",
+      "sha256": "68bebe826bbc9a3d3732ade834634d5a3df4750c80f1f9ef3525317f13a0bbd9"
+    },
+    {
+      "path": "hss_columns/Moment_Rotation/DEMO-HSS-012.csv",
+      "sha256": "87b39333ee682bebf64f7e8dc5bea54fcba35a87f5e81d4fc91901d1050d5ab1"
+    },
+    {
+      "path": "hss_columns/Moment_Rotation/DEMO-HSS-013.csv",
+      "sha256": "014a0436dacd7dca6f5c2514cd2658ec4f7845d80e45d94fc790408d89c1f7d3"
+    },
+    {
+      "path": "hss_columns/Moment_Rotation/DEMO-HSS-014.csv",
+      "sha256": "4a4043ce3158a4ad5fc55bf0d44dd47462d24defb8e3d7c4bbb73cb7a364be5c"
+    },
+    {
+      "path": "hss_columns/Moment_Rotation/DEMO-HSS-015.csv",
+      "sha256": "673ddd9a9fbbacafa44bba8edeace625d1e562a9ec9352d0071dac2eb8047664"
+    }
+  ],
+  "dismissed_warnings": []
+}
