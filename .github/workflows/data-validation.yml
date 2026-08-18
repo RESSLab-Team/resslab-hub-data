@@ -54,6 +54,7 @@ jobs:
             braces: 'braces/**'
             columns: 'columns/**'
             connections: 'connections/**'
+            eccentric-braced-frames: 'eccentric_braced_frames/**'
             hss-columns: 'hss_columns/**'
             material: 'material/**'
             residual-stresses: 'residual_stresses/**'
@@ -82,7 +83,7 @@ jobs:
       - name: Prepare validation ${{ matrix.type }}
         run: |
           DIRECTORY=${{ matrix.type }}
-          DIRECTORY=${DIRECTORY/-/_}  # Replace hyphens with underscores in directory names
+          DIRECTORY=${DIRECTORY//-/_}  # Replace hyphens with underscores in directory names
           TAR_NAME=${DIRECTORY}.tar.gz
           git diff --diff-filter=AM --name-only ${{ github.event.pull_request.base.sha }} HEAD $DIRECTORY/ | xargs tar --exclude-vcs -czf $TAR_NAME
 
@@ -94,7 +95,7 @@ jobs:
       - name: Validate data ${{ matrix.type }}
         run: |
           DIRECTORY=${{ matrix.type }}
-          DIRECTORY=${DIRECTORY/-/_}
+          DIRECTORY=${DIRECTORY//-/_}
           TAR_NAME=${DIRECTORY}.tar.gz
           UPLOAD_TYPE=all-${{ matrix.type }}  # Replace underscores with hyphens for upload type
           echo "Calling: $SERVER_URL/api/validate/?type=$UPLOAD_TYPE"
@@ -120,3 +121,18 @@ jobs:
           if [[ $(echo "$VALIDATION_LOG" | jq 'if .valid then .valid else false end') == "false" ]]; then
             exit 1
           fi
+
+  # Single stable check to mark as "required" in branch protection: the matrix
+  # `validate (<type>)` check names vary per PR, so gate on this job instead.
+  validation-passed:
+    if: ${{ always() }}
+    needs:
+      - line-endings
+      - changes
+      - authentification
+      - validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail if any upstream job failed or was cancelled
+        if: ${{ contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled') }}
+        run: exit 1
