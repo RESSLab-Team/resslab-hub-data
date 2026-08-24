@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "type": "all-braces",
+  "submitted_at": "2026-08-24T14:07:56+00:00",
+  "contributor": {
+    "name": "Pierre Ripoll",
+    "email": "pierre.ripoll@epfl.ch",
+    "institution": "EPFL",
+    "orcid": "",
+    "identity": "self-declared"
+  },
+  "files": [
+    {
+      "path": "braces/steel_braces.csv",
+      "sha256": "50d112c480044562fab7f772e73dbd526255fd00c7b44ec74f2b765d55aa228b"
+    }
+  ],
+  "dismissed_warnings": []
+}
