@@ -1,6 +1,6 @@
 # Residual stresses database
 
-Residual stress measurements on steel sections (hot-rolled, welded and built-up wide flanges), with the section and material properties, the characteristic residual stresses, the digitized flange and web distributions and the coefficients of the quadratic-program fit of each distribution.
+Residual stress measurements on steel sections (hot-rolled and built-up wide flanges), with the section and material properties, the characteristic residual stresses, the digitized flange and web distributions and the coefficients of the quadratic-program fit of each distribution.
 
 ## Contents
 
