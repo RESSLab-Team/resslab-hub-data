@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "type": "all-tensile-coupons",
+  "submitted_at": "2026-08-30T16:47:45+00:00",
+  "contributor": {
+    "name": "Yosuke Ashida",
+    "email": "yosuke.ashida@epfl.ch",
+    "institution": "",
+    "orcid": "",
+    "identity": "self-declared"
+  },
+  "files": [
+    {
+      "path": "material/tensile_coupons/tensile_coupons.csv",
+      "sha256": "1efac62c8b59fb8b715abeb13cc55ce34500bb919bc07ae1722fb61e3b9c51bb"
+    },
+    {
+      "path": "material/tensile_coupons/stress_strain/batch1-bfl-A3_test.csv",
+      "sha256": "836b6081f3801eb1817d898e27f6b4a5cceda9bb790dc8a9dc0369edf458b11e"
+    },
+    {
+      "path": "material/tensile_coupons/stress_strain/batch1-bfl-A4_test.csv",
+      "sha256": "8eab66be2fcde9346a9a485e5a654e470bfd0dbcb1c3b28de12de90b7046d7a0"
+    },
+    {
+      "path": "material/tensile_coupons/stress_strain/batch1-bfl-A5_test.csv",
+      "sha256": "7e04af11780775876018c7c51e7693f46f90f9bdbe2ea033726a255b6ab8ec64"
+    }
+  ],
+  "dismissed_warnings": []
+}
