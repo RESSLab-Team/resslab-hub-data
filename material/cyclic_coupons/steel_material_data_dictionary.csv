@@ -53,14 +53,13 @@ sn,Tin content,,wt%,DecimalFloat,0.002,True
 ca,Calcium content,,wt%,DecimalFloat,0.0002,True
 h,Hydrogen content,,wt%,DecimalFloat,0.0002,True
 fe,Iron content,,wt%,DecimalFloat,97.5,True
-file,Path to raw data file,,-,String,Clean_Data/S355J2_HEM320/WP3_HEM320_D_CRM20/LP4_Specimen_1_processed_data.csv,True
 reference,Publication reference,,-,String,El Jisr H. Lignos D.G. (2022),True
 link,URL to publication,,-,String,https://infoscience.epfl.ch/record/292178,True
 latitude,Testing facility latitude,,deg,DecimalFloat,46.5191,True
 longitude,Testing facility longitude,,deg,DecimalFloat,6.5668,True
 citekey,Citation key for reference,,-,String,ElJisrRoleCompositeFloor2022,True
 uvc_phi__prct_,Normalized error of UVC calibration as suggested in Hartloper et al. (2021) [see Eq. (33)],,%,DecimalFloat,5.449895087,True
-uvc_e__mpa_,UVC model elastic modulus,,MPa,DecimalFloat,181.0519,True
+uvc_e__gpa_,UVC model elastic modulus,,GPa,DecimalFloat,181.0519,True
 uvc_sigma__mpa_,UVC model stress parameter,,MPa,DecimalFloat,411.1091,True
 uvc_q__mpa_,UVC model parameter Q,,MPa,DecimalFloat,116.3773,True
 uvc_b,UVC model parameter b,,-,DecimalFloat,16.56587,True
