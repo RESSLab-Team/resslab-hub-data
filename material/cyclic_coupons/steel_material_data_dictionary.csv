@@ -5,7 +5,7 @@ id,Unique specimen identifier,,-,String,LP4_S1_D,False
 profile_type,Type of steel section,,-,String,wide flange,False
 profile,Steel section designation,,-,String,HEM320,False
 source,Location of specimen extraction,,-,String,web,False
-thickness,Nominal thickness of the original plate from which the specimen was extracted,,mm,DecimalFloat,21,False
+thickness,Nominal thickness of the original plate from which the test specimen was inferred,,mm,DecimalFloat,21,False
 grade,Steel grade designation including its specification suffix (e.g. S355J2+M / A992 Grade 50 / SN490B),,-,String,S355,False
 spec,Steel specification suffix; optional and always also part of the steel grade,,-,String,J2+M,True
 lp,Loading protocol identifier,,-,String,LP4,False
