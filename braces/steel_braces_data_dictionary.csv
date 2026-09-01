@@ -1,72 +1,72 @@
-column_name,description,symbol,unit,type,example_value,nullable
-id,Unique identifier for the specimen,,-,String,Wakabayashi_DIC 1-D1,False
-investigator,Names of researchers who conducted the study,,-,String,"Wakayabashi, Nakamura & Yoshida",False
-specimen_ID,Laboratory identification code for the specimen,,-,String,DIC 1-D1,False
-date,Year of the experiment,,-,SmallInteger,1977,False
-cross_section_shape,Shape of the brace cross-section,,-,String,I-shaped,False
-cross_section_size,Nominal dimensions of the cross-section,,-,String,50x50x6x6,False
-area,Cross-sectional area,,mm²,DecimalFloat,839,True
-d_br,Depth of the cross-section,,mm,DecimalFloat,50,True
-b_br,Width of the cross-section,,mm,DecimalFloat,50,True
-t_br,Thickness of the web/wall,,mm,DecimalFloat,6,True
-w_br,Thickness of the flange,,mm,DecimalFloat,6,True
-i_x,Strong-axis moment of inertia,,mm⁴,DecimalFloat,534700,True
-i_y,Weak-axis moment of inertia,,mm⁴,DecimalFloat,125900,True
-r_x,Strong-axis radius of gyration,,mm,DecimalFloat,25244.93,True
-r_y,Weak-axis radius of gyration,,mm,DecimalFloat,12249.88,True
-z_x,Strong-axis plastic section modulus,,mm³,DecimalFloat,20550,True
-z_y,Weak-axis plastic section modulus,,mm³,DecimalFloat,7950,True
-j,Torsional constant,,mm⁴,DecimalFloat,11412,True
-configuration,Bracing configuration type (SBF/DBF),,-,String,DBF,False
-brace_angle,Angle between brace and beam,,degrees,DecimalFloat,45,True
-l_b,Total length of brace,,mm,DecimalFloat,988,True
-l_b_clear,Clear length of brace between connections,,mm,DecimalFloat,494,True
-steel,Steel grade designation,,-,String,Annealed SS 41,False
-e,Young's modulus,,MPa,DecimalFloat,200000,True
-f_yn,Nominal yield strength,,MPa,DecimalFloat,235,True
-fy_m,Measured yield strength,,MPa,DecimalFloat,284,True
-f_um,Measured ultimate strength,,MPa,DecimalFloat,430,True
-boundary_condition,End conditions of the brace,,-,String,Fixed-fixed end,False
-l_1t,Length of top gusset plate segment 1,,mm,String,na,True
-l_2t,Length of top gusset plate segment 2,,mm,String,na,True
-l_3t,Length of top gusset plate segment 3,,mm,String,na,True
-l_4t,Length of top gusset plate segment 4,,mm,DecimalFloat,na,True
-l_5t,Length of top gusset plate segment 5,,mm,String,na,True
-l_6t,Length of top gusset plate segment 6,,mm,String,na,True
-l_7t,Length of top gusset plate segment 7,,mm,String,na,True
-_8t,Length of top gusset plate segment 8,,mm,DecimalFloat,na,True
-t_t,Thickness of top gusset plate,,mm,DecimalFloat,12,True
-l_1b,Length of bottom gusset plate segment 1,,mm,String,na,True
-l_2b,Length of bottom gusset plate segment 2,,mm,String,na,True
-l_3b,Length of bottom gusset plate segment 3,,mm,String,na,True
-l_4b,Length of bottom gusset plate segment 4,,mm,String,na,True
-l_5b,Length of bottom gusset plate segment 5,,mm,String,na,True
-l_6b,Length of bottom gusset plate segment 6,,mm,String,na,True
-l_7b,Length of bottom gusset plate segment 7,,mm,DecimalFloat,na,True
-l_8b,Length of bottom gusset plate segment 8,,mm,DecimalFloat,na,True
-t_b,Thickness of bottom gusset plate,,mm,String,12,True
-steel_gp,Steel grade of gusset plates,,-,String,A572 Gr.50,True
-f_yn_gp,Nominal yield strength of gusset plates,,MPa,DecimalFloat,345,True
-f_ym_gp,Measured yield strength of gusset plates,,MPa,DecimalFloat,508,True
-f_um_gp,Measured ultimate strength of gusset plates,,MPa,DecimalFloat,549,True
-weld_type,Type of welding used,,-,String,Fillet,True
-l_weld,Length of weld,,mm,DecimalFloat,254,True
-t_weld,Thickness of weld,,mm,DecimalFloat,6.4,True
-stick_space,Stick-out spacing,,mm,DecimalFloat,na,True
-nub_bolts,Number of bolts,,-,DecimalFloat,na,True
-bolt_size,Size designation of bolts,,-,String,na,True
-bolt_mat,Material specification of bolts,,-,String,na,True
-reinforcement_pl,Reinforcement plate dimensions,,-,String,203x51x6.4,True
-loading_protocol,Type of loading protocol applied,,-,String,Symmetric Cyclic,False
-p_t,Measured tensile capacity,,kN,DecimalFloat,1099,True
-p_t_theory,Theoretical tensile capacity,,kN,DecimalFloat,970.6,True
-p_c,Measured compressive capacity,,kN,DecimalFloat,698,True
-kl_r,Slenderness ratio,,-,DecimalFloat,77,True
-l_c,Normalized slenderness ratio,,-,DecimalFloat,1.2,True
-l_c_theory,Theoretical normalized slenderness ratio,,-,DecimalFloat,1.18,True
-k_assumed,Assumed effective length factor,,-,DecimalFloat,1,True
-kl_r_theory,Theoretical slenderness ratio,,-,DecimalFloat,77.13,True
-reference,Citation of the source publication,,-,String,"Wakabayashi, M., Nakamura, T., & Yoshida, N. (1977)...",False
-link,URL to the source document,,-,String,https://repository.kulib.kyoto-u.ac.jp/...,True
-latitude,Geographical latitude of testing facility,,degrees,Numeric,35.0262,True
-longitude,Geographical longitude of testing facility,,degrees,Numeric,135.7808,True
+column_name,description,symbol,unit,type,example_value,nullable,group
+id,Unique identifier for the specimen,,-,String,Wakabayashi_DIC 1-D1,False,Experimental program details
+investigator,Names of researchers who conducted the study,,-,String,"Wakayabashi, Nakamura & Yoshida",False,Experimental program details
+specimen_ID,Laboratory identification code for the specimen,,-,String,DIC 1-D1,False,Experimental program details
+date,Year of the experiment,,-,SmallInteger,1977,False,Experimental program details
+cross_section_shape,Shape of the brace cross-section,,-,String,I-shaped,False,Section properties
+cross_section_size,Nominal dimensions of the cross-section,,-,String,50x50x6x6,False,Section properties
+area,Cross-sectional area,,mm²,DecimalFloat,839,True,Section properties
+d_br,Depth of the cross-section,,mm,DecimalFloat,50,True,Section properties
+b_br,Width of the cross-section,,mm,DecimalFloat,50,True,Section properties
+t_br,Thickness of the web/wall,,mm,DecimalFloat,6,True,Section properties
+w_br,Thickness of the flange,,mm,DecimalFloat,6,True,Section properties
+i_x,Strong-axis moment of inertia,,mm⁴,DecimalFloat,534700,True,Section properties
+i_y,Weak-axis moment of inertia,,mm⁴,DecimalFloat,125900,True,Section properties
+r_x,Strong-axis radius of gyration,,mm,DecimalFloat,25244.93,True,Section properties
+r_y,Weak-axis radius of gyration,,mm,DecimalFloat,12249.88,True,Section properties
+z_x,Strong-axis plastic section modulus,,mm³,DecimalFloat,20550,True,Section properties
+z_y,Weak-axis plastic section modulus,,mm³,DecimalFloat,7950,True,Section properties
+j,Torsional constant,,mm⁴,DecimalFloat,11412,True,Section properties
+configuration,Bracing configuration type (SBF/DBF),,-,String,DBF,False,Specimen details
+brace_angle,Angle between brace and beam,,degrees,DecimalFloat,45,True,Specimen details
+l_b,Total length of brace,,mm,DecimalFloat,988,True,Specimen details
+l_b_clear,Clear length of brace between connections,,mm,DecimalFloat,494,True,Specimen details
+steel,Steel grade designation,,-,String,Annealed SS 41,False,Material properties
+e,Young's modulus,,MPa,DecimalFloat,200000,True,Material properties
+f_yn,Nominal yield strength,,MPa,DecimalFloat,235,True,Material properties
+fy_m,Measured yield strength,,MPa,DecimalFloat,284,True,Material properties
+f_um,Measured ultimate strength,,MPa,DecimalFloat,430,True,Material properties
+boundary_condition,End conditions of the brace,,-,String,Fixed-fixed end,False,Specimen details
+l_1t,Length of top gusset plate segment 1,,mm,String,na,True,Gusset plate dimensions
+l_2t,Length of top gusset plate segment 2,,mm,String,na,True,Gusset plate dimensions
+l_3t,Length of top gusset plate segment 3,,mm,String,na,True,Gusset plate dimensions
+l_4t,Length of top gusset plate segment 4,,mm,DecimalFloat,na,True,Gusset plate dimensions
+l_5t,Length of top gusset plate segment 5,,mm,String,na,True,Gusset plate dimensions
+l_6t,Length of top gusset plate segment 6,,mm,String,na,True,Gusset plate dimensions
+l_7t,Length of top gusset plate segment 7,,mm,String,na,True,Gusset plate dimensions
+_8t,Length of top gusset plate segment 8,,mm,DecimalFloat,na,True,Gusset plate dimensions
+t_t,Thickness of top gusset plate,,mm,DecimalFloat,12,True,Gusset plate dimensions
+l_1b,Length of bottom gusset plate segment 1,,mm,String,na,True,Gusset plate dimensions
+l_2b,Length of bottom gusset plate segment 2,,mm,String,na,True,Gusset plate dimensions
+l_3b,Length of bottom gusset plate segment 3,,mm,String,na,True,Gusset plate dimensions
+l_4b,Length of bottom gusset plate segment 4,,mm,String,na,True,Gusset plate dimensions
+l_5b,Length of bottom gusset plate segment 5,,mm,String,na,True,Gusset plate dimensions
+l_6b,Length of bottom gusset plate segment 6,,mm,String,na,True,Gusset plate dimensions
+l_7b,Length of bottom gusset plate segment 7,,mm,DecimalFloat,na,True,Gusset plate dimensions
+l_8b,Length of bottom gusset plate segment 8,,mm,DecimalFloat,na,True,Gusset plate dimensions
+t_b,Thickness of bottom gusset plate,,mm,String,12,True,Gusset plate dimensions
+steel_gp,Steel grade of gusset plates,,-,String,A572 Gr.50,True,Gusset plate material properties
+f_yn_gp,Nominal yield strength of gusset plates,,MPa,DecimalFloat,345,True,Gusset plate material properties
+f_ym_gp,Measured yield strength of gusset plates,,MPa,DecimalFloat,508,True,Gusset plate material properties
+f_um_gp,Measured ultimate strength of gusset plates,,MPa,DecimalFloat,549,True,Gusset plate material properties
+weld_type,Type of welding used,,-,String,Fillet,True,Connection detailing
+l_weld,Length of weld,,mm,DecimalFloat,254,True,Connection detailing
+t_weld,Thickness of weld,,mm,DecimalFloat,6.4,True,Connection detailing
+stick_space,Stick-out spacing,,mm,DecimalFloat,na,True,Connection detailing
+nub_bolts,Number of bolts,,-,DecimalFloat,na,True,Connection detailing
+bolt_size,Size designation of bolts,,-,String,na,True,Connection detailing
+bolt_mat,Material specification of bolts,,-,String,na,True,Connection detailing
+reinforcement_pl,Reinforcement plate dimensions,,-,String,203x51x6.4,True,Connection detailing
+loading_protocol,Type of loading protocol applied,,-,String,Symmetric Cyclic,False,Loading details
+p_t,Measured tensile capacity,,kN,DecimalFloat,1099,True,Measured and theoretical resistance
+p_t_theory,Theoretical tensile capacity,,kN,DecimalFloat,970.6,True,Measured and theoretical resistance
+p_c,Measured compressive capacity,,kN,DecimalFloat,698,True,Measured and theoretical resistance
+kl_r,Slenderness ratio,,-,DecimalFloat,77,True,Measured and theoretical resistance
+l_c,Normalized slenderness ratio,,-,DecimalFloat,1.2,True,Measured and theoretical resistance
+l_c_theory,Theoretical normalized slenderness ratio,,-,DecimalFloat,1.18,True,Measured and theoretical resistance
+k_assumed,Assumed effective length factor,,-,DecimalFloat,1,True,Measured and theoretical resistance
+kl_r_theory,Theoretical slenderness ratio,,-,DecimalFloat,77.13,True,Measured and theoretical resistance
+reference,Citation of the source publication,,-,String,"Wakabayashi, M., Nakamura, T., & Yoshida, N. (1977)...",False,Experimental program details
+link,URL to the source document,,-,String,https://repository.kulib.kyoto-u.ac.jp/...,True,Experimental program details
+latitude,Geographical latitude of testing facility,,degrees,Numeric,35.0262,True,Experimental program details
+longitude,Geographical longitude of testing facility,,degrees,Numeric,135.7808,True,Experimental program details
