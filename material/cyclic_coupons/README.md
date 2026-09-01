@@ -22,7 +22,7 @@ Prefix new ids with something that identifies the campaign (the profile, or the 
 ## Main table
 
 - Every column is described in `steel_material_data_dictionary.csv`. Columns with `nullable = False` are mandatory.
-- Column names carry their unit as a suffix between double underscores (`gage_length__mm_`, `fy_n__mpa_`, `t_a__deg_c_`, `uvc_e__mpa_`).
+- Column names carry their unit as a suffix between double underscores (`gage_length__mm_`, `fy_n__mpa_`, `t_a__deg_c_`, `uvc_e__gpa_`).
 - `pid_*` are the controller gains of the testing machine, `uvc_*` the calibrated material model parameters, and the chemical composition columns (`c`, `si`, `mn`, ...) are mass percentages from the mill certificate. Leave what you did not measure `NR`.
 - `file` is the path of the raw record in the contributor's own archive; it is informational and not resolved by the hub.
 - `date` is a full date, `dd.mm.yyyy`.

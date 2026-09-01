@@ -33,7 +33,7 @@ for example `batch1-bfl-A3` (batch 1, beam flange, coupon A3) or `batch1-bweb-B5
 
 | Folder | Response | Columns (exact header) | Units |
 | --- | --- | --- | --- |
-| `stress_strain/` | True stress versus true strain | `e_true`, `Sigma_true` (a leading unnamed index column is accepted and ignored) | -, MPa |
+| `stress_strain/` | Engineering stress versus engineering strain | `strain_eng`, `Stress_eng` (a leading unnamed index column is accepted and ignored) | -, MPa |
 
 - One file per coupon, named `{id}.csv`, for example `stress_strain/batch1-bfl-A3.csv`.
 - Numeric values only, decimal point.
