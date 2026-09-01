@@ -4,3 +4,21 @@ material/.DS_Store
 
 # Generated WebPs + dimple JSONs from `make precompute-sem` (backend repo)
 material/ductile_fracture/sem/_webp/
+
+# Credentials and local settings. Never commit these.
+.secrets
+.secrets.*
+secrets/
+.env
+.env.*
+!.env.example
+!.secrets.example
+*.pem
+*.key
+*credentials*.json
+*service-account*.json
+
+# Archives built when uploading data by hand or from CI.
+*.tar.gz
+*.tgz
+*.zip
