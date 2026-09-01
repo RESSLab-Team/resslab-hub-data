@@ -1,6 +1,6 @@
 # Tensile coupons database
 
-Monotonic tensile coupon tests on structural steel following a testing standard (ASTM E8M, ISO 6892-1, ...), with the coupon origin and geometry, chemical composition, testing machine and controller settings, the yield, ultimate and fracture properties, and the processed true stress versus true strain response.
+Monotonic tensile coupon tests on structural steel following a testing standard (ASTM E8M, ISO 6892-1, ...), with the coupon origin and geometry, chemical composition, testing machine and controller settings, the yield, ultimate and fracture properties, and the processed engineering stress versus engineering strain response.
 
 ## Contents
 
@@ -8,7 +8,7 @@ Monotonic tensile coupon tests on structural steel following a testing standard 
 | --- | --- |
 | `tensile_coupons.csv` | Main table, one row per coupon test. |
 | `tensile_coupons_data_dictionary.csv` | Data dictionary: name, description, symbol, unit, type, example and nullability of every column of the main table. It is the single reference for what each column expects, so it is not repeated here. |
-| `stress_strain/` | Processed true stress versus true strain curve, one CSV per coupon. |
+| `stress_strain/` | Processed engineering stress versus engineering strain curve, one CSV per coupon. |
 
 ## Specimen identifier
 
