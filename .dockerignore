@@ -1,0 +1,21 @@
+# Keep the data image to the CSV files the uploader reads.
+
+.git
+.gitattributes
+.git-blame-ignore-revs
+.github
+.claude
+.mcp.json
+
+# Never ship credentials in an image.
+.env
+.secrets
+
+# SEM rasters go to the CDN, not to the database. 1.8 GB of TIFs the uploader
+# never opens.
+material/ductile_fracture/sem
+
+# Archives built by the upload workflows.
+*.tar.gz
+
+**/.DS_Store

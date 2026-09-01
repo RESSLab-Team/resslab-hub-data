@@ -1,0 +1,35 @@
+name: build-data-image
+
+# Packs the data files into an image, one tag per branch: `main` feeds dev and
+# prod, `test` feeds the stage deployment. The hub re-uploads a whole database
+# from it with the resslab-hub-upload-data CronJob (ArgoCD -> create-job).
+on:
+  push:
+    branches:
+      - main
+      - test
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The TIFs stay pointers, .dockerignore drops them anyway.
+          lfs: false
+
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: ghcr.io/resslab-team/resslab-hub-data:${{ github.ref_name }}
