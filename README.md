@@ -3,6 +3,11 @@
 This repository contains the DB underlying [RESSLAB Hub](https://resslab-hub.epfl.ch/). The `main` branch points to the website in production, the `test` branch points to the [test deployement](https://resslab-hub-test.epfl.ch/). See [RESSLAB Hub's repository](https://github.com/RESSLab-Team/resslab-hub).  
 Automated data upload pipeline is still under active development and testing. 
 
+## Licence
+
+The data is released under the [Open Data Commons Public Domain Dedication and License (PDDL) 1.0](https://opendatacommons.org/licenses/pddl/1-0/), see [LICENSE](LICENSE). Anyone can use it for any purpose, including commercial use and AI training.
+Contributors keep the authorship of their work. Every row references the publication of the original test, please cite it when you use the data.
+
 ## Data documentation
 
 ### Per-database guides
