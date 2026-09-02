@@ -30,18 +30,18 @@ pid_disp_d,PID derivative gain for crosshead displacement control,`K_d`,-,Decima
 pid_ext_p,PID proportional gain for extensometer control,`K_p`,-,DecimalFloat,0.8,True,Test equipment details
 pid_ext_i,PID integral gain for extensometer control,`K_i`,-,DecimalFloat,0.8,True,Test equipment details
 pid_ext_d,PID derivative gain for extensometer control,`K_d`,-,DecimalFloat,0,True,Test equipment details
-yield_stress_02__mpa_,"Engineering stress at yield, 0.2% offset rule","`f_{y,m}`",MPa,DecimalFloat,395,True,Measured response
-yield_strain_02,"Engineering strain at yield, 0.2% offset rule",`\varepsilon_y`,-,DecimalFloat,0.00394,True,Measured response
-bin_discont_yield,"Presence of discontinuous yielding (0 = no, 1 = yes)",,-,Boolean,1,False,Measured response
-yield_stress_uyp__mpa_,Engineering stress at upper yield point,"`f_{y,uyp}`",MPa,DecimalFloat,400,True,Measured response
-yield_stress_lyp__mpa_,Engineering stress at lower yield point,"`f_{y,lyp}`",MPa,DecimalFloat,389,True,Measured response
-yield_point_elongation,Yield point elongation,`\varepsilon_{yp}`,-,DecimalFloat,0.01045,True,Measured response
-tensile_strength__mpa_,Engineering stress at maximum strength (measured tensile strength),"`f_{u,m}`",MPa,DecimalFloat,523,True,Measured response
-uniform_elongation,Engineering strain at maximum strength,`\varepsilon_u`,-,DecimalFloat,0.13913,True,Measured response
-elongation_at_fracture,Elongation at fracture,`\varepsilon_f`,%,DecimalFloat,21.5,True,Measured response
-elongation_after_fracture,Elongation after fracture,`\varepsilon_{af}`,%,DecimalFloat,24.7,True,Measured response
-reduction_of_area,Reduction of area,`Z`,%,DecimalFloat,61,True,Measured response
-elastic_modulus__mpa_,Young's modulus,`E`,MPa,DecimalFloat,202901,True,Measured response
+yield_stress_02__mpa_,"Engineering stress at yield, 0.2% offset rule","`f_{y,m}`",MPa,DecimalFloat,395,True,Material properties
+yield_strain_02,"Engineering strain at yield, 0.2% offset rule",`\varepsilon_y`,-,DecimalFloat,0.00394,True,Material properties
+bin_discont_yield,"Presence of discontinuous yielding (0 = no, 1 = yes)",,-,Boolean,1,False,Material properties
+yield_stress_uyp__mpa_,Engineering stress at upper yield point,"`f_{y,uyp}`",MPa,DecimalFloat,400,True,Material properties
+yield_stress_lyp__mpa_,Engineering stress at lower yield point,"`f_{y,lyp}`",MPa,DecimalFloat,389,True,Material properties
+yield_point_elongation,Yield point elongation,`\varepsilon_{yp}`,-,DecimalFloat,0.01045,True,Material properties
+tensile_strength__mpa_,Engineering stress at maximum strength (measured tensile strength),"`f_{u,m}`",MPa,DecimalFloat,523,True,Material properties
+uniform_elongation,Engineering strain at maximum strength,`\varepsilon_u`,-,DecimalFloat,0.13913,True,Elongation and reduction of area
+elongation_at_fracture,Elongation at fracture,`\varepsilon_f`,%,DecimalFloat,21.5,True,Elongation and reduction of area
+elongation_after_fracture,Elongation after fracture,`\varepsilon_{af}`,%,DecimalFloat,24.7,True,Elongation and reduction of area
+reduction_of_area,Reduction of area,`Z`,%,DecimalFloat,61,True,Elongation and reduction of area
+elastic_modulus__mpa_,Young's modulus,`E`,MPa,DecimalFloat,202901,True,Material properties
 c,Carbon content,,wt%,DecimalFloat,0.09,True,Chemical composition
 si,Silicon content,,wt%,DecimalFloat,0.19,True,Chemical composition
 mn,Manganese content,,wt%,DecimalFloat,1.46,True,Chemical composition

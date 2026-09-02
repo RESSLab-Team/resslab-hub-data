@@ -60,9 +60,9 @@ p_t,Tensile load,,N,DecimalFloat,NA,True,Axial resistance
 p_c,Compressive load,,N,DecimalFloat,2272000,True,Axial resistance
 p_g_over_p_ym,Gravity load ratio to measured yield strength,,-,DecimalFloat,0.2,True,Loading details
 p_g_over_p_yn,Gravity load ratio to nominal yield strength,,-,DecimalFloat,0.24,True,Loading details
-p_t_over_p_ym,Tensile load ratio to measured yield strength,,-,DecimalFloat,NA,True,Axial resistance
-p_c_over_p_ym,Compressive load ratio to measured yield strength,,-,DecimalFloat,0.2,True,Axial resistance
-p_c_over_p_yn,Compressive load ratio to nominal yield strength,,-,DecimalFloat,0.24,True,Axial resistance
+p_t_over_p_ym,Tensile load ratio to measured yield strength,,-,DecimalFloat,NA,True,Loading details
+p_c_over_p_ym,Compressive load ratio to measured yield strength,,-,DecimalFloat,0.2,True,Loading details
+p_c_over_p_yn,Compressive load ratio to nominal yield strength,,-,DecimalFloat,0.24,True,Loading details
 p,Applied axial load,,N,DecimalFloat,2272000,True,Loading details
 t_top_plate,Thickness of top plate,,mm,DecimalFloat,76,True,Specimen dimensions
 t_bottom_plate,Thickness of bottom plate,,mm,DecimalFloat,76,True,Specimen dimensions

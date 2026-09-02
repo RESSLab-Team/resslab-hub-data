@@ -61,11 +61,11 @@ loading_protocol,Type of loading protocol applied,,-,String,Symmetric Cyclic,Fal
 p_t,Measured tensile capacity,,kN,DecimalFloat,1099,True,Measured and theoretical resistance
 p_t_theory,Theoretical tensile capacity,,kN,DecimalFloat,970.6,True,Measured and theoretical resistance
 p_c,Measured compressive capacity,,kN,DecimalFloat,698,True,Measured and theoretical resistance
-kl_r,Slenderness ratio,,-,DecimalFloat,77,True,Measured and theoretical resistance
-l_c,Normalized slenderness ratio,,-,DecimalFloat,1.2,True,Measured and theoretical resistance
-l_c_theory,Theoretical normalized slenderness ratio,,-,DecimalFloat,1.18,True,Measured and theoretical resistance
-k_assumed,Assumed effective length factor,,-,DecimalFloat,1,True,Measured and theoretical resistance
-kl_r_theory,Theoretical slenderness ratio,,-,DecimalFloat,77.13,True,Measured and theoretical resistance
+kl_r,Slenderness ratio,,-,DecimalFloat,77,True,Brace member geometric properties
+l_c,Normalized slenderness ratio,,-,DecimalFloat,1.2,True,Brace member geometric properties
+l_c_theory,Theoretical normalized slenderness ratio,,-,DecimalFloat,1.18,True,Brace member geometric properties
+k_assumed,Assumed effective length factor,,-,DecimalFloat,1,True,Brace member geometric properties
+kl_r_theory,Theoretical slenderness ratio,,-,DecimalFloat,77.13,True,Brace member geometric properties
 reference,Citation of the source publication,,-,String,"Wakabayashi, M., Nakamura, T., & Yoshida, N. (1977)...",False,Experimental program details
 link,URL to the source document,,-,String,https://repository.kulib.kyoto-u.ac.jp/...,True,Experimental program details
 latitude,Geographical latitude of testing facility,,degrees,Numeric,35.0262,True,Experimental program details
