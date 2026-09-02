@@ -3,7 +3,30 @@
 This repository contains the DB underlying [RESSLAB Hub](https://resslab-hub.epfl.ch/). The `main` branch points to the website in production, the `test` branch points to the [test deployement](https://resslab-hub-test.epfl.ch/). See [RESSLAB Hub's repository](https://github.com/RESSLab-Team/resslab-hub).  
 Automated data upload pipeline is still under active development and testing. 
 
+## Licence
+
+The data is released under the [Open Data Commons Public Domain Dedication and License (PDDL) 1.0](https://opendatacommons.org/licenses/pddl/1-0/), see [LICENSE](LICENSE). Anyone can use it for any purpose, including commercial use and AI training.
+Contributors keep the authorship of their work. Every row references the publication of the original test, please cite it when you use the data.
+
 ## Data documentation
+
+### Per-database guides
+
+Each database folder has a `README.md` explaining what the database contains, how the specimen identifier is built, which measured-response files are expected (folder, exact column headers, units) and how to submit data. Read the one for your database before preparing a contribution:
+
+| Database | Folder | Guide |
+| --- | --- | --- |
+| Braces | `braces/` | [braces/README.md](braces/README.md) |
+| Columns | `columns/` | [columns/README.md](columns/README.md) |
+| Connections | `connections/` | [connections/README.md](connections/README.md) |
+| HSS columns | `hss_columns/` | [hss_columns/README.md](hss_columns/README.md) |
+| EBF links | `eccentric_braced_frames/` | [eccentric_braced_frames/README.md](eccentric_braced_frames/README.md) |
+| Cyclic coupons | `material/cyclic_coupons/` | [material/cyclic_coupons/README.md](material/cyclic_coupons/README.md) |
+| Tensile coupons | `material/tensile_coupons/` | [material/tensile_coupons/README.md](material/tensile_coupons/README.md) |
+| Ductile fracture | `material/ductile_fracture/` | [material/ductile_fracture/README.md](material/ductile_fracture/README.md) |
+| Residual stresses | `residual_stresses/` | [residual_stresses/README.md](residual_stresses/README.md) |
+
+The guides deliberately do not repeat the list of columns: the data dictionary CSV next to each main table is the single source of truth for that, and the guides link to it.
 
 ### Data dictionaries
 Data dictionaries are available as CSVs in each tab's folder, e.g. `steel_braces_data_dictionary.csv`. They contain:
@@ -15,8 +38,10 @@ Data dictionaries are available as CSVs in each tab's folder, e.g. `steel_braces
 - unit (optional) : units acceptable. None if unitless. 
 - nullable : True if this column accepts NA. (Clarify distinction NA/NR for the user).
 
-### File naming conventions 
-Currently documented only for [Connections DB](https://github.com/RESSLab-Team/resslab-hub-data/blob/main/connections/README.md)
+### Two ways to contribute
+
+- **Submission form**: <https://resslab-hub.epfl.ch/contribute/new>. Pick the database, download the template CSV and the data dictionary, fill one row per experiment, attach the measured-response files named after their `id`, and submit. The form runs the validation checks as you type and opens the pull request on this repository for you; a curator then reviews it.
+- **Pull request by hand**: fork, branch, add your rows and files, open a pull request. The process is described below.
 
 
 ## Data validation
@@ -55,16 +80,16 @@ git switch -c data/your-changes-description
 
 ### 2. Making Changes
 
-You can modify data in any of these directories:
-- `braces/`
-- `columns/`
-- `connections/`
-- `hss_columns/`
-- `material/cyclic_coupons/`
-- `material/tensile_coupons/`
-- `material/ductile_fracture/`
-- `residual_stresses/`
-- `eccentric_braced_frames`
+You can modify data in any of these directories (each one has a README with the conventions specific to that database):
+- [`braces/`](braces/README.md)
+- [`columns/`](columns/README.md)
+- [`connections/`](connections/README.md)
+- [`hss_columns/`](hss_columns/README.md)
+- [`material/cyclic_coupons/`](material/cyclic_coupons/README.md)
+- [`material/tensile_coupons/`](material/tensile_coupons/README.md)
+- [`material/ductile_fracture/`](material/ductile_fracture/README.md)
+- [`residual_stresses/`](residual_stresses/README.md)
+- [`eccentric_braced_frames/`](eccentric_braced_frames/README.md)
 
 ### Important Note About Commits
 
@@ -88,7 +113,8 @@ But remember:
 1. Open the relevant CSV file
 2. Add your new row(s) following the existing format
 3. Ensure all mandatory fields (nullable=false in data dictionary) are filled
-4. Use "NA" (not empty cells) for missing values in nullable fields
+4. Use "NA" (not applicable) or "NR" (not reported) rather than empty cells for missing values in nullable fields
+5. Name every measured-response file after the `id` of its row (`<id>.csv`) and put it in the folder given in the database README
 
 #### Modifying Existing Data
 1. Locate the row(s) you want to modify

@@ -1,79 +1,79 @@
-column_name,description,symbol,unit,type,example_value,nullable
-id,Unique specimen identifier,,-,String,Skiadopoulos_and_Lignos_CNT_L1_M_C1_R1_0,False
-specimen_designation,Specimen designation code,,-,String,CNT_L1_M_C1_R1_0,False
-experimental_program,Name of the research program/investigators,,-,String,Skiadopoulos and Lignos,False
-date,Test year,,-,SmallInteger,2026,False
-specimen_type,Specimen geometry (CNT = circumferentially notched tensile; GP = grooved plate),,-,String,CNT,False
-piece,Coupon name in fabrication drawings (optional),,-,String,L1_5,False
-loading,Loading type (monotonic / cyclic_*),,-,String,monotonic,False
-loading_protocol,Loading protocol sequence as array,,-,String,"[0,2]",False
-location_coupon,Coupon extraction location in parent element,,-,String,column flange,False
-section_type,Cross-section type,,-,String,wide flange,False
-section_profile,Section profile designation,,-,String,H498x432x45/70,False
-steel_type,Steel grade designation,,-,String,SM490A,False
-coupon_direction,Coupon orientation relative to rolling direction,,-,String,longitudinal,False
-crack_opening_direction,Plane or direction of crack opening relative to rolling direction,,-,String,thickness/width,False
-plate_thickness,Plate thickness from which coupon was extracted,,mm,DecimalFloat,70,False
-f_yn,Nominal yield stress,,MPa,DecimalFloat,295,False
-f_un,Nominal ultimate stress,,MPa,DecimalFloat,490,True
-fy_m,Measured yield stress,,MPa,DecimalFloat,368,True
-fu_m,Measured ultimate stress,,MPa,DecimalFloat,531,True
-elongation_fr,Elongation at fracture (?),,%,DecimalFloat,36,True
-temperature,Test temperature,,°C,DecimalFloat,20,False
-chemical_composition_C,Carbon content,,%,DecimalFloat,0.16,True
-chemical_composition_Si,Silicon content,,%,DecimalFloat,0.3,True
-chemical_composition_Mn,Manganese content,,%,DecimalFloat,1.4,True
-chemical_composition_P,Phosphorus content,,%,DecimalFloat,0.017,True
-chemical_composition_S,Sulfur content,,%,DecimalFloat,0.004,True
-chemical_composition_Cu,Copper content,,%,DecimalFloat,0.01,True
-chemical_composition_Ni,Nickel content,,%,DecimalFloat,0.01,True
-chemical_composition_Cr,Chromium content,,%,DecimalFloat,0.02,True
-chemical_composition_V,Vanadium content,,%,DecimalFloat,0.042,True
-chemical_composition_Nb,Niobium content,,%,DecimalFloat,0,True
-chemical_composition_Mo,Molybdenum content,,%,DecimalFloat,0.006,True
-chemical_composition_Ti,Titanium content,,%,DecimalFloat,0.001,True
-chemical_composition_Al,Aluminum content,,%,DecimalFloat,0.032,True
-chemical_composition_N,Nitrogen content,,%,DecimalFloat,0.004,True
-gauge_length,Gauge length,,mm,DecimalFloat,20,False
-nom_notch_radius,Nominal notch radius,,mm,DecimalFloat,1,False
-nom_whole_diameter_cnt,Nominal unotched cylinder diameter (CNT only),,mm,DecimalFloat,8,True
-nom_notch_diameter_cnt,Nominal notched cylinder diameter (CNT only),,mm,DecimalFloat,5,True
-nom_notch_width,Nominal notch width,,mm,DecimalFloat,2,False
-nom_width_gp,Nominal width (GP only),,mm,DecimalFloat,25,True
-nom_whole_thickness_gp,Nominal whole thickness (GP only),,mm,DecimalFloat,12,True
-nom_notch_thickness_gp,Nominal notch thickness (GP only),,mm,DecimalFloat,2.6,True
-meas_whole_diameter_cnt,Measured unotched cylinder diameter values as array (CNT only),,mm,String,"[7.99, 7.99, 7.99, 7.99]",True
-meas_notch_diameter_cnt,Measured notched cylinder diameter values as array (CNT only),,mm,String,"[5.04, 5.04, 5.02, 5.03]",True
-meas_notch_width,Measured notch width values as array,,mm,String,"[1.97, 1.94, 1.96, 1.97]",False
-meas_width_gp,Measured width values as array (GP only),,mm,String,"[24.96, 25.01, 24.98]",True
-meas_whole_thickness_gp,Measured whole thickness values as array (GP only),,mm,String,"[12.0, 12.0, 12.0]",True
-meas_notch_thickness_gp,Measured notch thickness values as array (GP only),,mm,String,"[2.60, 2.59, 2.61]",True
-disp_fract,Displacement at fracture,,mm,DecimalFloat,1.253,True
-exc_at_fract,Excursion count at fracture,,-,SmallInteger,1,True
-step_fract,Experimental step at ductile crack initiation,,-,Integer,9125,False
-fract_loc,Fracture location,,-,String,center,False
-young_mod,Young's modulus,,MPa,DecimalFloat,205000,False
-nu,Poisson's ratio,,-,DecimalFloat,0.3,False
-triax_at_fr,Triaxiality at fracture,,-,DecimalFloat,1.33267,True
-triax_avg_till_fr,Average triaxiality up to fracture,,-,DecimalFloat,1.33267,False
-lode_at_fr,Lode angle parameter at fracture,,-,DecimalFloat,1,False
-lode_avg_till_fr,Average Lode angle parameter up to fracture,,-,DecimalFloat,1.0032,False
-peeq_at_fr,Equivalent plastic strain at fracture,,-,DecimalFloat,0.5214,False
-cvgm_etamono,CVGM monotonic toughness parameter η,,-,DecimalFloat,6.1,False
-cvgm_lambda,CVGM cyclic degradation parameter λ,,-,DecimalFloat,0.6,False
-swdfm_alpha_pos,SWDFM Alpha positive exponent,,-,DecimalFloat,1.3,False
-swdfm_alpha_neg,SWDFM Alpha negative exponent,,-,DecimalFloat,1.3,False
-swdfm_kappa,SWDFM kappa parameter,,-,DecimalFloat,0.3,False
-swdfm_C,SWDFM C toughness parameter,,-,DecimalFloat,0.25,False
-swdfm_beta,SWDFM beta parameter,,-,DecimalFloat,2.75,False
-kk_alpha_1,Kiran-Khandelwal damage parameter,,-,DecimalFloat,0.85,False
-kk_alpha_2,Kiran-Khandelwal damage parameter,,-,DecimalFloat,-0.25,False
-kk_beta_1,Kiran-Khandelwal damage parameter,,-,DecimalFloat,-0.25,False
-kk_beta_2,Kiran-Khandelwal damage parameter,,-,DecimalFloat,-1.9,False
-kk_d_cr,Kiran-Khandelwal critical damage parameter,,-,DecimalFloat,1,False
-l_star,Characteristic length,,mm,DecimalFloat,0.3,True
-reference,Publication reference,,-,String,"Skiadopoulos, A., and Lignos, D. (2026), ...",False
-link,Publication URL,,-,String,https://www.sciencedirect.com/science/article/pii/S0143974X26000271,False
-latitude,Test location latitude,,°,DecimalFloat,46.5172,False
-longitude,Test location longitude,,°,DecimalFloat,6.5689,False
-has_sem,Whether Scanning Electron Microscopy images are available for this specimen,,-,Boolean,Binary: YES/NO,True
+column_name,description,symbol,unit,type,example_value,nullable,group
+id,Unique specimen identifier,,-,String,Skiadopoulos_and_Lignos_CNT_L1_M_C1_R1_0,False,Experimental program details
+specimen_designation,Specimen designation code,,-,String,CNT_L1_M_C1_R1_0,False,Experimental program details
+experimental_program,Name of the research program/investigators,,-,String,Skiadopoulos and Lignos,False,Experimental program details
+date,Test year,,-,SmallInteger,2026,False,Experimental program details
+specimen_type,Specimen geometry (CNT = circumferentially notched tensile; GP = grooved plate),,-,String,CNT,False,Specimen details
+piece,Coupon name in fabrication drawings (optional),,-,String,L1_5,False,Specimen details
+loading,Loading type (monotonic / cyclic_*),,-,String,monotonic,False,Loading details
+loading_protocol,Loading protocol sequence as array,,-,String,"[0,2]",False,Loading details
+location_coupon,Coupon extraction location in parent element,,-,String,column flange,False,Specimen details
+section_type,Cross-section type,,-,String,wide flange,False,Specimen details
+section_profile,Section profile designation,,-,String,H498x432x45/70,False,Specimen details
+steel_type,Steel grade designation,,-,String,SM490A,False,Material properties
+coupon_direction,Coupon orientation relative to rolling direction,,-,String,longitudinal,False,Material properties
+crack_opening_direction,Plane or direction of crack opening relative to rolling direction,,-,String,thickness/width,False,Specimen details
+plate_thickness,Plate thickness from which coupon was extracted,,mm,DecimalFloat,70,False,Specimen details
+f_yn,Nominal yield stress,,MPa,DecimalFloat,295,False,Material properties
+f_un,Nominal ultimate stress,,MPa,DecimalFloat,490,True,Material properties
+fy_m,Measured yield stress,,MPa,DecimalFloat,368,True,Material properties
+fu_m,Measured ultimate stress,,MPa,DecimalFloat,531,True,Material properties
+elongation_fr,Elongation at fracture (?),,%,DecimalFloat,36,True,Material properties
+temperature,Test temperature,,°C,DecimalFloat,20,False,Experimental program details
+chemical_composition_C,Carbon content,,%,DecimalFloat,0.16,True,Chemical composition
+chemical_composition_Si,Silicon content,,%,DecimalFloat,0.3,True,Chemical composition
+chemical_composition_Mn,Manganese content,,%,DecimalFloat,1.4,True,Chemical composition
+chemical_composition_P,Phosphorus content,,%,DecimalFloat,0.017,True,Chemical composition
+chemical_composition_S,Sulfur content,,%,DecimalFloat,0.004,True,Chemical composition
+chemical_composition_Cu,Copper content,,%,DecimalFloat,0.01,True,Chemical composition
+chemical_composition_Ni,Nickel content,,%,DecimalFloat,0.01,True,Chemical composition
+chemical_composition_Cr,Chromium content,,%,DecimalFloat,0.02,True,Chemical composition
+chemical_composition_V,Vanadium content,,%,DecimalFloat,0.042,True,Chemical composition
+chemical_composition_Nb,Niobium content,,%,DecimalFloat,0,True,Chemical composition
+chemical_composition_Mo,Molybdenum content,,%,DecimalFloat,0.006,True,Chemical composition
+chemical_composition_Ti,Titanium content,,%,DecimalFloat,0.001,True,Chemical composition
+chemical_composition_Al,Aluminum content,,%,DecimalFloat,0.032,True,Chemical composition
+chemical_composition_N,Nitrogen content,,%,DecimalFloat,0.004,True,Chemical composition
+gauge_length,Gauge length,,mm,DecimalFloat,20,False,Geometric properties
+nom_notch_radius,Nominal notch radius,,mm,DecimalFloat,1,False,Geometric properties
+nom_whole_diameter_cnt,Nominal unotched cylinder diameter (CNT only),,mm,DecimalFloat,8,True,Geometric properties
+nom_notch_diameter_cnt,Nominal notched cylinder diameter (CNT only),,mm,DecimalFloat,5,True,Geometric properties
+nom_notch_width,Nominal notch width,,mm,DecimalFloat,2,False,Geometric properties
+nom_width_gp,Nominal width (GP only),,mm,DecimalFloat,25,True,Geometric properties
+nom_whole_thickness_gp,Nominal whole thickness (GP only),,mm,DecimalFloat,12,True,Geometric properties
+nom_notch_thickness_gp,Nominal notch thickness (GP only),,mm,DecimalFloat,2.6,True,Geometric properties
+meas_whole_diameter_cnt,Measured unotched cylinder diameter values as array (CNT only),,mm,String,"[7.99, 7.99, 7.99, 7.99]",True,Geometric properties
+meas_notch_diameter_cnt,Measured notched cylinder diameter values as array (CNT only),,mm,String,"[5.04, 5.04, 5.02, 5.03]",True,Geometric properties
+meas_notch_width,Measured notch width values as array,,mm,String,"[1.97, 1.94, 1.96, 1.97]",False,Geometric properties
+meas_width_gp,Measured width values as array (GP only),,mm,String,"[24.96, 25.01, 24.98]",True,Geometric properties
+meas_whole_thickness_gp,Measured whole thickness values as array (GP only),,mm,String,"[12.0, 12.0, 12.0]",True,Geometric properties
+meas_notch_thickness_gp,Measured notch thickness values as array (GP only),,mm,String,"[2.60, 2.59, 2.61]",True,Geometric properties
+disp_fract,Displacement at fracture,,mm,DecimalFloat,1.253,True,Measured quantities at fracture
+exc_at_fract,Excursion count at fracture,,-,SmallInteger,1,True,Measured quantities at fracture
+step_fract,Experimental step at ductile crack initiation,,-,Integer,9125,False,Measured quantities at fracture
+fract_loc,Fracture location,,-,String,center,False,Measured quantities at fracture
+young_mod,Young's modulus,,MPa,DecimalFloat,205000,False,Material properties
+nu,Poisson's ratio,,-,DecimalFloat,0.3,False,Material properties
+triax_at_fr,Triaxiality at fracture,,-,DecimalFloat,1.33267,True,Measured quantities at fracture
+triax_avg_till_fr,Average triaxiality up to fracture,,-,DecimalFloat,1.33267,False,Measured quantities at fracture
+lode_at_fr,Lode angle parameter at fracture,,-,DecimalFloat,1,False,Measured quantities at fracture
+lode_avg_till_fr,Average Lode angle parameter up to fracture,,-,DecimalFloat,1.0032,False,Measured quantities at fracture
+peeq_at_fr,Equivalent plastic strain at fracture,,-,DecimalFloat,0.5214,False,Measured quantities at fracture
+cvgm_etamono,CVGM monotonic toughness parameter η,,-,DecimalFloat,6.1,False,Fracture model parameters
+cvgm_lambda,CVGM cyclic degradation parameter λ,,-,DecimalFloat,0.6,False,Fracture model parameters
+swdfm_alpha_pos,SWDFM Alpha positive exponent,,-,DecimalFloat,1.3,False,Fracture model parameters
+swdfm_alpha_neg,SWDFM Alpha negative exponent,,-,DecimalFloat,1.3,False,Fracture model parameters
+swdfm_kappa,SWDFM kappa parameter,,-,DecimalFloat,0.3,False,Fracture model parameters
+swdfm_C,SWDFM C toughness parameter,,-,DecimalFloat,0.25,False,Fracture model parameters
+swdfm_beta,SWDFM beta parameter,,-,DecimalFloat,2.75,False,Fracture model parameters
+kk_alpha_1,Kiran-Khandelwal damage parameter,,-,DecimalFloat,0.85,False,Fracture model parameters
+kk_alpha_2,Kiran-Khandelwal damage parameter,,-,DecimalFloat,-0.25,False,Fracture model parameters
+kk_beta_1,Kiran-Khandelwal damage parameter,,-,DecimalFloat,-0.25,False,Fracture model parameters
+kk_beta_2,Kiran-Khandelwal damage parameter,,-,DecimalFloat,-1.9,False,Fracture model parameters
+kk_d_cr,Kiran-Khandelwal critical damage parameter,,-,DecimalFloat,1,False,Fracture model parameters
+l_star,Characteristic length,,mm,DecimalFloat,0.3,True,Fracture model parameters
+reference,Publication reference,,-,String,"Skiadopoulos, A., and Lignos, D. (2026), ...",False,Experimental program details
+link,Publication URL,,-,String,https://www.sciencedirect.com/science/article/pii/S0143974X26000271,False,Experimental program details
+latitude,Test location latitude,,°,DecimalFloat,46.5172,False,Experimental program details
+longitude,Test location longitude,,°,DecimalFloat,6.5689,False,Experimental program details
+has_sem,Whether Scanning Electron Microscopy images are available for this specimen,,-,Boolean,Binary: YES/NO,True,Experimental program details
