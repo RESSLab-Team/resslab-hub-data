@@ -5,7 +5,7 @@ investigator,Names of researchers who conducted the study,,-,String,Yamada,False
 reference,Citation of the source publication,,-,String,"Yamada, S., Ishida, T., & Shimada, Y. (2012)...",False,Experimental program details
 url,URL to the source document,,-,String,https://doi.org/10.3130/aijs.77.627,True,Experimental program details
 test_configuration,Type of test setup configuration,,-,String,DC,False,Specimen details
-stiffness_coefficient,Stiffness coefficient for boundary conditions,,-,SmallInteger,3,False,Specimen details
+stiffness_coefficient,Stiffness coefficient for boundary conditions,,-,SmallInteger,3,False,Loading details
 test_type,Type of loading test,,-,String,Cyclic,False,Specimen details
 loading_protocol,Description of loading sequence,,-,String,Symmetric,False,Loading details
 forming_process,Manufacturing process of the HSS section,,-,String,Cold,False,Specimen details
@@ -56,6 +56,6 @@ mc_my_neg_80fit,Negative capping moment ratio (80% fit),,-,DecimalFloat,1.19,Tru
 mu_mc_neg_80fit,Negative ultimate moment ratio (80% fit),,-,DecimalFloat,0.36,True,Backbone parameters (80% fit)
 lambda_s,Slenderness ratio (strong axis),,-,DecimalFloat,0.749,True,Section properties
 lambda_c,Slenderness ratio (weak axis),,-,DecimalFloat,0.749,True,Section properties
-flexural_buckling,Indication of flexural buckling occurrence,,-,String,False,False,Specimen details
+flexural_buckling,Indication of flexural buckling occurrence,,-,String,False,False,Measured response
 latitude,Geographical latitude of testing facility,,degrees,DecimalFloat,45.505,True,Experimental program details
 longitude,Geographical longitude of testing facility,,degrees,DecimalFloat,-73.614,True,Experimental program details
