@@ -14,7 +14,7 @@
   "files": [
     {
       "path": "connections/connections.csv",
-      "sha256": "0514b4aa3d5e704bd1bacb60680a2ce394d53b98be8f68fcebab1d34875983b7"
+      "sha256": "cc70d8073d665244fdb05dfeda47ab5f02d9ac36e4b6994b1a14b55ed6c1edf1"
     },
     {
       "path": "connections/Beam_moment_rotation/DEMO-CON-001.csv",
@@ -317,5 +317,15 @@
       "sha256": "e52764568ef44ff87e08d5b8e66ff6be873a9b6a8bccfd69289566d91add1c40"
     }
   ],
-  "dismissed_warnings": []
+  "dismissed_warnings": [],
+  "updated_at": "2026-09-05T17:44:02+00:00",
+  "updated_by": {
+    "name": "Pierre Ripoll",
+    "email": "pierreripoll13@gmail.com",
+    "institution": "",
+    "orcid": "",
+    "github_login": "pierreleripoll",
+    "identity": "github",
+    "user_id": "d00383e0-f639-483b-b5a1-2d2db7184779"
+  }
 }
