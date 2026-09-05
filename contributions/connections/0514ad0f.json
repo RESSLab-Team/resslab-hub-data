@@ -1,0 +1,331 @@
+{
+  "schema": 1,
+  "type": "all-connections",
+  "submitted_at": "2026-09-05T17:42:38+00:00",
+  "contributor": {
+    "name": "Pierre Ripoll",
+    "email": "pierreripoll13@gmail.com",
+    "institution": "",
+    "orcid": "",
+    "github_login": "pierreleripoll",
+    "identity": "github",
+    "user_id": "d00383e0-f639-483b-b5a1-2d2db7184779"
+  },
+  "files": [
+    {
+      "path": "connections/connections.csv",
+      "sha256": "cc70d8073d665244fdb05dfeda47ab5f02d9ac36e4b6994b1a14b55ed6c1edf1"
+    },
+    {
+      "path": "connections/Beam_moment_rotation/DEMO-CON-001.csv",
+      "sha256": "63c6b4d11dea4590fba92b937e5028157b58ac908c8f9e88bd9f7488831e6489"
+    },
+    {
+      "path": "connections/Beam_moment_rotation/DEMO-CON-002.csv",
+      "sha256": "7d60208daa84429cb0da488f1be7b8cf0a43701d3b54e9e30507d02937ec1e82"
+    },
+    {
+      "path": "connections/Beam_moment_rotation/DEMO-CON-003.csv",
+      "sha256": "3fead31bdea2eff2f24da7eb1b11ead8ca79079631eb13e5f565753a81bfc9fd"
+    },
+    {
+      "path": "connections/Beam_moment_rotation/DEMO-CON-004.csv",
+      "sha256": "e1f18743ced7245e0da273ec5990862ce851e0e7b08515e7fa4014bcd2e7c6b2"
+    },
+    {
+      "path": "connections/Beam_moment_rotation/DEMO-CON-005.csv",
+      "sha256": "3e857fea0d3d1544601ebf449a77d0eeb64ec912aa05e7e2579bf0c6ca7f76db"
+    },
+    {
+      "path": "connections/Beam_moment_rotation/DEMO-CON-006.csv",
+      "sha256": "91c29a11fccb1ca24d7da5a8cae01f524d0911b68f2b2f4666f03bc3f32ead6a"
+    },
+    {
+      "path": "connections/Beam_moment_rotation/DEMO-CON-007.csv",
+      "sha256": "63aa26d5c59cf3308ab37dac0d3c3f0bb742aa03cf56f0485ae25735d0d63793"
+    },
+    {
+      "path": "connections/Beam_moment_rotation/DEMO-CON-008.csv",
+      "sha256": "3162a373dcbc00f968ce9fd8c5fd159f2d575ff22d07383d5b134de777ca0b6d"
+    },
+    {
+      "path": "connections/Beam_moment_rotation/DEMO-CON-009.csv",
+      "sha256": "b6f234b1c4c971055e6ca4cf84799c84cff5c14df1a853289cc03d9180e3e354"
+    },
+    {
+      "path": "connections/Beam_moment_rotation/DEMO-CON-010.csv",
+      "sha256": "bf50f8666b0ff0378c1274790438d1aacff4b68bda9f15d46519acb6230e97b6"
+    },
+    {
+      "path": "connections/Beam_moment_rotation/DEMO-CON-011.csv",
+      "sha256": "d565f982f01ac82336882bd6f82ad584ebf9bb69ee1f849ea086af15300e6709"
+    },
+    {
+      "path": "connections/Beam_moment_rotation/DEMO-CON-012.csv",
+      "sha256": "587f76effa4cf218e7fab19beb294465f220b589cb5adfc6fc7d08bf46b8a7a3"
+    },
+    {
+      "path": "connections/Beam_moment_rotation/DEMO-CON-013.csv",
+      "sha256": "4c5ae52618e1d481538d2bf0340f1064acdfd9f6c983bd34386028763d7dfdb0"
+    },
+    {
+      "path": "connections/Beam_moment_rotation/DEMO-CON-014.csv",
+      "sha256": "1890f165e1e2e985ec0f3763a382c43f6670c8ef219ba14a36bbeef688a24fbe"
+    },
+    {
+      "path": "connections/Beam_moment_rotation/DEMO-CON-015.csv",
+      "sha256": "f6926c8720b0c7f0f70da6946cca587619a989250eedcd9295c369d38644becc"
+    },
+    {
+      "path": "connections/Beam_moment_rotation_west/DEMO-CON-001.csv",
+      "sha256": "b6f8d83897fd39d22ab7729e775538025159ed6f29800c9bf8149a3b488b81b1"
+    },
+    {
+      "path": "connections/Beam_moment_rotation_west/DEMO-CON-002.csv",
+      "sha256": "073f53e523fbd24a78fecb7a9e054a8b75c751b0664c213ffb23a4c354dddcbd"
+    },
+    {
+      "path": "connections/Beam_moment_rotation_west/DEMO-CON-003.csv",
+      "sha256": "0beefda6a53c5d0ce4bed586096a9366ee7113247fa74825bad41b966e3ab942"
+    },
+    {
+      "path": "connections/Beam_moment_rotation_west/DEMO-CON-004.csv",
+      "sha256": "aee8d86737c0ffdf37a2edb3fa1770c60c67230280cd0fe88d8e75d70f0dfd33"
+    },
+    {
+      "path": "connections/Beam_moment_rotation_west/DEMO-CON-005.csv",
+      "sha256": "0a12d4b6bfbb60355a00bae411e5bdbd22dd59336c3b472b31e5836c48462aa2"
+    },
+    {
+      "path": "connections/Beam_moment_rotation_west/DEMO-CON-006.csv",
+      "sha256": "15400d2adc9b89ba3fcc766e9b70a83e3f7de490f064cf7137bcef1e631e2c25"
+    },
+    {
+      "path": "connections/Beam_moment_rotation_west/DEMO-CON-007.csv",
+      "sha256": "ab9a49e79ef5c10ce6e92fdd6144161161502ea4177d6052c29694be82c87da0"
+    },
+    {
+      "path": "connections/Beam_moment_rotation_west/DEMO-CON-008.csv",
+      "sha256": "77c1d3681e6da6e50483ce45763ffd8946031b12eb1f503fa79675c7dade1286"
+    },
+    {
+      "path": "connections/Beam_moment_rotation_west/DEMO-CON-009.csv",
+      "sha256": "0849c1a11cb9f804a37354723556b05d7c6b78f8675919b3076227f107a76ffb"
+    },
+    {
+      "path": "connections/Beam_moment_rotation_west/DEMO-CON-010.csv",
+      "sha256": "53fc7116440de409594df646f30fe00a200426c54390d3eb7a94b9f378bb9bc9"
+    },
+    {
+      "path": "connections/Beam_moment_rotation_west/DEMO-CON-011.csv",
+      "sha256": "b24e89585bb874bb4ee87ff50f916bc76559e1c0855f9e0877785dab2f755695"
+    },
+    {
+      "path": "connections/Beam_moment_rotation_west/DEMO-CON-012.csv",
+      "sha256": "ab47fcafa60dafa443dae5ed02e1d2b98598f1a3a04928fe73cc2cd1896ee6c6"
+    },
+    {
+      "path": "connections/Beam_moment_rotation_west/DEMO-CON-013.csv",
+      "sha256": "fed30afa2a05b5771a317456a43ecb3567f21ac9433ec158d622f2dc58f82a46"
+    },
+    {
+      "path": "connections/Beam_moment_rotation_west/DEMO-CON-014.csv",
+      "sha256": "315b6d497d20a78ae3d4b5c16ca149875b9cb86fbecdb5cdab91b43abd693981"
+    },
+    {
+      "path": "connections/Beam_moment_rotation_west/DEMO-CON-015.csv",
+      "sha256": "8a4965082f4559490faa54091e59796a322eb9859aa57cb7051dd4812046d053"
+    },
+    {
+      "path": "connections/Global/DEMO-CON-001.csv",
+      "sha256": "cdcabdabaee110683fc91fb38c1c8eab909f38e27e4b8ed1da4ca0302e1aa794"
+    },
+    {
+      "path": "connections/Global/DEMO-CON-002.csv",
+      "sha256": "92557f177ffe4b307d28ef2006e0ce38ed8c2338bc00386776d2682f01910da1"
+    },
+    {
+      "path": "connections/Global/DEMO-CON-003.csv",
+      "sha256": "bae9a0fa3fe896f32ab4ea113793c353b99e052da3a9cce777ed1887f6143ba3"
+    },
+    {
+      "path": "connections/Global/DEMO-CON-004.csv",
+      "sha256": "e4160e9b1f1ee4b1ddb5a472249b4f48f8d402074c0adb8ddf74c9a11e2b0abf"
+    },
+    {
+      "path": "connections/Global/DEMO-CON-005.csv",
+      "sha256": "194d3d84c3b3f03be543f6f910bdc58f8696c69bf723e8ca26e062699567d64c"
+    },
+    {
+      "path": "connections/Global/DEMO-CON-006.csv",
+      "sha256": "24267a4c53b8f5e36627016fecc0862d752834239006aa7b0bb02452cedb2b81"
+    },
+    {
+      "path": "connections/Global/DEMO-CON-007.csv",
+      "sha256": "51020795e50b6965882b8becb1f88ee2728055705bf7c4e9320214c288c88c04"
+    },
+    {
+      "path": "connections/Global/DEMO-CON-008.csv",
+      "sha256": "dfc5951bdbf697c5c28f6d5cc67402267a6ea64c14321c580826f542db0e48fe"
+    },
+    {
+      "path": "connections/Global/DEMO-CON-009.csv",
+      "sha256": "23074e6dc88f278262b709d09ec9339d68d813d02fd074f3ba6899c50b851324"
+    },
+    {
+      "path": "connections/Global/DEMO-CON-010.csv",
+      "sha256": "60cf51913eaa7f94b1e00d9c6b4c2bf741b8dbbe35f6234dd84e0d786c76ec35"
+    },
+    {
+      "path": "connections/Global/DEMO-CON-011.csv",
+      "sha256": "e085ed7e4832b6a49789b34093cc4d9e9b770f008bcec9aaef9884bb98f2a557"
+    },
+    {
+      "path": "connections/Global/DEMO-CON-012.csv",
+      "sha256": "41816f30b0704f6b9f07a2542b6c956d3f9dfd0ccb1172469e17b61baddd791e"
+    },
+    {
+      "path": "connections/Global/DEMO-CON-013.csv",
+      "sha256": "cff357ecc52beee1069dc5d2c91ee4bdcbd532ffff2fc65c99431d1f8ef1c5c8"
+    },
+    {
+      "path": "connections/Global/DEMO-CON-014.csv",
+      "sha256": "b5f340f2cd4566fa982dbfa83a97ed654c99dc4779728f5c1171ba213c62e416"
+    },
+    {
+      "path": "connections/Global/DEMO-CON-015.csv",
+      "sha256": "55a50cf861e8ef18ad4c33f3d1b1e455b91bc5e3903e7541eaa673f395181cc8"
+    },
+    {
+      "path": "connections/Global_west/DEMO-CON-001.csv",
+      "sha256": "f6bb27e0c176a6b518aa0a5ac85568f1a0511c34c90fcf39bc5d297aacde9973"
+    },
+    {
+      "path": "connections/Global_west/DEMO-CON-002.csv",
+      "sha256": "91b54856f817c45d720c7b447aec9fbf287eb351f97508175cf9deffbd1b32d6"
+    },
+    {
+      "path": "connections/Global_west/DEMO-CON-003.csv",
+      "sha256": "b489ac81479da00449ed84cdb4b7b25170570ffd6d626b228e1bdab012d3cf89"
+    },
+    {
+      "path": "connections/Global_west/DEMO-CON-004.csv",
+      "sha256": "2d47e0bd0b0babf1a04ea0a59ee2b414ca10c68b4a5a29c2d193795bf2cea352"
+    },
+    {
+      "path": "connections/Global_west/DEMO-CON-005.csv",
+      "sha256": "2ad88650ed60e5381dc09b01bed51e172582290c5a91fcd68e830d112e3edc4e"
+    },
+    {
+      "path": "connections/Global_west/DEMO-CON-006.csv",
+      "sha256": "b2d3190d667a3fa9ca0d0536f36bccc49543d2eb20baddd1b1c2f0fef89166ce"
+    },
+    {
+      "path": "connections/Global_west/DEMO-CON-007.csv",
+      "sha256": "7244f124c17059ce1d9582fad86d9ff772f2d32e0fc88e5deaf6da8c5a582e51"
+    },
+    {
+      "path": "connections/Global_west/DEMO-CON-008.csv",
+      "sha256": "29802fceac0a92b2f593318f1a6d975c0c5ddd3900e25334c7081ebe920a41a6"
+    },
+    {
+      "path": "connections/Global_west/DEMO-CON-009.csv",
+      "sha256": "840947d50f426b330814821b25ec50d28fe3c155fe5b8530c7dde26b8739ef83"
+    },
+    {
+      "path": "connections/Global_west/DEMO-CON-010.csv",
+      "sha256": "b080ba3d6705c10cd025d982650b4ecd11733bc60b3730a5a944d2c14417e44c"
+    },
+    {
+      "path": "connections/Global_west/DEMO-CON-011.csv",
+      "sha256": "138ff85fe4cd4c519fe81800ffd98c351f6a206ca113521414e8751382354ea6"
+    },
+    {
+      "path": "connections/Global_west/DEMO-CON-012.csv",
+      "sha256": "ddfc5cc2453faa558810780fb179390bb9607abe05c8fcbd39b158502c668d52"
+    },
+    {
+      "path": "connections/Global_west/DEMO-CON-013.csv",
+      "sha256": "6bfd0e47d4b529d9e0b45b75bfa593409494f46c0c7c097552fc57387b2875e0"
+    },
+    {
+      "path": "connections/Global_west/DEMO-CON-014.csv",
+      "sha256": "cb9e7d03c00364295f3bc09f9d55c5fb4fc5a54692dea9edea8cba765a6bee1c"
+    },
+    {
+      "path": "connections/Global_west/DEMO-CON-015.csv",
+      "sha256": "0006407dfb36da682d9338d3df1702b95c6233834fb2b1fdd53d1b618d56e8fb"
+    },
+    {
+      "path": "connections/Panel_zone/DEMO-CON-001.csv",
+      "sha256": "d9cf8b94dd9d3ddc19aafc4779585dd176842fa76d0b2b5feb5e9bf8bd24e240"
+    },
+    {
+      "path": "connections/Panel_zone/DEMO-CON-002.csv",
+      "sha256": "1d06ac4b332c3c50993c2d9dcc831d51f2abb0cdb8d89301e10f332a6a32a937"
+    },
+    {
+      "path": "connections/Panel_zone/DEMO-CON-003.csv",
+      "sha256": "028b6ce3651037b587ac42881d8d0cf03a01a83ef29815c47d30548c181bac4e"
+    },
+    {
+      "path": "connections/Panel_zone/DEMO-CON-004.csv",
+      "sha256": "5ba4af1256ea18c33f5ae9dc7781d1e9157596caedf358d58e656ab0a7a89c05"
+    },
+    {
+      "path": "connections/Panel_zone/DEMO-CON-005.csv",
+      "sha256": "1aeeba7c7860f7f9d09b2cba4b36db750f642e07cdfa14c23b88a991142afca5"
+    },
+    {
+      "path": "connections/Panel_zone/DEMO-CON-006.csv",
+      "sha256": "537b73080a0f8812c2dd67600e159b9dea7241821430edb4269c48b19dbb59db"
+    },
+    {
+      "path": "connections/Panel_zone/DEMO-CON-007.csv",
+      "sha256": "f8806049a05c851bb707c494f47013f962270416976815f3a16afa4a7bd2a173"
+    },
+    {
+      "path": "connections/Panel_zone/DEMO-CON-008.csv",
+      "sha256": "26461aa3635587fbe881cb5aa1f7a3d1d5d2780a2480f8a31709c6e7a9e5a2c5"
+    },
+    {
+      "path": "connections/Panel_zone/DEMO-CON-009.csv",
+      "sha256": "7f621018223bd5528b470bfa065a6290cfd237efad2cce263fd2c5c24d2177cc"
+    },
+    {
+      "path": "connections/Panel_zone/DEMO-CON-010.csv",
+      "sha256": "58c92c2cddaaeb9d5c33161d68b7c4cb53f5730912308c156fe2c14d485d7bc4"
+    },
+    {
+      "path": "connections/Panel_zone/DEMO-CON-011.csv",
+      "sha256": "eb9e780ee7f04bc5766629291ca003781b82b6bafd585728c689c824b716040e"
+    },
+    {
+      "path": "connections/Panel_zone/DEMO-CON-012.csv",
+      "sha256": "a48f14ecd042cd947416388ff5c09d3fe6e9547c08c6bb47a5c9caa56e66861e"
+    },
+    {
+      "path": "connections/Panel_zone/DEMO-CON-013.csv",
+      "sha256": "f84e7d9145ebc50dd1e3b01435e2f5db49e78bf8a9895bdf561f1f5f5eab0129"
+    },
+    {
+      "path": "connections/Panel_zone/DEMO-CON-014.csv",
+      "sha256": "40078b0fc9901e9c51d2557c38325c8ed2554ece95892a7cae96191308d4fad3"
+    },
+    {
+      "path": "connections/Panel_zone/DEMO-CON-015.csv",
+      "sha256": "e52764568ef44ff87e08d5b8e66ff6be873a9b6a8bccfd69289566d91add1c40"
+    }
+  ],
+  "dismissed_warnings": [],
+  "updated_at": "2026-09-05T17:44:02+00:00",
+  "updated_by": {
+    "name": "Pierre Ripoll",
+    "email": "pierreripoll13@gmail.com",
+    "institution": "",
+    "orcid": "",
+    "github_login": "pierreleripoll",
+    "identity": "github",
+    "user_id": "d00383e0-f639-483b-b5a1-2d2db7184779"
+  }
+}
