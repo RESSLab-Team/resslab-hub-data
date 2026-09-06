@@ -1,0 +1,201 @@
+{
+  "schema": 1,
+  "type": "all-columns",
+  "submitted_at": "2026-09-06T07:47:41+00:00",
+  "contributor": {
+    "name": "Pierre Ripoll",
+    "email": "pierre.ripoll@epfl.ch",
+    "institution": "",
+    "orcid": "",
+    "github_login": "",
+    "identity": "email",
+    "user_id": "1a256628-a0d5-4b7e-bff7-bd561ffeb069"
+  },
+  "files": [
+    {
+      "path": "columns/steel_columns.csv",
+      "sha256": "ec95e798e15ed9484cff2c19f5a83ac5c1e74038ed733cbdbc14e682f11e2a0b"
+    },
+    {
+      "path": "columns/axial_shortening_rotation/DEMO-COL-001.csv",
+      "sha256": "e46f1065bb6cc7c50a5918b11fd8f1a47b4cf2b8e997eb7ce54bb455642aa2a7"
+    },
+    {
+      "path": "columns/axial_shortening_rotation/DEMO-COL-002.csv",
+      "sha256": "10095ee6f9c075bbdf74d3b2ae82a0f8f3d2be67c6a94c31ed44174cd43651d6"
+    },
+    {
+      "path": "columns/axial_shortening_rotation/DEMO-COL-003.csv",
+      "sha256": "dfd4afa450b8dd361b5d0516d954531ec51d03be0376ddf6f58682e982219655"
+    },
+    {
+      "path": "columns/axial_shortening_rotation/DEMO-COL-004.csv",
+      "sha256": "ad8f0d9129751609f712f3d1cec25a5ac4a6c130a082c368facbb5862c0fb7f3"
+    },
+    {
+      "path": "columns/axial_shortening_rotation/DEMO-COL-005.csv",
+      "sha256": "11616a72af0e8910b2d51349d12e10b9ed572d2b90b22ce74d2f0ddc08874e12"
+    },
+    {
+      "path": "columns/axial_shortening_rotation/DEMO-COL-006.csv",
+      "sha256": "9cbd06515c61ae5f10e021d3abade2390b2f9cab89b10ebe5e656ec2d3f1a6f0"
+    },
+    {
+      "path": "columns/axial_shortening_rotation/DEMO-COL-007.csv",
+      "sha256": "cd84b36ce6219a0dfbda2aba6a335c9b2f7745ef715132439c229a529f81c6cc"
+    },
+    {
+      "path": "columns/axial_shortening_rotation/DEMO-COL-008.csv",
+      "sha256": "a1df2a669f09d0c56f6fa2b826854b893a15d66fddeef357d946c73c5cc5762d"
+    },
+    {
+      "path": "columns/axial_shortening_rotation/DEMO-COL-009.csv",
+      "sha256": "98ea3fa3c95657f5de19ea1d61fef9933b4dd20ad2a5b409fee7f3dca4b700fd"
+    },
+    {
+      "path": "columns/axial_shortening_rotation/DEMO-COL-010.csv",
+      "sha256": "190e521480184549b39ffb500fb835b2bfc65c65626497e0e79828bec46455d7"
+    },
+    {
+      "path": "columns/axial_shortening_rotation/DEMO-COL-011.csv",
+      "sha256": "7ff6abdcc5cfabe924c0c149afe0247d97c26abf74e5ddaa34b83ea743cc78f1"
+    },
+    {
+      "path": "columns/axial_shortening_rotation/DEMO-COL-012.csv",
+      "sha256": "c0704269599ce17bd86493a9279eee15b963c46220b2bd8f22fcfb70e58fdfea"
+    },
+    {
+      "path": "columns/axial_shortening_rotation/DEMO-COL-013.csv",
+      "sha256": "b9c20b17006d4cfe396016415c0f94bfbca8cc7d05b428ff7fea2b4a7a510e51"
+    },
+    {
+      "path": "columns/axial_shortening_rotation/DEMO-COL-014.csv",
+      "sha256": "75f4210d4422012f8f6ae54a987d19833f5e80942331e8d59b8d816f315b8dd3"
+    },
+    {
+      "path": "columns/axial_shortening_rotation/DEMO-COL-015.csv",
+      "sha256": "3460bca7936aca2058a3105de21de2dc5eefb49f8b219ffbf2315c99418df8be"
+    },
+    {
+      "path": "columns/moment_rotation_strong/DEMO-COL-001.csv",
+      "sha256": "c67458af6c4fee21ffe4aab51900897f330ae251ca9c0cb8641ba02ce1eb7627"
+    },
+    {
+      "path": "columns/moment_rotation_strong/DEMO-COL-002.csv",
+      "sha256": "e73c6eee00610b5b2aa6c8070c4f6fc772f94f69da5b8f230aae690c7b1a29f5"
+    },
+    {
+      "path": "columns/moment_rotation_strong/DEMO-COL-003.csv",
+      "sha256": "948ad9fecce1973ada9ce62670067b8e2193c6fdc7d27f2bdac1a2216e5ffca9"
+    },
+    {
+      "path": "columns/moment_rotation_strong/DEMO-COL-004.csv",
+      "sha256": "0c2235ca766f810c2405940c3f43b4d76104dc4864e4edf32cf30cff1af933ed"
+    },
+    {
+      "path": "columns/moment_rotation_strong/DEMO-COL-005.csv",
+      "sha256": "c6fa7b58aac4f28ee8f04a82ea61ccb8d8974f67381ae531667eabf6617d0e54"
+    },
+    {
+      "path": "columns/moment_rotation_strong/DEMO-COL-006.csv",
+      "sha256": "9d8b7601d4b43c4e86fc6190042bbc0e0219f15d014490c40d61148999f02cff"
+    },
+    {
+      "path": "columns/moment_rotation_strong/DEMO-COL-007.csv",
+      "sha256": "a14f4e0013828c41446ed7ed9046c5970fd2dbe529250b89fb7d8555d9e5dddb"
+    },
+    {
+      "path": "columns/moment_rotation_strong/DEMO-COL-008.csv",
+      "sha256": "89f0aec5926223c226b817f06047036e54a205ac206c2f480b2560725adc4d0e"
+    },
+    {
+      "path": "columns/moment_rotation_strong/DEMO-COL-009.csv",
+      "sha256": "7b8a15884db6459d03a58c4deefe3ec1427392631e2cff9a637c2374923538ac"
+    },
+    {
+      "path": "columns/moment_rotation_strong/DEMO-COL-010.csv",
+      "sha256": "f55e6952056eec9017ab4d0675508edd1c58a7c867fc263eeca336a979858a44"
+    },
+    {
+      "path": "columns/moment_rotation_strong/DEMO-COL-011.csv",
+      "sha256": "cee6b6d791eb02f0033a7d7d0c8ecc1abb6d87e538fc18fac01af1b3844cdf07"
+    },
+    {
+      "path": "columns/moment_rotation_strong/DEMO-COL-012.csv",
+      "sha256": "05fa41733369e20064a3850141596b91434d565791f8df323eaf26498d05f5b6"
+    },
+    {
+      "path": "columns/moment_rotation_strong/DEMO-COL-013.csv",
+      "sha256": "4d94b63f9aa44ce5ca9204f9fe064f5418ce90028421847fcbccdddd34aceed5"
+    },
+    {
+      "path": "columns/moment_rotation_strong/DEMO-COL-014.csv",
+      "sha256": "2541e73c94455ff66cd24ebe37e5600324280f86ddbe9b3b9d0893bdf058d1e5"
+    },
+    {
+      "path": "columns/moment_rotation_strong/DEMO-COL-015.csv",
+      "sha256": "c981e6e4d2791305f642eaa0d91701dd27d1c5d3ab5a13fff835d1b6fce0f0a4"
+    },
+    {
+      "path": "columns/moment_rotation_weak/DEMO-COL-001.csv",
+      "sha256": "9b0c4341c5d76ef52d7574fefe90e027d75d1f79bf0234a85f97b9fe4de744ec"
+    },
+    {
+      "path": "columns/moment_rotation_weak/DEMO-COL-002.csv",
+      "sha256": "933c33d30649d5970f7ac8ff4fcc9e750d60638607c694000fd87999db11a66b"
+    },
+    {
+      "path": "columns/moment_rotation_weak/DEMO-COL-003.csv",
+      "sha256": "b98f2fc06601d91be7638565c7d2df8c2ed9b65cd550ab76174920e58c098070"
+    },
+    {
+      "path": "columns/moment_rotation_weak/DEMO-COL-004.csv",
+      "sha256": "6bbdade5bb58cda15a2302e6b7ec1f74acebd8daa166dcd3d543d3901af4be3b"
+    },
+    {
+      "path": "columns/moment_rotation_weak/DEMO-COL-005.csv",
+      "sha256": "df65838ea9c6d3ea3d3a44c02c4e389c70cf096cf9d4e911fb33462fc87a2696"
+    },
+    {
+      "path": "columns/moment_rotation_weak/DEMO-COL-006.csv",
+      "sha256": "b10e0055758f1546017471c257de096b98cbdaa7ea1c265b0b375084cbc2edfc"
+    },
+    {
+      "path": "columns/moment_rotation_weak/DEMO-COL-007.csv",
+      "sha256": "6ad97058b0f9900d908d9d0b599d62f22acc343bd96cbc2d23d24048f7d573d7"
+    },
+    {
+      "path": "columns/moment_rotation_weak/DEMO-COL-008.csv",
+      "sha256": "dbd810d724e7955c162737e470f3d7ed45dd4afde7569fb2c59b577816cd9915"
+    },
+    {
+      "path": "columns/moment_rotation_weak/DEMO-COL-009.csv",
+      "sha256": "8758b8568debef3ee37630e636b210a3d17b9b6bd0b568fd920a92e5180e5d8e"
+    },
+    {
+      "path": "columns/moment_rotation_weak/DEMO-COL-010.csv",
+      "sha256": "f3c41d8fbdd7c31fd181db8573a097d34f96b61bde6d9377164f8baa95502cc6"
+    },
+    {
+      "path": "columns/moment_rotation_weak/DEMO-COL-011.csv",
+      "sha256": "43eb894d77e8bf9dc94e106fa57b49d062eb889b169a06a440d1dd20f6109585"
+    },
+    {
+      "path": "columns/moment_rotation_weak/DEMO-COL-012.csv",
+      "sha256": "d6805e559b9332a17900107bb9e55a7cadd73a8b7a673e7b9dbc438a19557156"
+    },
+    {
+      "path": "columns/moment_rotation_weak/DEMO-COL-013.csv",
+      "sha256": "d0024866a009ace5f6e07820e380fc61b71b50ca7ee8276d53b993e398bd1529"
+    },
+    {
+      "path": "columns/moment_rotation_weak/DEMO-COL-014.csv",
+      "sha256": "6072eb42f00912585ebbea763a6557e29b2ba0832de0d297e0e188b6133aa76e"
+    },
+    {
+      "path": "columns/moment_rotation_weak/DEMO-COL-015.csv",
+      "sha256": "9832de77bb23195a59285cb7063c9443dc48c4675ffb6d52464c390b4214bb30"
+    }
+  ],
+  "dismissed_warnings": []
+}
