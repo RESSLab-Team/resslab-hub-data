@@ -1,13 +1,17 @@
 name: build-data-image
 
-# Packs the data files into an image, one tag per branch: `main` feeds dev and
-# prod, `test` feeds the stage deployment. The hub re-uploads a whole database
+# Packs the data files into an image tagged `main`. Every deployment (dev,
+# stage, prod) uploads from that one image. The hub re-uploads a whole database
 # from it with the resslab-hub-upload-data CronJob (ArgoCD -> create-job).
+#
+# There used to be a `test` branch feeding the stage deployment. It was never
+# updated after January 2022 and is gone now, so `main` is the only source.
+# Submissions from every environment open their pull request into `main` too;
+# the ones made for testing are closed, not merged.
 on:
   push:
     branches:
       - main
-      - test
   workflow_dispatch:
 
 jobs:
