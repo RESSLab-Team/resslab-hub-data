@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "type": "all-material",
+  "submitted_at": "2026-08-26T15:47:17+00:00",
+  "contributor": {
+    "name": "Yosuke Ashida",
+    "email": "yosuke.ashida@epfl.ch",
+    "institution": "",
+    "orcid": "",
+    "identity": "self-declared"
+  },
+  "files": [
+    {
+      "path": "material/cyclic_coupons/steel_material.csv",
+      "sha256": "02d2cad4e70ed7d19b2ac7b34f086006df75845821e102510d3418e5b4eb4419"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/B1-HEM340Fl-S355J2+AR-C1.csv",
+      "sha256": "6bf17dd08708f04e71648b2a7c8b8106a30bc47fdf6d4551a2843175824410f6"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/B1-HEM340Fl-S355J2+AR-C10.csv",
+      "sha256": "80aa3a7146a2a5a40eda0ad4b571513d0ecbfcaa2c579f96b8fae932efdf8631"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/B1-HEM340Fl-S355J2+AR-C11.csv",
+      "sha256": "e4adcda3334eef00632ebe2c1e5a1f30048ba5c8c51481247b3eafde7441dc42"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/B1-HEM340Fl-S355J2+AR-C2.csv",
+      "sha256": "0e70ca3d957bf021fdc9fb01e83efca84d2d89f6a3170c9db993289eeace79aa"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/B1-HEM340Fl-S355J2+AR-C3.csv",
+      "sha256": "44a80ff098b33989e85b24cba48510d932a2b74495ebe934204a26715d41ca9f"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/B1-HEM340Fl-S355J2+AR-C4.csv",
+      "sha256": "964efb44e326d8f4c46e12e95f1af040caa3287641bae8eb593f0ed978421061"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/B1-HEM340Fl-S355J2+AR-C5.csv",
+      "sha256": "d988405d9cd9b99af6542e7a79c866e9ad2fa6d4681d0a11b36c18508ca84a3c"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/B1-HEM340Fl-S355J2+AR-C6.csv",
+      "sha256": "f6a4279b9e51eb92efab7919d8bc573d6aff32bff8d5a50f81add91eb5fc512c"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/B1-HEM340Fl-S355J2+AR-C7.csv",
+      "sha256": "7b5268c1c79bf5450a65f1ba0db6e2d320e49e371a54809e146a8d6384418e72"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/B1-HEM340Fl-S355J2+AR-C8.csv",
+      "sha256": "232d3ca387fb3cff4bd953c5c61d31459cfee23aa8d5283a8646d73c8bb87e81"
+    },
+    {
+      "path": "material/cyclic_coupons/stress_strain/B1-HEM340Fl-S355J2+AR-C9.csv",
+      "sha256": "35de8e39faa675c7159d905825bbe5f32a9467dcb7929e84e1cb9629e08631e0"
+    }
+  ],
+  "dismissed_warnings": []
+}
