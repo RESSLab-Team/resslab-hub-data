@@ -97,3 +97,4 @@ reference,Reference citation for the study,,-,String,"Engelhardt, M. and Popov, 
 url,URL to the reference document,,-,String,https://nehrpsearch.nist.gov/static/files/NSF/PB92143056.pdf,False,Experimental program details
 latitude,Latitude of the test location,,degrees,DecimalFloat,37.8742565,False,Experimental program details
 longitude,Longitude of the test location,,degrees,DecimalFloat,-122.2387092,False,Experimental program details
+data_curation_status,Review status set by the Hub (unverified until a curator checked the data),,-,String,verified,False,Experimental program details

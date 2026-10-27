@@ -23,6 +23,7 @@ for example `batch1-bfl-A3` (batch 1, beam flange, coupon A3) or `batch1-bweb-B5
 ## Main table
 
 - Every column is described in `tensile_coupons_data_dictionary.csv`. Columns with `nullable = False` are mandatory.
+- Leave `data_curation_status` out, the Hub sets it. A new submission goes live as `unverified`, with a warning on the site, and a curator changes it to `verified` once the data has been checked.
 - Column names carry their unit as a suffix between double underscores (`avg_init_reduced_width__mm_`, `yield_stress_02__mpa_`, `t_a__deg_c_`).
 - `standard` is the testing standard the coupon follows; `specimen_type` its geometry (rectangular, round).
 - `bin_discont_yield` says whether the stress-strain curve shows a yield plateau; `yield_stress_uyp__mpa_`, `yield_stress_lyp__mpa_` and `yield_point_elongation` only apply when it does, otherwise `NA`.

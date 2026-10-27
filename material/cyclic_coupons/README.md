@@ -22,6 +22,7 @@ Prefix new ids with something that identifies the campaign (the profile, or the 
 ## Main table
 
 - Every column is described in `steel_material_data_dictionary.csv`. Columns with `nullable = False` are mandatory.
+- Leave `data_curation_status` out, the Hub sets it. A new submission goes live as `unverified`, with a warning on the site, and a curator changes it to `verified` once the data has been checked.
 - Column names carry their unit as a suffix between double underscores (`gage_length__mm_`, `fy_n__mpa_`, `t_a__deg_c_`, `uvc_e__gpa_`).
 - `pid_*` are the controller gains of the testing machine, `uvc_*` the calibrated material model parameters, and the chemical composition columns (`c`, `si`, `mn`, ...) are mass percentages from the mill certificate. Leave what you did not measure `NR`.
 - `date` is a full date, `dd.mm.yyyy`.

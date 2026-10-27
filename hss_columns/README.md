@@ -27,6 +27,7 @@ The `id` column is the join key between the main table and the response files. N
 ## Main table
 
 - Every column is described in `hss_columns_data_dictionary.csv`. Columns with `nullable = False` are mandatory.
+- Leave `data_curation_status` out, the Hub sets it. A new submission goes live as `unverified`, with a warning on the site, and a curator changes it to `verified` once the data has been checked.
 - Column names carry their unit as a suffix (`width__mm`, `fy_measured__n_mm2`, `mp_measured__knmm`, `theta_p_pos_100fit__rad`); a double underscore separates the name from the unit.
 - `axial_load_ratio` is the applied axial load over the yield load; `loading_angle` is the angle of the applied loading in degrees.
 - The `*_100fit` columns are the modelling parameters fitted on the measured response; leave them `NR` if you did not compute them.

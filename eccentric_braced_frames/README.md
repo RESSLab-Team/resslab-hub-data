@@ -17,6 +17,7 @@ Unlike the other databases, `id` is an integer, assigned in order of insertion: 
 ## Main table
 
 - Every column is described in `eccentric_braced_frames_data_dictionary.csv`. Columns with `nullable = False` are mandatory.
+- Leave `data_curation_status` out, the Hub sets it. A new submission goes live as `unverified`, with a warning on the site, and a curator changes it to `verified` once the data has been checked.
 - Nominal and measured values are separate columns, with `_n` and `_m` suffixes (`f_y_n_flg` versus `f_y_m_flg`, `h_n` versus `h_m`); fill both when known. `_flg` and `_web` refer to the flange and web plates.
 - Lengths in mm, forces in kN, stresses in MPa, rotations in rad, as stated in the `unit` column of the dictionary.
 

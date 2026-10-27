@@ -59,3 +59,4 @@ lambda_c,Slenderness ratio (weak axis),,-,DecimalFloat,0.749,True,Section proper
 flexural_buckling,Indication of flexural buckling occurrence,,-,String,False,False,Measured response
 latitude,Geographical latitude of testing facility,,degrees,DecimalFloat,45.505,True,Experimental program details
 longitude,Geographical longitude of testing facility,,degrees,DecimalFloat,-73.614,True,Experimental program details
+data_curation_status,Review status set by the Hub (unverified until a curator checked the data),,-,String,verified,False,Experimental program details

@@ -29,6 +29,7 @@ Underscores separate the parts and replace dots in the designation (`R0_5` is a 
 ## Main table
 
 - Every column is described in `ductile_fracture_data_dictionary.csv`. Columns with `nullable = False` are mandatory.
+- Leave `data_curation_status` out, the Hub sets it. A new submission goes live as `unverified`, with a warning on the site, and a curator changes it to `verified` once the data has been checked.
 - Geometry columns come in a nominal (`nom_*`) and a measured (`meas_*`) form, and in a `_cnt` or `_gp` variant that only applies to that coupon type; the other variant is `NA`. Measured dimensions are arrays of repeated readings written as JSON lists, for example `[7.99, 7.99, 7.99, 7.99]`.
 - `loading_protocol` is the sequence of imposed elongation targets, also written as a JSON list (`[0,2]` for a monotonic pull to 2 mm).
 - `chemical_composition_*` are mass percentages from the mill certificate.

@@ -152,3 +152,4 @@ reference,Reference of the experimental program,-,-,String,"Example: Engelhardt,
 link,Link to the reference,-,-,String,Example: https://store.atcouncil.org/index.php?dispatch=products.view&product_id=132,True,Experimental program details
 latitude,Latitude of the laboratory the experiment was conducted,lat,degrees,DecimalFloat,Example: 30.62037845,True,Experimental program details
 longitude,Longitude of the laboratory the experiment was conducted,lon,degrees,DecimalFloat,Example: -96.33951634,True ,Experimental program details
+data_curation_status,Review status set by the Hub (unverified until a curator checked the data),,-,String,verified,False,Experimental program details

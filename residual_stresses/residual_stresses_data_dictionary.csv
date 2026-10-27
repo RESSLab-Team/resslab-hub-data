@@ -24,3 +24,4 @@ reference,Full citation of the study,,None,String,"Ketter, R. L. (1958)...",Fals
 link,DOI or URL link to the study,,None,String,https://doi.org/...,True,Experimental program details
 latitude,Latitude of testing location,,Degrees,Numeric,40.608028,True,Experimental program details
 longitude,Longitude of testing location,,Degrees,Numeric,-75.376194,True,Experimental program details
+data_curation_status,Review status set by the Hub (unverified until a curator checked the data),,-,String,verified,False,Experimental program details

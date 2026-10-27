@@ -27,6 +27,7 @@ Underscores separate the parts (and replace the spaces inside a name); the speci
 ## Main table
 
 - Every column is described in `steel_braces_data_dictionary.csv`. Columns with `nullable = False` are mandatory.
+- Leave `data_curation_status` out, the Hub sets it. A new submission goes live as `unverified`, with a warning on the site, and a curator changes it to `verified` once the data has been checked.
 - Section properties (`area`, `i_x`, `z_x`, `j`, ...) are in mm-based units, forces in kN, stresses in MPa, angles in degrees. Check the `unit` column of the dictionary before filling a value.
 - `p_t`, `p_c` are the measured tensile and compressive capacities; `p_t_theory`, `kl_r_theory` are the values computed from nominal properties.
 

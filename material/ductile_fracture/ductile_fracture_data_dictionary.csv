@@ -77,3 +77,4 @@ link,Publication URL,,-,String,https://www.sciencedirect.com/science/article/pii
 latitude,Test location latitude,,°,DecimalFloat,46.5172,False,Experimental program details
 longitude,Test location longitude,,°,DecimalFloat,6.5689,False,Experimental program details
 has_sem,Whether Scanning Electron Microscopy images are available for this specimen,,-,Boolean,Binary: YES/NO,True,Experimental program details
+data_curation_status,Review status set by the Hub (unverified until a curator checked the data),,-,String,verified,False,Experimental program details
