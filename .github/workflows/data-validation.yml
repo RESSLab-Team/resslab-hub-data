@@ -98,14 +98,26 @@ jobs:
           DIRECTORY=${DIRECTORY//-/_}
           TAR_NAME=${DIRECTORY}.tar.gz
           UPLOAD_TYPE=all-${{ matrix.type }}  # Replace underscores with hyphens for upload type
-          echo "Calling: $SERVER_URL/api/validate/?type=$UPLOAD_TYPE"
-          VALIDATION_LOG=$(curl -sSL -F file=@$TAR_NAME -u user:$API_PASSWORD $SERVER_URL/api/validate/?type=$UPLOAD_TYPE )
+          # No slash after validate, and no -L: behind the proxy, the slash
+          # redirect lost /api and ended on the site's nginx (an HTML 405).
+          URL="$SERVER_URL/api/validate?type=$UPLOAD_TYPE"
+          echo "Calling: $URL"
+          HTTP_CODE=$(curl -sS -o response.json -w '%{http_code}' -F file=@$TAR_NAME -u user:$API_PASSWORD "$URL") || true
+          echo "HTTP $HTTP_CODE"
+          # Anything that is not JSON (proxy error page, timeout, redirect):
+          # show it as is, so the log says what went wrong.
+          if ! jq -e . response.json > /dev/null 2>&1; then
+            echo "::error::The Hub did not answer JSON (HTTP $HTTP_CODE). Raw answer:"
+            if [[ -s response.json ]]; then head -c 2000 response.json; else echo "(empty)"; fi
+            echo
+            exit 1
+          fi
           echo "Validation Results:"
           # First, parse the JSON response
-          echo "$VALIDATION_LOG" | jq -r '
+          jq -r '
               if .valid then
                 "\u001b[32m✓ All validations passed\u001b[0m"
-              else
+              elif .error_results then
                 .error_results[] |
                 "\u001b[31m✗ Validations failed for \(.file)\u001b[0m\n" + 
                 if .errors then
@@ -116,9 +128,11 @@ jobs:
                   "\n\u001b[33mWarnings:\u001b[0m\n" + 
                   (.warnings | map("  • \(.)" ) | join("\n"))
                 else "" end
-              end'
+              else
+                "\u001b[31m✗ \(.detail // .)\u001b[0m"
+              end' response.json
           # Check validation status
-          if [[ $(echo "$VALIDATION_LOG" | jq 'if .valid then .valid else false end') == "false" ]]; then
+          if [[ $(jq 'if .valid then .valid else false end' response.json) == "false" ]]; then
             exit 1
           fi
 
