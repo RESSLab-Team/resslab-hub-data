@@ -76,3 +76,4 @@ uvc_rho_yield,UVC model yield ratio as defined in Hartloper et al. (2021) [see E
 uvc_rho_iso,UVC model isotropic ratio as defined in Hartloper et al. (2021) [see Eq. (35)],,-,DecimalFloat,0.363269998,True,Cyclic material model parameters
 uvc_rho_kin,UVC model kinematic ratio as defined in Hartloper et al. (2021) [see Eq. (36)],,-,DecimalFloat,0.636730002,True,Cyclic material model parameters
 uvc_rho_d,Ratio of initial stress reduction to total hardening in UVC model as defined in de Castro e Sousa (2021) [see Eq. (15)],,-,DecimalFloat,0.411625859,True,Cyclic material model parameters
+data_curation_status,Review status set by the Hub (unverified until a curator checked the data),,-,String,verified,False,Experimental program details

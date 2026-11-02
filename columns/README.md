@@ -29,6 +29,7 @@ Underscores separate the parts; the specimen designation is kept as reported (hy
 ## Main table
 
 - Every column is described in `steel_columns_data_dictionary.csv`. Columns with `nullable = False` are mandatory.
+- Leave `data_curation_status` out, the Hub sets it. A new submission goes live as `unverified`, with a warning on the site, and a curator changes it to `verified` once the data has been checked.
 - Nominal and measured values are separate columns (`f_yn` versus `f_ymf`/`f_ymw`, `p_yn` versus `p_ym`); fill both when known.
 - Lengths in mm, forces in kN, stresses in MPa, rotations in rad, as stated in the `unit` column of the dictionary.
 - The `k_*` stiffnesses and `th_*` rotations at the end of the table are the parameters extracted from the measured response (yield, local buckling, 80 % and 50 % strength loss, ...); leave them `NR` if you did not compute them.

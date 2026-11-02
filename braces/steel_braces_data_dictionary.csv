@@ -70,3 +70,4 @@ reference,Citation of the source publication,,-,String,"Wakabayashi, M., Nakamur
 link,URL to the source document,,-,String,https://repository.kulib.kyoto-u.ac.jp/...,True,Experimental program details
 latitude,Geographical latitude of testing facility,,degrees,Numeric,35.0262,True,Experimental program details
 longitude,Geographical longitude of testing facility,,degrees,Numeric,135.7808,True,Experimental program details
+data_curation_status,Review status set by the Hub (unverified until a curator checked the data),,-,String,verified,False,Experimental program details

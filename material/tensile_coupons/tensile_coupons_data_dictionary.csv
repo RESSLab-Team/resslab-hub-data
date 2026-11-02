@@ -69,3 +69,4 @@ latitude,Latitude of the test location,,degrees,DecimalFloat,46.5191,False,Exper
 longitude,Longitude of the test location,,degrees,DecimalFloat,6.5668,False,Experimental program details
 publication_key,BibTeX citation key for the publication,,-,String,AshidaCompositeEffect2025,True,Experimental program details
 datacol_version,Version of the data collection system,,-,SmallInteger,1,False,Experimental program details
+data_curation_status,Review status set by the Hub (unverified until a curator checked the data),,-,String,verified,False,Experimental program details
