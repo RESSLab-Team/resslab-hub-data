@@ -96,3 +96,4 @@ reference,Citation of the source publication,,-,String,"Elkady, A., and Lignos, 
 link,URL to the source document,,-,String,https://doi.org/10.1061/...,True,Experimental program details
 latitude,Geographical latitude of testing facility,,degrees,DecimalFloat,45.505,False,Experimental program details
 longitude,Geographical longitude of testing facility,,degrees,DecimalFloat,-73.614,False ,Experimental program details
+data_curation_status,Review status set by the Hub (unverified until a curator checked the data),,-,String,verified,False,Experimental program details

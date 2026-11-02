@@ -30,6 +30,7 @@ The `id` column is the join key between the main table and the response files:
 ## Main table
 
 - Every column is described in `connections_data_dictionary.csv`. Columns with `nullable = False` are mandatory.
+- Leave `data_curation_status` out, the Hub sets it. A new submission goes live as `unverified`, with a warning on the site, and a curator changes it to `verified` once the data has been checked.
 - Nominal, mill-certificate and coupon-measured yield stresses are separate columns (`f_yb`, `f_yb_mill`, `f_ybw`/`f_ybf`, `f_yb_avg`); fill every one that is known.
 - Measured section dimensions carry an `m` suffix (`d_bm`, `t_bfm`, ...); leave them `NR` when only nominal dimensions were reported.
 - Lengths in mm, forces in kN, moments in kN-m unless the dictionary says otherwise, stresses in MPa, rotations in rad.

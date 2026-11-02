@@ -28,6 +28,7 @@ The `id` column is the join key between the main table, the distribution files a
 ## Main table
 
 - Every column is described in `residual_stresses_data_dictionary.csv`. Columns with `nullable = False` are mandatory.
+- Leave `data_curation_status` out, the Hub sets it. A new submission goes live as `unverified`, with a warning on the site, and a curator changes it to `verified` once the data has been checked.
 - `fy_n`, `fy_e`, `fy_mf`, `fy_mw` are the nominal, expected and measured (flange, web) yield strengths in MPa; `h`, `b`, `tw`, `tf`, `r` the section dimensions in mm; `A` the area in mm².
 - `sigma_0_f` and `sigma_0_w` are the characteristic residual stresses at the flange tip and at the web centre, in MPa.
 - `flange_nr_data` is the number of flange distributions provided (1 or 2, matching the presence of an `F2` file) and `plot_sf` a scale factor used by the hub to draw the distribution on the section.
