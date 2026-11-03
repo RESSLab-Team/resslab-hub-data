@@ -1,7 +1,9 @@
 name: build-data-image
 
-# Packs the data files into an image tagged `main`. Every deployment (dev,
-# stage, prod) uploads from that one image. The hub re-uploads a whole database
+# Packs the data files into an image tagged with the branch, `main`. Stage and
+# prod upload from this repo's image. The image is named after the repository,
+# so the test fork (EPFL-ENAC/resslab-hub-data-test) builds its own, and the
+# dev deployment uploads from that one. The hub re-uploads a whole database
 # from it with the resslab-hub-upload-data CronJob (ArgoCD -> create-job).
 #
 # There used to be a `test` branch feeding the stage deployment. It was never
@@ -32,8 +34,14 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      # ghcr wants a lowercase name: ghcr.io/resslab-team/resslab-hub-data
+      # here, ghcr.io/epfl-enac/resslab-hub-data-test in the test fork.
+      - name: Image name
+        id: image
+        run: echo "name=ghcr.io/${GITHUB_REPOSITORY,,}" >> "$GITHUB_OUTPUT"
+
       - uses: docker/build-push-action@v6
         with:
           context: .
           push: true
-          tags: ghcr.io/resslab-team/resslab-hub-data:${{ github.ref_name }}
+          tags: ${{ steps.image.outputs.name }}:${{ github.ref_name }}
