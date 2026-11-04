@@ -1,0 +1,119 @@
+name: upload
+
+# Sends the data files changed by a push on main to the deployed hubs, so a
+# merged contribution shows up a few minutes later.
+#
+# Deleted files are not sent (POST /upload only adds and replaces). The
+# nightly rebuild of each hub (the resslab-hub-upload-data CronJob, on the
+# image that build-data-image.yml makes) cleans them, and also catches a
+# failed run of this workflow.
+#
+# The hubs are in the repository variable UPLOAD_TARGETS, not in this file,
+# so the file is the same in the real repo and in the test fork (make
+# data-fork-reset copies main over). One entry per hub, with the name of the
+# secret that holds its machine password (API_PASSWORD of the hub):
+#
+#   real repo: [{"name": "prod", "url": "https://resslab-hub.epfl.ch", "secret": "API_PASSWORD_PROD"},
+#               {"name": "stage", "url": "https://resslab-hub-test.epfl.ch", "secret": "API_PASSWORD_STAGE"}]
+#   test fork: [{"name": "dev", "url": "https://resslab-hub-dev.epfl.ch", "secret": "API_PASSWORD_DEV"}]
+#
+# Without the variable, nothing runs.
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  upload:
+    if: ${{ vars.UPLOAD_TARGETS != '' }}
+    name: upload (${{ matrix.target.name }})
+    runs-on: ubuntu-latest
+    strategy:
+      # A hub that is down must not stop the upload to the others.
+      fail-fast: false
+      matrix:
+        target: ${{ fromJSON(vars.UPLOAD_TARGETS || '[]') }}
+    # Two merges close together: the second upload waits for the first.
+    concurrency:
+      group: upload-${{ matrix.target.name }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+          fetch-depth: 2
+
+      - name: Pack the changed files
+        id: pack
+        env:
+          BEFORE: ${{ github.event.before }}
+        run: |
+          # Diff against the commit main was at before the push, so a push of
+          # several commits sends all of them. HEAD~1 when it is not there
+          # (first push, or a force push that dropped it).
+          BASE=HEAD~1
+          if [[ ! "$BEFORE" =~ ^0+$ ]] && git fetch --no-tags --depth=1 origin "$BEFORE"; then
+            BASE="$BEFORE"
+          else
+            echo "::warning::Cannot fetch $BEFORE, diffing against HEAD~1 only."
+          fi
+          # The uploader reads only CSV files and README.md. Filter by name,
+          # not by folder, so a new data folder needs no change here.
+          # --no-renames: a moved file counts as added at its new path.
+          git diff --no-renames --diff-filter=AM --name-only -z "$BASE" HEAD -- '*.csv' '*/README.md' > files.txt
+          COUNT=$(tr -cd '\0' < files.txt | wc -c)
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+          if [ "$COUNT" -eq 0 ]; then
+            echo "No data file changed between $BASE and HEAD, nothing to upload."
+            exit 0
+          fi
+          echo "$COUNT files changed between $BASE and HEAD:"
+          tr '\0' '\n' < files.txt
+          tar --null -T files.txt -czf upload.tar.gz
+          ls -l upload.tar.gz
+
+      - name: Upload to ${{ matrix.target.name }}
+        if: ${{ steps.pack.outputs.count != '0' }}
+        env:
+          SERVER_URL: ${{ matrix.target.url }}
+          SECRET_NAME: ${{ matrix.target.secret }}
+          API_PASSWORD: ${{ secrets[matrix.target.secret] }}
+        run: |
+          if [ -z "$API_PASSWORD" ]; then
+            echo "::error::The secret $SECRET_NAME is not set in this repository."
+            exit 1
+          fi
+          # No slash after upload, and no -L: behind the proxy, the slash
+          # redirect loses /api and ends on the site's nginx (a 405).
+          URL="$SERVER_URL/api/upload?type=all"
+          echo "Calling: $URL"
+          HTTP_CODE=$(curl -sS -o response.json -w '%{http_code}' --max-time 1800 \
+            -F file=@upload.tar.gz -u "user:$API_PASSWORD" "$URL") || true
+          echo "HTTP $HTTP_CODE"
+          # Anything that is not JSON (proxy error page, timeout): show it as
+          # is, so the log says what went wrong.
+          if ! jq -e . response.json > /dev/null 2>&1; then
+            echo "::error::The hub did not answer JSON (HTTP $HTTP_CODE). Raw answer:"
+            if [[ -s response.json ]]; then head -c 2000 response.json; else echo "(empty)"; fi
+            echo
+            if [ "$HTTP_CODE" = "504" ]; then
+              echo "A 504 comes from the proxy: the hub can still be uploading. Read the backend log."
+            fi
+            exit 1
+          fi
+          jq -r '.uploads[]? // empty' response.json
+          case "$HTTP_CODE" in
+            200)
+              echo "All files uploaded."
+              ;;
+            422)
+              # The other files went in. The error text is only in the hub's
+              # backend log.
+              jq -r '.failed[] | "::error file=\(.)::This file failed to upload, see the backend log of the hub."' response.json
+              exit 1
+              ;;
+            *)
+              echo "::error::Upload failed (HTTP $HTTP_CODE): $(jq -c '.detail // .' response.json)"
+              exit 1
+              ;;
+          esac

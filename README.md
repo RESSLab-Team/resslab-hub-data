@@ -1,7 +1,11 @@
 # Resslab Hub Data
 
-This repository contains the DB underlying [RESSLAB Hub](https://resslab-hub.epfl.ch/). The `main` branch points to the website in production, the `test` branch points to the [test deployement](https://resslab-hub-test.epfl.ch/). See [RESSLAB Hub's repository](https://github.com/RESSLab-Team/resslab-hub).  
-Automated data upload pipeline is still under active development and testing. 
+This repository contains the DB underlying [RESSLAB Hub](https://resslab-hub.epfl.ch/). See [RESSLAB Hub's repository](https://github.com/RESSLab-Team/resslab-hub).
+
+The `main` branch is the only source of data. When a pull request is merged into `main`, two things happen:
+
+- `upload.yml` sends the CSV files that changed to each hub listed in the `UPLOAD_TARGETS` repository variable (see the comment at the top of the file). The data is online a few minutes after the merge.
+- `build-data-image.yml` packs all the data into an image. Each night, every hub uploads the full data again from that image (the `resslab-hub-upload-data` CronJob). This removes deleted files and fixes a failed upload.
 
 ## Licence
 

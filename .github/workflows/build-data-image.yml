@@ -4,7 +4,8 @@ name: build-data-image
 # prod upload from this repo's image. The image is named after the repository,
 # so the test fork (EPFL-ENAC/resslab-hub-data-test) builds its own, and the
 # dev deployment uploads from that one. The hub re-uploads a whole database
-# from it with the resslab-hub-upload-data CronJob (ArgoCD -> create-job).
+# from it with the resslab-hub-upload-data CronJob, each night or by hand
+# (ArgoCD -> create-job). upload.yml sends the changed files right away.
 #
 # There used to be a `test` branch feeding the stage deployment. It was never
 # updated after January 2022 and is gone now, so `main` is the only source.
