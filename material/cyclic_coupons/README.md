@@ -17,7 +17,7 @@ The `id` column is the join key between the main table and the response files. I
 - `{Loading_protocol}_{Specimen}_{Piece}` for recent EPFL campaigns, for example `LP4_S1_D`
 - `{Coupon}_{Protocol}_{Profile}_{Location}_{campaign}` for the historical Hartloper set, for example `C4_LP4_w_hartloper`
 
-Prefix new ids with something that identifies the campaign (the profile, or the first author's name) so they cannot collide with existing ones. `hidden_index` is a running integer used internally; give a new row the next free number.
+Prefix new ids with something that identifies the campaign (the profile, or the first author's name) so they cannot collide with existing ones.
 
 ## Main table
 

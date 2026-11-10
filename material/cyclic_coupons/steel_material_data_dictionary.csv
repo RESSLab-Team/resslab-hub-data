@@ -1,5 +1,4 @@
 column_name,description,symbol,unit,type,example_value,nullable,group
-hidden_index,Internal index for database management,,-,SmallInteger,0,False,Experimental program details
 experimental_program,Name of the research program/investigators,,-,String,El Jisr & Lignos,False,Experimental program details
 id,Unique specimen identifier,,-,String,LP4_S1_D,False,Experimental program details
 profile_type,Type of steel section,,-,String,wide flange,False,Specimen details
@@ -69,7 +68,6 @@ uvc_c1__mpa_,UVC model parameter C1,,MPa,DecimalFloat,21161.27,True,Cyclic mater
 uvc_g1,UVC model parameter γ1,,-,DecimalFloat,210.4413,True,Cyclic material model parameters
 uvc_c2__mpa_,UVC model parameter C2,,MPa,DecimalFloat,1706.608,True,Cyclic material model parameters
 uvc_g2,UVC model parameter γ2,,-,DecimalFloat,16.5007,True,Cyclic material model parameters
-hidden_dataset_index,Internal dataset index,,-,SmallInteger,4,False,Experimental program details
 uvc_sigma_sat__mpa_,UVC model saturation stress defined as sigma_y0 + Q_inf - D_inf + sum(C_i/gamma_i),,MPa,DecimalFloat,599.6008399,True,Cyclic material model parameters
 uvc_sigma_hard__mpa_,UVC model hardening stress as defined in Hartloper et al. (2021) [see Eq. (34)],,MPa,DecimalFloat,320.3603399,True,Cyclic material model parameters
 uvc_rho_yield,UVC model yield ratio as defined in Hartloper et al. (2021) [see Eq. (38)],,-,DecimalFloat,1.458495664,True,Cyclic material model parameters
