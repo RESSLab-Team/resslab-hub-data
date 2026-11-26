@@ -1,27 +1,50 @@
 column_name,description,symbol,unit,type,example_value,nullable,group
-id,Unique identifier for specimen,,None,String,Ketter_1958_W4x13_1,False,Experimental program details
-experimental_program,Name of experimental program or primary investigator,,None,String,Ketter,False,Experimental program details
-date,Year of the study,,None,SmallInteger,1958,False,Experimental program details
-profile_type,Type of steel section,,None,String,Hot-rolled wide flange,False,Steel profile
-profile,Profile designation,,None,String,W4x13,False,Steel profile
-spec_var,Specimen variant identifier,,None,String,A,True,Experimental program details
-steel,Steel grade designation,,None,String,ASTM A7,False,Material properties
-fy_n,Nominal yield strength,,MPa,DecimalFloat,250,True,Material properties
-fy_e,Expected yield strength,,MPa,DecimalFloat,375,True,Material properties
-fy_mf,Measured yield strength (flange),,MPa,DecimalFloat,371,True,Material properties
-fy_mw,Measured yield strength (web),,MPa,DecimalFloat,350,True,Material properties
-h,Section depth,,mm,DecimalFloat,106,True,Section properties
-b,Section width,,mm,DecimalFloat,103,True,Section properties
-tw,Web thickness,,mm,DecimalFloat,7.1,True,Section properties
-tf,Flange thickness,,mm,DecimalFloat,8.8,True,Section properties
-r,Root radius,,mm,DecimalFloat,6.4,True,Section properties
-A,Cross-sectional area,,mm²,DecimalFloat,2470,True,Section properties
-sigma_0_f,Residual stress at flange tip,,f,Numeric,DecimalFloat,False,Measured residual stresses
-sigma_0_w,Residual stress at web center,,w,Numeric,DecimalFloat,False,Measured residual stresses
-flange_nr_data,Number of measurement points in flange,,None,SmallInteger,1,False,Measured residual stresses
-plot_sf,Plot scale factor,,None,Numeric,2.8,False,Plot properties
-reference,Full citation of the study,,None,String,"Ketter, R. L. (1958)...",False,Experimental program details
-link,DOI or URL link to the study,,None,String,https://doi.org/...,True,Experimental program details
-latitude,Latitude of testing location,,Degrees,Numeric,40.608028,True,Experimental program details
-longitude,Longitude of testing location,,Degrees,Numeric,-75.376194,True,Experimental program details
+id,Unique specimen identifier and filename join key,,-,String,Ketter_1958_W4x13_1,False,Experimental program details
+experimental_program,Name of experimental program or primary investigator,,-,String,Ketter,False,Experimental program details
+date,Year of the study,,year,SmallInteger,1958,False,Experimental program details
+profile_type,Section manufacture category: Hot-rolled wide flange or Built-up wide flange,,-,String,Built-up wide flange,False,Steel profile
+profile,Profile designation as compiled from the source,,-,String,314x312x12x25,False,Steel profile
+spec_var,Specimen variant identifier when a program tested several nominally identical profiles,,-,String,A,True,Experimental program details
+steel,Steel grade of the flanges; section steel grade for hot-rolled records,,-,String,Q460GJ,True,Material properties
+fy_n,Nominal flange yield strength; section nominal yield strength for hot-rolled records,"f_y,n,f",MPa,DecimalFloat,460,True,Material properties
+fy_e,Expected flange yield strength; section expected yield strength for hot-rolled records,"f_y,e,f",MPa,DecimalFloat,493,True,Material properties
+fy_mf,Measured flange yield strength,"f_y,m,f",MPa,DecimalFloat,524,True,Material properties
+fy_mw,Measured web yield strength,"f_y,m,w",MPa,DecimalFloat,533,True,Material properties
+h,Overall section depth,h,mm,DecimalFloat,314,True,Section properties
+b,Top or first flange width; flange width for a doubly symmetric section,"b_f,top",mm,DecimalFloat,312,True,Section properties
+tw,Web thickness,t_w,mm,DecimalFloat,12,True,Section properties
+tf,Top or first flange thickness; flange thickness for a doubly symmetric section,"t_f,top",mm,DecimalFloat,25,True,Section properties
+r,Root fillet radius of a hot-rolled section; not applicable to the assembled built-up plate geometry,r,mm,DecimalFloat,6.4,True,Section properties
+A,Cross-sectional area as compiled from the source,A,mm²,DecimalFloat,18768,True,Section properties
+sigma_0_f,Characteristic measured first or top flange stress as compiled; tension positive,"sigma_0,f",MPa,DecimalFloat,-125.12,True,Measured residual stresses
+sigma_0_w,Characteristic measured residual stress at the web centre; tension positive,"sigma_0,w",MPa,DecimalFloat,-100,True,Measured residual stresses
+flange_nr_data,Number of measured flange distributions reported for the specimen: 0 or 1 or 2; a replicated F2 file does not add an independent measurement,,-,SmallInteger,2,False,Measured residual stresses
+steel_web,Web steel grade for built-up sections; may differ from the flange grade in hybrid sections,,-,String,Q460GJ,True,Material properties
+fy_nw,Nominal web yield strength for built-up sections,"f_y,n,w",MPa,DecimalFloat,460,True,Material properties
+fy_ew,Expected web yield strength for built-up sections,"f_y,e,w",MPa,DecimalFloat,493,True,Material properties
+b2,Bottom or second flange width of a built-up section,"b_f,bot",mm,DecimalFloat,312,True,Section properties
+tf2,Bottom or second flange thickness of a built-up section,"t_f,bot",mm,DecimalFloat,25,True,Section properties
+plt_cut_f,Flange plate edge preparation as reported; categories include Flame-cut and Shear-cut and Universal-mill and Uncoiled-strip and Plasma and Slit-coiled and Wire-cut and Water-jet,,-,String,Flame-cut,True,Fabrication details
+plt_cut_w,Web plate edge preparation as reported; uses the same categories as plt_cut_f,,-,String,Flame-cut,True,Fabrication details
+mea_met,Residual stress measurement method as reported,,-,String,Sectioning,True,Measured residual stresses
+weld_type,Reported weld joint type; includes fillet and groove and CJP and resistance seam joints,,-,String,fillet,True,Fabrication details
+fillet_size,Fillet weld throat thickness,a_f,mm,DecimalFloat,10,True,Fabrication details
+weld_cur,Reported welding current; may be a quoted comma-separated list for multiple welding stages,I,A,String,"94.5,615",True,Fabrication details
+weld_vol,Reported welding voltage; may be a quoted comma-separated list for multiple welding stages,U,V,String,"20.2,33",True,Fabrication details
+weld_vel,Reported welding velocity; may be a quoted comma-separated list for multiple welding stages,v_w,mm/s,String,"11.1,3.2",True,Fabrication details
+preheat_c,Reported preheat temperature; retains ranges and inequalities and multistage lists,,°C,String,150-200,True,Fabrication details
+interpass_c,Reported interpass temperature; retains ranges and multistage lists,,°C,String,160-180,True,Fabrication details
+holding_c,Reported holding temperature; retains multistage lists and missing-stage markers,,°C,String,"NR,200",True,Fabrication details
+holding_t,Reported holding duration; source unit is not specified in this compilation and multistage values are retained,,-,String,"NR,1.5",True,Fabrication details
+n_weld_pass,Reported number of weld passes,,-,SmallInteger,2,True,Fabrication details
+heat_inp,Reported linear welding heat input; one value or a quoted comma-separated list for multiple welding stages; preserve stage order and NA/NR markers; divide each numeric stage value by 10 to obtain kJ/mm,q,kJ/cm,String,"1.7,63.4",True,Fabrication details
+region,Country or region associated with the experimental study,,-,String,China,True,Experimental program details
+webdata,Web measurement availability flag for built-up records: 1 available or 0 unavailable; NA for legacy hot-rolled records,,-,SmallInteger,1,True,Measured residual stresses
+sym,Section symmetry: doubly or mono,,-,String,doubly,False,Section properties
+sigma_0_b_f,Characteristic measured bottom or second flange stress as compiled; tension positive,"sigma_0,b,f",MPa,DecimalFloat,-140.32,True,Measured residual stresses
+plot_sf,Legacy scale factor for drawing residual stresses on the section,,-,DecimalFloat,2.8,False,Plot properties
+reference,Full citation of the experimental study,,-,String,"Ketter, R. L. (1958). The influence of residual stress on the strength of structural members.",False,Experimental program details
+link,DOI or URL of the experimental study,,-,String,https://doi.org/10.1016/j.jcsr.2010.10.008,True,Experimental program details
+latitude,Latitude of testing location,,degree,DecimalFloat,40.608028,True,Experimental program details
+longitude,Longitude of testing location,,degree,DecimalFloat,-75.376194,True,Experimental program details
 data_curation_status,Review status set by the Hub (unverified until a curator checked the data),,-,String,verified,False,Experimental program details
